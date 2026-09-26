@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1B2A3F" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="78%" cy="30%" r="60%">
+      <stop offset="0" stop-color="#137C6D" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#070B14" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#2DD4BF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#070B14"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity=".6"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <g transform="translate(80 72)">
+    <circle cx="44" cy="44" r="44" fill="#137C6D"/>
+    <g fill="none" stroke="#fff" stroke-width="46" stroke-linecap="round" stroke-linejoin="round" transform="translate(-1 7) scale(.088)">
+      <path d="M198 467H327L362 432L397 467H441"/>
+      <path d="M500 390L556 422V486L500 518L444 486V422Z"/>
+      <path d="M564 470L596 528L675 206L741 470L776 430L808 470"/>
+    </g>
+    <circle cx="43" cy="47" r="2" fill="#fff"/>
+    <text x="108" y="58" fill="#fff" font-family="'Segoe UI','Noto Sans',Arial,sans-serif" font-size="38" font-weight="700" letter-spacing="1">Nitrotick</text>
+  </g>
+
+  <g font-family="'Segoe UI','Noto Sans',Arial,sans-serif">
+    <text x="80" y="238" fill="#5EEAD4" font-size="22" font-weight="700" letter-spacing="4">VERIFIABLE EXECUTION INFRASTRUCTURE</text>
+    <text x="80" y="318" fill="#FFFFFF" font-size="72" font-weight="800">Trust in Execution.</text>
+    <text x="80" y="384" fill="#C7D2E0" font-size="30">Deterministic execution · Cryptographic proof ·</text>
+    <text x="80" y="424" fill="#C7D2E0" font-size="30">Federated trust — without blockchain overhead.</text>
+    <text x="80" y="540" fill="#8FA3BA" font-size="22">Enterprise AI · Digital Assets · Digital Product Passport · Regulated Systems</text>
+  </g>
+
+  <g transform="translate(860 170)" fill="none" stroke-width="3">
+    <path d="M40 120L160 40L280 120L160 200Z" stroke="#1E3A52"/>
+    <path d="M40 120L160 40M160 40L280 120M40 120L160 200M160 200L280 120M160 40V200M40 120H280" stroke="url(#line)" opacity=".7"/>
+    <g stroke="#2DD4BF" fill="#0B1422">
+      <circle cx="40" cy="120" r="20"/>
+      <circle cx="160" cy="40" r="20"/>
+      <circle cx="280" cy="120" r="20"/>
+      <circle cx="160" cy="200" r="20"/>
+    </g>
+    <circle cx="160" cy="120" r="34" fill="#137C6D" stroke="#5EEAD4"/>
+    <path d="M146 120l10 10 20-22" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

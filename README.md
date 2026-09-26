@@ -15,6 +15,8 @@ Static company website for **Nitrotick — Verifiable Execution Infrastructure**
 ├── federation/index.html             Nitrotick Federation (cross-institution execution)
 ├── digital-product-passport/index.html  Verifiable Digital Asset Platform / DPP (EN + MK summary)
 ├── ai-governance/index.html          Governed AI execution (AI agents as bounded actors)
+├── blockchain-alternative/index.html Enterprise blockchain alternative (comparison, FAQ)
+├── compliance/index.html             NIS2, DORA, EU AI Act, GDPR, eIDAS 2.0, ESPR
 ├── 404.html                          GitHub Pages not-found page
 ├── css/styles.css                    Complete design system (tokens, layout, components)
 ├── assets/img/

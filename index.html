@@ -1,0 +1,930 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Nitrotick — Verifiable Execution Infrastructure | Trust in Execution</title>
+  <meta name="description" content="Nitrotick is verifiable execution infrastructure for enterprise AI, digital assets and regulated systems: deterministic execution, cryptographic proof and federated trust — without blockchain overhead.">
+  <meta name="keywords" content="verifiable execution, trust infrastructure, cryptographic proof, durable execution, federated execution, AI governance, digital product passport, DPP, NIS2, GDPR, EU AI Act, blockchain alternative, stablecoin alternative, digital assets, Nitrotick">
+  <meta name="author" content="Aleksandar M. Tasevski">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#070b14">
+  <meta name="color-scheme" content="dark">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="canonical" href="https://nitrotick.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nitrotick">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://nitrotick.com/">
+  <meta property="og:title" content="Nitrotick — Trust in Execution">
+  <meta property="og:description" content="Deterministic execution, immutable evidence and federated trust for enterprise AI, digital assets and regulated systems. Blockchain-like trust without the overhead.">
+  <meta property="og:image" content="https://nitrotick.com/assets/img/og-image.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Nitrotick — Trust in Execution. Verifiable execution infrastructure.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nitrotick — Trust in Execution">
+  <meta name="twitter:description" content="Verifiable execution infrastructure for enterprise AI, digital assets and regulated systems.">
+  <meta name="twitter:image" content="https://nitrotick.com/assets/img/og-image.png">
+  <meta name="twitter:image:alt" content="Nitrotick — Trust in Execution. Verifiable execution infrastructure.">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/styles.css?v=20260926">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://nitrotick.com/#organization",
+        "name": "Nitrotick",
+        "url": "https://nitrotick.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://nitrotick.com/assets/img/logo-512.png",
+          "width": 512,
+          "height": 512
+        },
+        "description": "Verifiable execution infrastructure for enterprise AI, digital assets and regulated systems.",
+        "slogan": "Trust in Execution.",
+        "foundingLocation": { "@type": "Place", "name": "Skopje, North Macedonia" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Skopje", "addressCountry": "MK" },
+        "founder": { "@id": "https://nitrotick.com/#founder" },
+        "sameAs": ["https://www.linkedin.com/company/nitrotick/"],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "url": "https://www.linkedin.com/in/aleksandar-m-tasevski/",
+          "availableLanguage": ["English", "Macedonian"]
+        },
+        "knowsAbout": ["Verifiable execution", "Durable execution", "Cryptographic proof", "Federated trust", "AI governance", "Digital Product Passport", "NIS2", "GDPR", "EU AI Act"]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://nitrotick.com/#founder",
+        "name": "Aleksandar M. Tasevski",
+        "jobTitle": "Founder & Principal Architect",
+        "image": "https://nitrotick.com/assets/img/aleksandar-m-tasevski.jpg",
+        "worksFor": { "@id": "https://nitrotick.com/#organization" },
+        "homeLocation": { "@type": "Place", "name": "Skopje, North Macedonia" },
+        "sameAs": ["https://www.linkedin.com/in/aleksandar-m-tasevski/"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://nitrotick.com/#website",
+        "url": "https://nitrotick.com/",
+        "name": "Nitrotick",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://nitrotick.com/#organization" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://nitrotick.com/#webpage",
+        "url": "https://nitrotick.com/",
+        "name": "Nitrotick — Verifiable Execution Infrastructure",
+        "isPartOf": { "@id": "https://nitrotick.com/#website" },
+        "about": { "@id": "https://nitrotick.com/#organization" },
+        "primaryImageOfPage": "https://nitrotick.com/assets/img/og-image.png",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://nitrotick.com/#platform",
+        "name": "Nitrotick Platform",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "Verifiable Execution Infrastructure",
+        "operatingSystem": "Cloud, Private Cloud, On-Premise",
+        "description": "Durable, governed, evidenced and federated execution for critical business processes, AI agents and verifiable digital assets.",
+        "publisher": { "@id": "https://nitrotick.com/#organization" },
+        "featureList": [
+          "Deterministic durable execution and recovery",
+          "Immutable, tamper-evident execution evidence",
+          "Independent cryptographic proof and reconstruction",
+          "Federated cross-institution execution with atomic revocation",
+          "Governed AI agents as bounded actors",
+          "Verifiable digital assets and Digital Product Passports"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://nitrotick.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is Nitrotick a blockchain?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Nitrotick delivers the core business utility people expect from blockchain — tamper-evident history, provenance, integrity and independent verification — through deterministic execution, tamper-evident evidence and cryptographic commitments. There are no tokens, no gas fees, no public ledger and no smart contracts to audit." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do we need to replace our ERP or core systems?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Nitrotick operates above your existing systems of record such as ERP, MES, PLM, core banking or insurance platforms. They keep their role; Nitrotick adds the execution, governance, evidence and federation layer across them." }
+          },
+          {
+            "@type": "Question",
+            "name": "How does Nitrotick handle GDPR?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Personal data stays in your own systems. Nitrotick federates signals, claims and cryptographic proofs rather than raw records, so evidence can be verified independently without exposing or permanently publishing personal data." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between Nitrotick Proof and Nitrotick Qualified Anchor?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Nitrotick Proof provides independent cryptographic proof, immutable evidence and deterministic reconstruction for critical execution. Nitrotick Qualified Anchor adds an external qualified trust anchor to those proofs for regulated and legally sensitive use cases." }
+          },
+          {
+            "@type": "Question",
+            "name": "How is Nitrotick Federation different from workflow orchestrators or APIs?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Workflow orchestrators are built for internal microservices, and plain APIs carry no native cryptographic trust. Nitrotick Federation is built for execution across independent organizations: each keeps its own node, data and authority, capabilities are re-verified at execution time, revocation is atomic and every hand-off produces signed evidence." }
+          },
+          {
+            "@type": "Question",
+            "name": "Which deployment models are available?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Nitrotick is available as SaaS, in a private cloud or on-premise, with custom integrations into your existing systems, registries and workflows." }
+          },
+          {
+            "@type": "Question",
+            "name": "How can we get a demo or an offer?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Send a direct message on LinkedIn to Aleksandar M. Tasevski, Founder & Principal Architect, with a short description of your use case to arrange a technical presentation or a tailored offer." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Primary">
+      <a class="brand" href="./" aria-label="Nitrotick home">
+        <img src="assets/img/logo-mark.svg" alt="" width="40" height="40">
+        <span>Nitrotick</span>
+      </a>
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu">
+      <label class="nav-toggle-label" for="nav-toggle" aria-hidden="true"><span></span></label>
+      <ul class="nav-menu">
+        <li><a href="federation/">Federation</a></li>
+        <li><a href="digital-product-passport/">Digital Product Passport</a></li>
+        <li><a href="ai-governance/">AI Governance</a></li>
+        <li><a href="blockchain-alternative/">Blockchain Alternative</a></li>
+        <li><a href="compliance/">Compliance</a></li>
+        <li><a class="btn btn--primary" href="#contact">Request a demo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container split">
+        <div>
+          <h1 id="hero-title"><span class="pill"><span class="dot" aria-hidden="true"></span>Verifiable Execution Infrastructure</span> Trust in <span class="accent">Execution.</span></h1>
+          <p class="lead">Nitrotick is infrastructure where execution itself becomes natively durable, verifiable, provable and federatively trusted — for enterprise AI, digital assets and regulated systems.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="https://www.linkedin.com/in/aleksandar-m-tasevski/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+              Request a technical demo
+            </a>
+            <a class="btn btn--ghost" href="#platform">Explore the platform</a>
+          </div>
+          <ul class="hero-meta">
+            <li>Deterministic execution</li>
+            <li>Immutable evidence</li>
+            <li>Federated trust</li>
+            <li>No blockchain required</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <svg viewBox="0 0 560 480" role="img" aria-labelledby="hero-svg-title hero-svg-desc">
+            <title id="hero-svg-title">Nitrotick federated execution network</title>
+            <desc id="hero-svg-desc">Four sovereign participants — AI agent, bank, government and enterprise — connect through the Nitrotick execution engine, which commits every state transition to a tamper-evident evidence log.</desc>
+            <defs>
+              <linearGradient id="h-core" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#137C6D"/>
+                <stop offset="1" stop-color="#0B3F38"/>
+              </linearGradient>
+              <linearGradient id="h-link" x1="0" x2="1">
+                <stop offset="0" stop-color="#22D3EE"/>
+                <stop offset="1" stop-color="#2DD4BF"/>
+              </linearGradient>
+              <filter id="h-glow" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="10" result="b"/>
+                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+
+            <g fill="none" stroke="url(#h-link)" stroke-width="2" class="anim-dash">
+              <path d="M150 104C210 104 220 160 238 180"/>
+              <path d="M410 104C350 104 340 160 322 180"/>
+              <path d="M150 316C210 316 220 262 238 242"/>
+              <path d="M410 316C350 316 340 262 322 242"/>
+              <path d="M280 290V372" stroke="#8B5CF6"/>
+            </g>
+
+            <circle cx="280" cy="210" r="96" fill="#2DD4BF" opacity=".08" class="anim-breathe"/>
+            <path d="M280 136L344 173V247L280 284L216 247V173Z" fill="url(#h-core)" stroke="#5EEAD4" stroke-width="2" filter="url(#h-glow)"/>
+            <g fill="none" stroke="#fff" stroke-width="38" stroke-linecap="round" stroke-linejoin="round" transform="translate(229 170) scale(.1)">
+              <path d="M198 467H327L362 432L397 467H441"/>
+              <path d="M500 390L556 422V486L500 518L444 486V422Z"/>
+              <path d="M564 470L596 528L675 206L741 470L776 430L808 470"/>
+            </g>
+            <circle cx="279" cy="215.4" r="2.2" fill="#fff"/>
+            <text x="280" y="248" text-anchor="middle" fill="#fff" font-size="15" font-weight="700" class="svg-text">Nitrotick Engine</text>
+
+            <g class="svg-text" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">
+              <rect x="20" y="76" width="140" height="56" rx="12" fill="#0D1624" stroke="#27405C"/>
+              <text x="90" y="101">AI Agent</text>
+              <text x="90" y="120" font-size="11" font-weight="500" fill="#8193A8">bounded actor</text>
+
+              <rect x="400" y="76" width="140" height="56" rx="12" fill="#0D1624" stroke="#27405C"/>
+              <text x="470" y="101">Bank</text>
+              <text x="470" y="120" font-size="11" font-weight="500" fill="#8193A8">sovereign node</text>
+
+              <rect x="20" y="288" width="140" height="56" rx="12" fill="#0D1624" stroke="#27405C"/>
+              <text x="90" y="313">Government</text>
+              <text x="90" y="332" font-size="11" font-weight="500" fill="#8193A8">sovereign node</text>
+
+              <rect x="400" y="288" width="140" height="56" rx="12" fill="#0D1624" stroke="#27405C"/>
+              <text x="470" y="313">Enterprise</text>
+              <text x="470" y="332" font-size="11" font-weight="500" fill="#8193A8">sovereign node</text>
+            </g>
+
+            <g class="svg-text">
+              <rect x="150" y="378" width="260" height="64" rx="14" fill="#0A111D" stroke="#8B5CF6" stroke-opacity=".6"/>
+              <text x="256" y="416" text-anchor="middle" fill="#C4B5FD" font-size="15" font-weight="700" letter-spacing="1.2">EVIDENCE LOG</text>
+              <circle cx="372" cy="410" r="17" fill="#137C6D" stroke="#5EEAD4"/>
+              <path d="M364 410l6 6 10-11" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STATS ================= -->
+    <section aria-label="Platform at a glance">
+      <div class="container">
+        <div class="stats">
+          <div class="stat"><b><span class="accent">&lt; 100 ms</span></b><span>real-time state transitions at cloud speed</span></div>
+          <div class="stat"><b><span class="accent">$0 gas</span></b><span>predictable, flat infrastructure cost</span></div>
+          <div class="stat"><b><span class="accent">60–83%</span></b><span>lower upfront cost vs. enterprise blockchain builds</span></div>
+          <div class="stat"><b><span class="accent">TLA+</span></b><span>formally model-checked federation protocols</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= THE QUESTION ================= -->
+    <section class="section" aria-labelledby="problem-title">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">The trust &amp; evidence problem</span>
+          <h2 id="problem-title">Can you prove it — five years from now?</h2>
+          <p class="lead">Can you independently prove why a transaction was allowed, which identity authorized it, which policy governed it, what inputs produced the outcome — and that the historical state has not been altered?</p>
+          <p>If the answer is “no”, you have a trust and evidence problem. Logs tell you <em>what happened</em>. Regulators, auditors, partners and courts increasingly ask <em>why it was allowed</em> and <em>how the state was reached</em>.</p>
+          <blockquote class="statement">
+            Not just what happened — but why it was allowed, how the state was reached, and whether the outcome can still be independently verified years later.
+          </blockquote>
+        </div>
+        <div>
+          <ol class="questions">
+            <li>Who was authorized?</li>
+            <li>Which policy governed the execution?</li>
+            <li>Which exact definition was applied?</li>
+            <li>What inputs generated the outcome?</li>
+            <li>How was the target state reached?</li>
+            <li>Can an independent party reconstruct the exact sequence years later?</li>
+            <li>Can organizations trust each other without surrendering data sovereignty?</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CATEGORY ================= -->
+    <section class="section section--alt" aria-labelledby="category-title">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">A new infrastructure category</span>
+          <h2 id="category-title">One layer beneath everything you already use</h2>
+          <p class="lead">When blockchain emerged it answered one question: how do we trust <strong>state</strong> without trusting a single central entity? Nitrotick targets the next, deeper layer: how do we trust <strong>execution</strong> itself?</p>
+          <p>Nitrotick is not another cybersecurity product, NIS2 checklist, QTSP, blockchain layer or workflow orchestrator. It is purpose-built execution infrastructure, engineered from the ground up — with its own protocols, storage and execution engine — for the root challenge: trust in execution.</p>
+        </div>
+        <dl class="layers">
+          <div class="layer"><dt>Cybersecurity</dt><dd>Protects system perimeters.</dd></div>
+          <div class="layer"><dt>NIS2</dt><dd>Defines organizational and technical resilience duties.</dd></div>
+          <div class="layer"><dt>QTSP</dt><dd>Establishes qualified legal trust.</dd></div>
+          <div class="layer"><dt>Blockchain</dt><dd>Provides distributed consensus and auditability.</dd></div>
+          <div class="layer layer--core"><dt>Nitrotick</dt><dd>Makes execution itself durable, verifiable, provable and federatively trusted.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ================= PLATFORM PROPERTIES ================= -->
+    <section class="section" id="platform" aria-labelledby="platform-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow">Core platform</span>
+          <h2 id="platform-title">Four guarantees for every critical process</h2>
+          <p class="lead">Nitrotick operates above your existing systems — ERP, MES, PLM, core banking, insurance and document platforms — and makes the processes that run across them provable.</p>
+        </div>
+        <div class="grid grid--4">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/><path d="M12 8v4l3 2"/></svg>
+            </div>
+            <h3>Durable</h3>
+            <p>A process resumes correctly after a restart, service failure or network interruption — with no lost state and no duplicated side-effects.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <h3>Governed</h3>
+            <p>Consequential transitions are subject to identity, authorization and policy — with human approval wherever you designate a step as critical.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="6" height="6" rx="1.5"/><rect x="15" y="4" width="6" height="6" rx="1.5"/><rect x="9" y="14" width="6" height="6" rx="1.5"/><path d="M9 7h6M18 10v2a2 2 0 0 1-2 2h-1M6 10v2a2 2 0 0 0 2 2h1"/></svg>
+            </div>
+            <h3>Evidenced</h3>
+            <p>Every step, approval and state transition is written to an append-only, tamper-evident log — independently verifiable without exposing private data.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="2.5"/><circle cx="19" cy="5" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M7.3 11l9.4-4.8M7.3 13l9.4 4.8"/></svg>
+            </div>
+            <h3>Federated</h3>
+            <p>Processes span institutions and sites while each participant keeps full sovereignty over its systems, data and operational authority.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+    <section class="section section--alt" id="products" aria-labelledby="products-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Products</span>
+          <h2 id="products-title">Built on one execution foundation</h2>
+          <p class="lead">Nitrotick combines its own protocols for sovereign durable execution, federated trust, ownership and capability admission, bilateral trust and recursive authorization — supported by frameworks for governed decision execution and execution economics.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card">
+            <span class="card-kicker">Digital assets</span>
+            <h3>Verifiable Digital Asset Platform</h3>
+            <p>Turn products, documents, certificates and business data into verifiable digital assets — with versioned state, lineage, execution evidence and independent proof. The foundation for custom Digital Product Passports.</p>
+            <a class="card-link" href="digital-product-passport/">Digital Product Passport</a>
+          </article>
+          <article class="card card--featured">
+            <span class="card-kicker">Cross-institution</span>
+            <h3>Nitrotick Federation</h3>
+            <p>Secure multi-tenant federated execution between independent organizations. Signals, claims and cryptographic proofs travel — raw data stays home. Capabilities are re-verified at execution time and revoked atomically.</p>
+            <a class="card-link" href="federation/">Explore Federation</a>
+          </article>
+          <article class="card">
+            <span class="card-kicker">Enterprise AI</span>
+            <h3>Governed AI Execution</h3>
+            <p>Autonomous AI agents operate as bounded actors. Agents propose; the governed execution layer holds authority — with deterministic logs of which context, policy and inputs led to every decision.</p>
+            <a class="card-link" href="ai-governance/">AI Governance</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TRUST TIERS ================= -->
+    <section class="section" id="trust-tiers" aria-labelledby="tiers-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow">Trust tiers</span>
+          <h2 id="tiers-title">Choose the trust level your use case requires</h2>
+          <p class="lead">From independent cryptographic proof for critical execution to externally anchored qualified trust for regulated, legally sensitive processes.</p>
+        </div>
+        <div class="grid grid--2">
+          <article class="card tier">
+            <span class="card-kicker">Tier 1</span>
+            <h3>Nitrotick Proof</h3>
+            <p class="tagline">Independent cryptographic proof for critical execution</p>
+            <p>Deterministic reconstruction, immutable evidence and cryptographic verification of how a business outcome was reached.</p>
+            <ul class="check-list">
+              <li>Append-only, tamper-evident execution evidence</li>
+              <li>Cryptographic commitments for every state transition</li>
+              <li>Independent deterministic reconstruction</li>
+              <li>Verification without exposing underlying data</li>
+            </ul>
+          </article>
+          <article class="card tier card--glow">
+            <span class="card-kicker">Tier 2</span>
+            <h3>Nitrotick Qualified Anchor</h3>
+            <p class="tagline">External qualified trust anchoring for Nitrotick Proofs</p>
+            <p>Everything in Nitrotick Proof, anchored to an external qualified trust service for regulated and legally sensitive use cases.</p>
+            <ul class="check-list">
+              <li>All Nitrotick Proof guarantees</li>
+              <li>External qualified trust anchor</li>
+              <li>Designed for legal evidentiary requirements</li>
+              <li>Fits eIDAS-aligned trust architectures</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ARCHITECTURE ================= -->
+    <section class="section section--alt" id="architecture" aria-labelledby="arch-title">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">Market architecture</span>
+          <h2 id="arch-title">Verify business logic before value moves</h2>
+          <p class="lead">Nitrotick does not compete with money. It decouples business execution from market liquidity.</p>
+          <ul class="check-list">
+            <li><strong>Layer 1 · Enterprise stack</strong>Your AI agents, regulatory processes such as DPP and local personal data stay inside your domain. Permissionless public access is a liability here, not a feature.</li>
+            <li><strong>Layer 2 · Nitrotick engine</strong>Validates every state transition deterministically with sub-100 ms latency and zero gas. Raw data stays private in sovereign nodes; only cryptographic proofs are federated.</li>
+            <li><strong>Layer 3 · Settlement</strong>Only after Nitrotick closes the state transition does settlement run — over regulated stablecoins, CBDCs or traditional banking rails.</li>
+          </ul>
+        </div>
+        <figure class="diagram">
+          <svg viewBox="0 0 560 612" role="img" aria-labelledby="arch-svg-title arch-svg-desc">
+            <title id="arch-svg-title">Three-tier market architecture</title>
+            <desc id="arch-svg-desc">Layer one is the enterprise stack with AI agents, digital product passports and local personal data. Layer two is the Nitrotick engine providing deterministic proofs, sovereign governance and sub-100 millisecond, zero-gas validation. Layer three is liquidity and settlement over stablecoins, CBDCs and traditional fiat rails.</desc>
+            <defs>
+              <marker id="arch-arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M0 0L10 5L0 10Z" fill="#22D3EE"/>
+              </marker>
+            </defs>
+            <g class="svg-text">
+              <rect x="6" y="6" width="548" height="164" rx="16" fill="#0C1A1C" stroke="#1F5F58"/>
+              <text x="28" y="36" fill="#8193A8" font-size="11" font-weight="700" letter-spacing="1.6">LAYER 1 · INDUSTRY BUSINESS LOGIC</text>
+              <text x="28" y="64" fill="#fff" font-size="22" font-weight="800">Enterprise Stack</text>
+              <g fill="#081414" stroke="#1F5F58">
+                <rect x="28" y="84" width="160" height="66" rx="10"/>
+                <rect x="200" y="84" width="160" height="66" rx="10"/>
+                <rect x="372" y="84" width="160" height="66" rx="10"/>
+              </g>
+              <g font-size="14" fill="#fff" font-weight="700">
+                <text x="42" y="110">AI Agents</text>
+                <text x="214" y="110">Product Passport</text>
+                <text x="386" y="110">Local PII Data</text>
+              </g>
+              <g font-size="12" fill="#8193A8">
+                <text x="42" y="132">Internal decisions</text>
+                <text x="214" y="132">EU compliance</text>
+                <text x="386" y="132">GDPR privacy</text>
+              </g>
+
+              <path d="M280 176V218" stroke="#22D3EE" stroke-width="2" stroke-dasharray="4 5" marker-end="url(#arch-arrow)"/>
+
+              <rect x="6" y="226" width="548" height="200" rx="16" fill="#0B2027" stroke="#22D3EE" stroke-width="2"/>
+              <text x="28" y="256" fill="#8193A8" font-size="11" font-weight="700" letter-spacing="1.6">LAYER 2 · CRYPTOGRAPHIC BACKBONE</text>
+              <rect x="372" y="240" width="160" height="26" rx="13" fill="#0A2E33" stroke="#22D3EE"/>
+              <text x="452" y="257" text-anchor="middle" fill="#22D3EE" font-size="10" font-weight="700" letter-spacing="1">WHERE NITROTICK LIVES</text>
+              <text x="28" y="288" fill="#fff" font-size="24" font-weight="800">Nitrotick Engine</text>
+              <text x="28" y="310" fill="#2DD4BF" font-size="11" font-weight="700" letter-spacing="1.1">GOVERNED EXECUTION &amp; STATE VERIFICATION</text>
+              <g fill="#081418" stroke="#1C4C55">
+                <rect x="28" y="330" width="160" height="76" rx="10"/>
+                <rect x="200" y="330" width="160" height="76" rx="10"/>
+                <rect x="372" y="330" width="160" height="76" rx="10"/>
+              </g>
+              <g fill="#fff" font-size="14" font-weight="700">
+                <text x="42" y="356">Deterministic</text>
+                <text x="214" y="356">Sovereign</text>
+                <text x="386" y="356">&lt; 100 ms · $0 gas</text>
+              </g>
+              <g fill="#8193A8" font-size="12">
+                <text x="42" y="376">Proof of every</text>
+                <text x="42" y="392">state transition</text>
+                <text x="214" y="376">Governance without</text>
+                <text x="214" y="392">third-party risk</text>
+                <text x="386" y="376">No public-chain</text>
+                <text x="386" y="392">latency or fees</text>
+              </g>
+
+              <path d="M280 432V474" stroke="#8B5CF6" stroke-width="2" stroke-dasharray="4 5" marker-end="url(#arch-arrow)"/>
+
+              <rect x="6" y="482" width="548" height="124" rx="16" fill="#12112A" stroke="#3B3470"/>
+              <text x="28" y="512" fill="#8193A8" font-size="11" font-weight="700" letter-spacing="1.6">LAYER 3 · VALUE TRANSFER STACK</text>
+              <text x="28" y="540" fill="#fff" font-size="22" font-weight="800">Liquidity &amp; Settlement</text>
+              <g font-size="14" fill="#fff" font-weight="700">
+                <text x="28" y="572">Stablecoins</text>
+                <text x="200" y="572">CBDCs</text>
+                <text x="372" y="572">Fiat rails</text>
+              </g>
+              <g font-size="12" fill="#A5B4FC">
+                <text x="28" y="592">Regulated, instant transfer</text>
+                <text x="200" y="592">Sovereign digital money</text>
+                <text x="372" y="592">SWIFT · SEPA</text>
+              </g>
+            </g>
+          </svg>
+          <figcaption>Nitrotick verifies, secures and governs business logic before settlement.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= FEDERATED FLOW ================= -->
+    <section class="section" id="how-it-works" aria-labelledby="flow-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">How it works</span>
+          <h2 id="flow-title">Secure multi-tenant federated execution</h2>
+          <p class="lead">Raw web traffic between organizations carries no native trust. Nitrotick moves state transitions and cryptographic metadata over its own federation protocol — each hand-off verified, every result signed.</p>
+        </div>
+        <figure class="diagram diagram--scroll">
+          <svg viewBox="0 0 960 420" role="img" aria-labelledby="seq-title seq-desc">
+            <title id="seq-title">Nitrotick federated workflow sequence</title>
+            <desc id="seq-desc">A client or AI agent starts a workflow at Institution A, which executes local business rules and performs a secure federated hand-off to Institution B. Institution B validates policy and the state transition, commits a cryptographic proof to the audit and evidence trail, and returns the final verifiable state.</desc>
+            <defs>
+              <marker id="seq-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#22D3EE"/></marker>
+              <marker id="seq-t" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#2DD4BF"/></marker>
+              <marker id="seq-v" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#A78BFA"/></marker>
+            </defs>
+            <g class="svg-text">
+              <g text-anchor="middle">
+                <rect x="30" y="16" width="160" height="58" rx="10" fill="#111C2D" stroke="#27405C"/>
+                <text x="110" y="42" fill="#fff" font-size="15" font-weight="700">Client / AI Agent</text>
+                <text x="110" y="61" fill="#8193A8" font-size="11">Workflow initiator</text>
+
+                <rect x="280" y="16" width="160" height="58" rx="10" fill="#1A1A3A" stroke="#6366F1"/>
+                <text x="360" y="42" fill="#fff" font-size="15" font-weight="700">Institution A</text>
+                <text x="360" y="61" fill="#A5B4FC" font-size="11">Nitrotick node (tenant A)</text>
+
+                <rect x="530" y="16" width="160" height="58" rx="10" fill="#0B2A25" stroke="#2DD4BF"/>
+                <text x="610" y="42" fill="#fff" font-size="15" font-weight="700">Institution B</text>
+                <text x="610" y="61" fill="#5EEAD4" font-size="11">Nitrotick node (tenant B)</text>
+
+                <rect x="780" y="16" width="160" height="58" rx="10" fill="#22143A" stroke="#A78BFA"/>
+                <text x="860" y="42" fill="#fff" font-size="15" font-weight="700">Audit &amp; Evidence</text>
+                <text x="860" y="61" fill="#C4B5FD" font-size="11">Immutable log</text>
+              </g>
+
+              <g stroke="#27405C" stroke-dasharray="4 6">
+                <path d="M110 74V404"/><path d="M360 74V404"/><path d="M610 74V404"/><path d="M860 74V404"/>
+              </g>
+              <rect x="352" y="112" width="16" height="262" rx="4" fill="#6366F1"/>
+              <rect x="602" y="196" width="16" height="140" rx="4" fill="#14B8A6"/>
+
+              <g font-size="13" font-weight="600">
+                <path d="M112 124H348" stroke="#22D3EE" stroke-width="2" marker-end="url(#seq-a)"/>
+                <text x="230" y="114" text-anchor="middle" fill="#22D3EE">1. Start workflow request</text>
+
+                <path d="M368 146h44v26h-40" fill="none" stroke="#A5B4FC" stroke-width="2" marker-end="url(#seq-a)"/>
+                <text x="422" y="164" fill="#E6EDF5">2. Execute local business rules</text>
+
+                <path d="M368 208H598" stroke="#2DD4BF" stroke-width="2.5" marker-end="url(#seq-t)"/>
+                <text x="484" y="198" text-anchor="middle" fill="#5EEAD4">3. Federated hand-off</text>
+
+                <path d="M618 230h44v26h-40" fill="none" stroke="#5EEAD4" stroke-width="2" marker-end="url(#seq-t)"/>
+                <text x="672" y="248" fill="#E6EDF5">4. Validate policy &amp; state transition</text>
+
+                <path d="M618 292H846" stroke="#A78BFA" stroke-width="2.5" marker-end="url(#seq-v)"/>
+                <text x="740" y="282" text-anchor="middle" fill="#C4B5FD">5. Commit signed proof</text>
+
+                <path d="M600 326H372" stroke="#2DD4BF" stroke-width="2" marker-end="url(#seq-t)"/>
+                <text x="486" y="318" text-anchor="middle" fill="#5EEAD4">6. Final verifiable state</text>
+
+                <path d="M350 362H124" stroke="#22D3EE" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#seq-a)"/>
+                <text x="237" y="354" text-anchor="middle" fill="#22D3EE">7. Result + proof receipt</text>
+              </g>
+            </g>
+          </svg>
+          <figcaption>Each participant executes under its own authority; only signals, claims and signed evidence cross the boundary.</figcaption>
+        </figure>
+
+        <div class="grid grid--3 mt-lg">
+          <article class="card">
+            <h3>Agent-to-agent delegation</h3>
+            <p>AI agents act as bounded, governed actors across institutional boundaries. They propose; execution authority and cryptographic hand-offs remain locked in the governance layer.</p>
+          </article>
+          <article class="card">
+            <h3>Dynamic ancestry &amp; atomic revocation</h3>
+            <p>Capabilities are re-verified across the federation hierarchy at execution time. A partner that loses authorization is revoked atomically — healthy peers keep running.</p>
+          </article>
+          <article class="card">
+            <h3>Proofs without PII</h3>
+            <p>Every state transition commits signed evidence to an immutable audit trail, without exposing underlying personal or proprietary enterprise data.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COMPARISON ================= -->
+    <section class="section section--alt" id="comparison" aria-labelledby="compare-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow">Blockchain-like trust. Without the overhead.</span>
+          <h2 id="compare-title">Traditional blockchain vs. Nitrotick</h2>
+          <p class="lead">Most enterprises don't need tokens or decentralized consensus. They need proof — that a product is authentic, a document untampered and a process executed deterministically.</p>
+        </div>
+
+        <div class="compare">
+          <article class="card card--bad">
+            <span class="card-kicker">Legacy decentralized layer</span>
+            <h3>Traditional blockchain</h3>
+            <div class="metric">
+              <div class="metric-head"><span>Initial build cost</span><span class="t-bad">$150K – $500K+</span></div>
+              <div class="bar bar--bad"><i class="w-88"></i></div>
+              <p>Node setup, Web3 synchronization and smart-contract engineering.</p>
+            </div>
+            <div class="metric">
+              <div class="metric-head"><span>Latency</span><span class="t-warn">Seconds to minutes</span></div>
+              <div class="bar bar--warn"><i class="w-65"></i></div>
+              <p>Transactions wait for network-wide block confirmation.</p>
+            </div>
+            <div class="metric">
+              <div class="metric-head"><span>Monthly network fees</span><span class="t-bad">$15K – $60K+ gas</span></div>
+              <div class="bar bar--bad"><i class="w-80"></i></div>
+              <p>Unpredictable gas spikes and percentage-based transaction rent.</p>
+            </div>
+            <ul class="cross-list">
+              <li>Smart-contract audits on every major update</li>
+              <li>Immutable public data collides with GDPR erasure rights</li>
+              <li>Rare, expensive Solidity / Rust talent</li>
+            </ul>
+          </article>
+
+          <div class="vs" aria-hidden="true">VS</div>
+
+          <article class="card card--good">
+            <span class="card-kicker">Durable execution framework</span>
+            <h3>Nitrotick infrastructure</h3>
+            <div class="metric">
+              <div class="metric-head"><span>Initial build cost</span><span class="t-good">$40K – $90K</span></div>
+              <div class="bar bar--good"><i class="w-22"></i></div>
+              <p>Runs on standard enterprise cloud stacks you already operate.</p>
+            </div>
+            <div class="metric">
+              <div class="metric-head"><span>Latency</span><span class="t-good">&lt; 100 ms</span></div>
+              <div class="bar bar--good"><i class="w-8"></i></div>
+              <p>Real-time execution suited to AI and high-volume data streams.</p>
+            </div>
+            <div class="metric">
+              <div class="metric-head"><span>Monthly network fees</span><span class="t-good">$0 gas</span></div>
+              <div class="bar bar--good"><i class="w-3"></i></div>
+              <p>Flat, predictable SaaS or infrastructure pricing.</p>
+            </div>
+            <ul class="check-list">
+              <li>Zero smart-contract risk — logic lives in a governed backend</li>
+              <li>Native GDPR alignment through proofs, not published data</li>
+              <li>Standard enterprise (.NET) engineering talent</li>
+            </ul>
+          </article>
+        </div>
+        <p class="note center mt-lg">Indicative ranges for typical enterprise implementations; actual figures depend on scope and deployment model.</p>
+        <p class="center"><a class="card-link" href="blockchain-alternative/">Full comparison: enterprise blockchain alternative</a></p>
+      </div>
+    </section>
+
+    <!-- ================= INDUSTRIES ================= -->
+    <section class="section" id="industries" aria-labelledby="industries-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Industries</span>
+          <h2 id="industries-title">Where execution must be provable</h2>
+          <p class="lead">From “trust me” to “independently verify” — across the sectors where a wrong or unprovable decision is expensive.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6"/><path d="M5 10v8M9.5 10v8M14.5 10v8M19 10v8"/><path d="M3 21h18"/></svg></div>
+            <h3>Banking &amp; fintech</h3>
+            <p>Verifiable transaction authorization, cross-institution settlement workflows and instant revoke signals for fraud and non-compliance — before value moves.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M8.5 12h7M12 8.5v7"/></svg></div>
+            <h3>Insurance</h3>
+            <p>Leads, renewals and claims shared across agents, brokers, banks and partners through signals and delegated authority — without handing over customer records.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></div>
+            <h3>Manufacturing &amp; aerospace</h3>
+            <p>Governed hand-offs across sites and supplier tiers: engineering change, supplier validation, tool release and quality confirmation — each step evidenced.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h3v3H8zM13 7h3M13 10h3M8 14h8M8 17h5"/></svg></div>
+            <h3>Product compliance &amp; DPP</h3>
+            <p>Custom Digital Product Passports built on your GS1 identifiers, certificates and ERP data — traceable, versioned and independently verifiable.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V9l8-5 8 5v12"/><path d="M9 21v-6h6v6"/><path d="M4 21h16"/></svg></div>
+            <h3>Government &amp; public sector</h3>
+            <p>Inter-agency processes where every institution keeps its sovereignty, yet decisions, authority and outcomes remain provable for citizens and auditors.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="7" width="14" height="12" rx="3"/><path d="M12 3v4M9 12h.01M15 12h.01M9.5 16h5"/></svg></div>
+            <h3>Enterprise AI</h3>
+            <p>AI agents as bounded actors with auditable decision context, human approval gates and deterministic evidence aligned with the EU AI Act.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INTEGRATION ================= -->
+    <section class="section section--alt" id="integration" aria-labelledby="integration-title">
+      <div class="container">
+        <div class="split">
+          <div>
+            <span class="eyebrow">Integration</span>
+            <h2 id="integration-title">Your systems. Your data. Your identity. Now verifiable.</h2>
+            <p class="lead">No rip-and-replace. Your systems of record keep their role — Nitrotick adds the execution, governance, evidence and federation layer across them.</p>
+            <ul class="dot-list">
+              <li><strong>ERP &amp; core systems</strong>SAP, Oracle, core banking, core insurance and custom platforms.</li>
+              <li><strong>Registries &amp; identifiers</strong>GS1 GTIN / GLN, product and asset registries.</li>
+              <li><strong>Manufacturing systems</strong>MES, PLM, quality and document management.</li>
+              <li><strong>Trust services</strong>Optional KMS / HSM / PKI and qualified trust anchors for critical commitments.</li>
+            </ul>
+          </div>
+          <div class="stack">
+            <h3>Incremental adoption</h3>
+            <p class="muted">Start small, prove value, then scale across the federation.</p>
+            <ol class="flow">
+              <li>One governed workflow</li>
+              <li>One site</li>
+              <li>One partner</li>
+              <li>Full federation</li>
+            </ol>
+            <div class="card mt-lg">
+              <h3>Deployment options</h3>
+              <p class="strip"><span>SaaS</span><span>Private cloud</span><span>On-premise</span></p>
+              <p class="center">Custom enterprise integrations with your existing systems, registries and workflows.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COMPLIANCE ================= -->
+    <section class="section" id="compliance" aria-labelledby="compliance-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Regulatory alignment</span>
+          <h2 id="compliance-title">Technical evidence for NIS2, DORA, GDPR and the EU AI Act</h2>
+          <p class="lead">Nitrotick contributes the technical execution evidence behind your compliance architecture. It complements — it does not replace — your organizational measures, legal assessments and certifications.</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <caption class="visually-hidden">How Nitrotick supports regulatory requirements</caption>
+            <thead>
+              <tr><th scope="col">Framework</th><th scope="col">What it demands</th><th scope="col">How Nitrotick contributes</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>NIS2</td><td>Resilience, incident handling, supply-chain security</td><td>Durable execution and recovery, tamper-evident logs, immediate supplier revocation</td></tr>
+              <tr><td>DORA</td><td>Digital operational resilience in financial services</td><td>Deterministic, reconstructable execution history and third-party containment</td></tr>
+              <tr><td>GDPR</td><td>Data minimisation, erasure rights, purpose limitation</td><td>Personal data stays local; only proofs and signals are federated</td></tr>
+              <tr><td>EU AI Act</td><td>Traceability, logging and human oversight for AI</td><td>Bounded AI actors, human approval gates, decision evidence</td></tr>
+              <tr><td>ESPR / Digital Product Passport</td><td>Product data, traceability and lifecycle transparency</td><td>Versioned, verifiable digital assets with lineage and proof</td></tr>
+              <tr><td>eIDAS 2.0</td><td>Qualified trust services and legal evidence</td><td>Nitrotick Qualified Anchor with external qualified trust anchoring</td></tr>
+              <tr><td>ISO 27001 / ISO 22301</td><td>Information security and business continuity</td><td>Audit-ready evidence and durable recovery of critical processes</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-lg"><a class="card-link" href="compliance/">Regulation-by-regulation guide</a></p>
+      </div>
+    </section>
+
+    <!-- ================= FOUNDER ================= -->
+    <section class="section section--alt" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">About</span>
+          <h2 id="about-title">Architecting the infrastructure before the market realizes it needs it</h2>
+        </div>
+        <div class="split">
+          <div class="founder">
+            <img class="avatar" src="assets/img/aleksandar-m-tasevski.jpg" alt="Aleksandar M. Tasevski, Founder &amp; Principal Architect of Nitrotick" width="120" height="120" loading="lazy" decoding="async">
+            <div>
+              <h3>Aleksandar M. Tasevski</h3>
+              <p class="muted">Founder &amp; Principal Architect · Skopje, North Macedonia</p>
+              <p>Nitrotick is a deep-tech initiative building an entirely new infrastructure category: execution that is natively durable, verifiable, provable and federatively trusted. Its protocols and architecture are designed and engineered in-house, from the ground up.</p>
+              <p>Built on standard enterprise technology, Nitrotick lets organizations adopt cryptographic trust without exotic stacks, token economics or public-ledger dependencies.</p>
+              <a class="card-link" href="https://www.linkedin.com/in/aleksandar-m-tasevski/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+            </div>
+          </div>
+          <div>
+            <blockquote class="statement">
+              The digital ecosystem of tomorrow will not be controlled by a single actor. AI agents, banks, governments and enterprises must execute interdependent operations, exchange authority and verify state transitions in real time — while retaining complete sovereignty.
+              <small>That is why federation is non-negotiable.</small>
+            </blockquote>
+            <ol class="flow">
+              <li>AI Agent</li>
+              <li>Bank</li>
+              <li>Government</li>
+              <li>Enterprise</li>
+              <li>AI Agent</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow">FAQ</span>
+          <h2 id="faq-title">Frequently asked questions</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Is Nitrotick a blockchain?</summary>
+            <div><p>No. Nitrotick delivers the core business utility people expect from blockchain — tamper-evident history, provenance, integrity and independent verification — through deterministic execution, tamper-evident evidence and cryptographic commitments. There are no tokens, no gas fees, no public ledger and no smart contracts to audit.</p></div>
+          </details>
+          <details>
+            <summary>Do we need to replace our ERP or core systems?</summary>
+            <div><p>No. Nitrotick operates above your existing systems of record such as ERP, MES, PLM, core banking or insurance platforms. They keep their role; Nitrotick adds the execution, governance, evidence and federation layer across them.</p></div>
+          </details>
+          <details>
+            <summary>How does Nitrotick handle GDPR?</summary>
+            <div><p>Personal data stays in your own systems. Nitrotick federates signals, claims and cryptographic proofs rather than raw records, so evidence can be verified independently without exposing or permanently publishing personal data.</p></div>
+          </details>
+          <details>
+            <summary>What is the difference between Nitrotick Proof and Nitrotick Qualified Anchor?</summary>
+            <div><p>Nitrotick Proof provides independent cryptographic proof, immutable evidence and deterministic reconstruction for critical execution. Nitrotick Qualified Anchor adds an external qualified trust anchor to those proofs for regulated and legally sensitive use cases.</p></div>
+          </details>
+          <details>
+            <summary>How is Nitrotick Federation different from workflow orchestrators or APIs?</summary>
+            <div><p>Workflow orchestrators are built for internal microservices, and plain APIs carry no native cryptographic trust. Nitrotick Federation is built for execution across independent organizations: each keeps its own node, data and authority, capabilities are re-verified at execution time, revocation is atomic and every hand-off produces signed evidence.</p></div>
+          </details>
+          <details>
+            <summary>Which deployment models are available?</summary>
+            <div><p>Nitrotick is available as SaaS, in a private cloud or on-premise, with custom integrations into your existing systems, registries and workflows.</p></div>
+          </details>
+          <details>
+            <summary>How can we get a demo or an offer?</summary>
+            <div><p>Send a direct message on LinkedIn to Aleksandar M. Tasevski, Founder &amp; Principal Architect, with a short description of your use case to arrange a technical presentation or a tailored offer.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="cta">
+          <span class="pill"><span class="dot" aria-hidden="true"></span>Demo &amp; offers</span>
+          <h2 id="contact-title" class="mt-lg">Let's talk about trust in your execution</h2>
+          <p class="lead">Technical presentations, tailored use cases and offers are arranged directly on LinkedIn. Send a message with a few lines about your organization and the process you want to make verifiable.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="https://www.linkedin.com/in/aleksandar-m-tasevski/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+              Message on LinkedIn
+            </a>
+            <a class="btn btn--ghost" href="https://www.linkedin.com/company/nitrotick/" target="_blank" rel="noopener">Follow Nitrotick</a>
+          </div>
+          <ol class="cta-steps">
+            <li>Open the LinkedIn profile and press <strong>Message</strong>.</li>
+            <li>Describe your industry, systems and the process to verify.</li>
+            <li>Receive a technical presentation or a tailored offer.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="./" aria-label="Nitrotick home">
+            <img src="assets/img/logo-mark.svg" alt="" width="40" height="40">
+            <span>Nitrotick</span>
+          </a>
+          <p class="footer-tagline">Verifiable execution infrastructure. <strong>Trust in Execution.</strong></p>
+        </div>
+        <div>
+          <p class="footer-heading">Platform</p>
+          <ul>
+            <li><a href="#platform">Core platform</a></li>
+            <li><a href="#trust-tiers">Trust tiers</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="blockchain-alternative/">Blockchain alternative</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Solutions</p>
+          <ul>
+            <li><a href="federation/">Nitrotick Federation</a></li>
+            <li><a href="digital-product-passport/">Digital Product Passport</a></li>
+            <li><a href="ai-governance/">AI Governance</a></li>
+            <li><a href="compliance/">Compliance &amp; regulations</a></li>
+            <li><a href="#industries">Industries</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Connect</p>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/aleksandar-m-tasevski/" target="_blank" rel="noopener">Founder on LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/company/nitrotick/" target="_blank" rel="noopener">Nitrotick on LinkedIn</a></li>
+            <li><a href="#contact">Request a demo</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Nitrotick. All rights reserved.</span>
+        <span>Skopje, North Macedonia · SaaS · Private Cloud · On-Premise</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

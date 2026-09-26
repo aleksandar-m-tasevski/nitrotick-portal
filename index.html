@@ -70,6 +70,7 @@
         "@id": "https://nitrotick.com/#founder",
         "name": "Aleksandar M. Tasevski",
         "jobTitle": "Founder & Principal Architect",
+        "image": "https://nitrotick.com/assets/img/aleksandar-m-tasevski.jpg",
         "worksFor": { "@id": "https://nitrotick.com/#organization" },
         "homeLocation": { "@type": "Place", "name": "Skopje, North Macedonia" },
         "sameAs": ["https://www.linkedin.com/in/aleksandar-m-tasevski/"]
@@ -103,7 +104,7 @@
         "publisher": { "@id": "https://nitrotick.com/#organization" },
         "featureList": [
           "Deterministic durable execution and recovery",
-          "Immutable hash-chained execution evidence",
+          "Immutable, tamper-evident execution evidence",
           "Independent cryptographic proof and reconstruction",
           "Federated cross-institution execution with atomic revocation",
           "Governed AI agents as bounded actors",
@@ -117,7 +118,7 @@
           {
             "@type": "Question",
             "name": "Is Nitrotick a blockchain?",
-            "acceptedAnswer": { "@type": "Answer", "text": "No. Nitrotick delivers the core business utility people expect from blockchain — tamper-evident history, provenance, integrity and independent verification — through deterministic execution, hash-chained evidence and cryptographic commitments. There are no tokens, no gas fees, no public ledger and no smart contracts to audit." }
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Nitrotick delivers the core business utility people expect from blockchain — tamper-evident history, provenance, integrity and independent verification — through deterministic execution, tamper-evident evidence and cryptographic commitments. There are no tokens, no gas fees, no public ledger and no smart contracts to audit." }
           },
           {
             "@type": "Question",
@@ -203,7 +204,7 @@
         <div class="hero-visual">
           <svg viewBox="0 0 560 480" role="img" aria-labelledby="hero-svg-title hero-svg-desc">
             <title id="hero-svg-title">Nitrotick federated execution network</title>
-            <desc id="hero-svg-desc">Four sovereign participants — AI agent, bank, government and enterprise — connect through the Nitrotick execution engine, which commits every state transition to a hash-chained evidence log.</desc>
+            <desc id="hero-svg-desc">Four sovereign participants — AI agent, bank, government and enterprise — connect through the Nitrotick execution engine, which commits every state transition to a tamper-evident evidence log.</desc>
             <defs>
               <linearGradient id="h-core" x1="0" y1="0" x2="1" y2="1">
                 <stop offset="0" stop-color="#137C6D"/>
@@ -255,20 +256,11 @@
               <text x="470" y="332" font-size="11" font-weight="500" fill="#8193A8">sovereign node</text>
             </g>
 
-            <g class="svg-mono" font-size="11" fill="#B4C2D3">
-              <rect x="70" y="378" width="420" height="80" rx="14" fill="#0A111D" stroke="#8B5CF6" stroke-opacity=".6"/>
-              <text x="90" y="400" fill="#C4B5FD" font-weight="700" letter-spacing="1.5">EVIDENCE LOG · HASH-CHAINED</text>
-              <g fill="#111C2D" stroke="#27405C">
-                <rect x="90" y="412" width="86" height="32" rx="6"/>
-                <rect x="196" y="412" width="86" height="32" rx="6"/>
-                <rect x="302" y="412" width="86" height="32" rx="6"/>
-              </g>
-              <text x="133" y="432" text-anchor="middle">#a41f…</text>
-              <text x="239" y="432" text-anchor="middle">#7c02…</text>
-              <text x="345" y="432" text-anchor="middle">#e9b3…</text>
-              <path d="M176 428H196M282 428H302M388 428H408" stroke="#8B5CF6" stroke-width="2"/>
-              <circle cx="436" cy="428" r="16" fill="#137C6D" stroke="#5EEAD4"/>
-              <path d="M429 428l5 5 9-10" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <g class="svg-text">
+              <rect x="150" y="378" width="260" height="64" rx="14" fill="#0A111D" stroke="#8B5CF6" stroke-opacity=".6"/>
+              <text x="256" y="416" text-anchor="middle" fill="#C4B5FD" font-size="15" font-weight="700" letter-spacing="1.2">EVIDENCE LOG</text>
+              <circle cx="372" cy="410" r="17" fill="#137C6D" stroke="#5EEAD4"/>
+              <path d="M364 410l6 6 10-11" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
             </g>
           </svg>
         </div>
@@ -360,7 +352,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="6" height="6" rx="1.5"/><rect x="15" y="4" width="6" height="6" rx="1.5"/><rect x="9" y="14" width="6" height="6" rx="1.5"/><path d="M9 7h6M18 10v2a2 2 0 0 1-2 2h-1M6 10v2a2 2 0 0 0 2 2h1"/></svg>
             </div>
             <h3>Evidenced</h3>
-            <p>Every step, approval and state transition is written to an append-only, hash-chained log — independently verifiable without exposing private data.</p>
+            <p>Every step, approval and state transition is written to an append-only, tamper-evident log — independently verifiable without exposing private data.</p>
           </article>
           <article class="card">
             <div class="card-icon" aria-hidden="true">
@@ -419,7 +411,7 @@
             <p class="tagline">Independent cryptographic proof for critical execution</p>
             <p>Deterministic reconstruction, immutable evidence and cryptographic verification of how a business outcome was reached.</p>
             <ul class="check-list">
-              <li>Hash-chained, append-only execution evidence</li>
+              <li>Append-only, tamper-evident execution evidence</li>
               <li>Cryptographic commitments for every state transition</li>
               <li>Independent deterministic reconstruction</li>
               <li>Verification without exposing underlying data</li>
@@ -798,7 +790,7 @@
         </div>
         <div class="split">
           <div class="founder">
-            <div class="avatar" aria-hidden="true">AT</div>
+            <img class="avatar" src="assets/img/aleksandar-m-tasevski.jpg" alt="Aleksandar M. Tasevski, Founder &amp; Principal Architect of Nitrotick" width="120" height="120" loading="lazy" decoding="async">
             <div>
               <h3>Aleksandar M. Tasevski</h3>
               <p class="muted">Founder &amp; Principal Architect · Skopje, North Macedonia</p>
@@ -834,7 +826,7 @@
         <div class="faq">
           <details>
             <summary>Is Nitrotick a blockchain?</summary>
-            <div><p>No. Nitrotick delivers the core business utility people expect from blockchain — tamper-evident history, provenance, integrity and independent verification — through deterministic execution, hash-chained evidence and cryptographic commitments. There are no tokens, no gas fees, no public ledger and no smart contracts to audit.</p></div>
+            <div><p>No. Nitrotick delivers the core business utility people expect from blockchain — tamper-evident history, provenance, integrity and independent verification — through deterministic execution, tamper-evident evidence and cryptographic commitments. There are no tokens, no gas fees, no public ledger and no smart contracts to audit.</p></div>
           </details>
           <details>
             <summary>Do we need to replace our ERP or core systems?</summary>

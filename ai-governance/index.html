@@ -116,7 +116,7 @@
         <figure class="diagram diagram--scroll" id="gate">
           <svg viewBox="0 0 960 400" role="img" aria-labelledby="gov-title gov-desc">
             <title id="gov-title">Governed AI decision pipeline</title>
-            <desc id="gov-desc">An AI agent proposes an action. The governance gate checks identity, capability, policy and risk. The outcome is allowed, warned, held for human approval, or rejected. Allowed, warned and approved actions are committed durably; every outcome, including rejections, is written to the hash-chained evidence log.</desc>
+            <desc id="gov-desc">An AI agent proposes an action. The governance gate checks identity, capability, policy and risk. The outcome is allowed, warned, held for human approval, or rejected. Allowed, warned and approved actions are committed durably; every outcome, including rejections, is written to the tamper-evident evidence log.</desc>
             <defs>
               <marker id="g-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#22D3EE"/></marker>
               <marker id="g-v" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#A78BFA"/></marker>
@@ -178,7 +178,7 @@
 
               <!-- evidence -->
               <rect x="16" y="300" width="928" height="84" rx="14" fill="#12112A" stroke="#8B5CF6"/>
-              <text x="36" y="328" fill="#C4B5FD" font-size="11" font-weight="700" letter-spacing="1.5">EVIDENCE LOG · HASH-CHAINED · EVERY OUTCOME RECORDED</text>
+              <text x="36" y="328" fill="#C4B5FD" font-size="11" font-weight="700" letter-spacing="1.5">EVIDENCE LOG · EVERY OUTCOME RECORDED</text>
               <text x="36" y="356" fill="#E6EDF5" font-size="13">Agent · inputs · historical context · policy version · capability · decision · approver · resulting state</text>
               <g stroke="#A78BFA" stroke-width="1.6" stroke-dasharray="4 5" fill="none">
                 <path d="M101 206V296" marker-end="url(#g-v)"/>
@@ -264,7 +264,7 @@
               <tr><th scope="col">Obligation</th><th scope="col">What it requires</th><th scope="col">Nitrotick contribution</th></tr>
             </thead>
             <tbody>
-              <tr><td>Record-keeping</td><td>Automatic logging of events over the lifetime of high-risk AI systems</td><td>Append-only, hash-chained evidence of every agent action and decision</td></tr>
+              <tr><td>Record-keeping</td><td>Automatic logging of events over the lifetime of high-risk AI systems</td><td>Append-only, tamper-evident evidence of every agent action and decision</td></tr>
               <tr><td>Human oversight</td><td>Effective oversight by natural persons, including the ability to intervene</td><td>Declarative human approval gates; held steps do not commit</td></tr>
               <tr><td>Traceability</td><td>Ability to trace outputs back to inputs and context</td><td>Deterministic reconstruction of inputs, context and policy version</td></tr>
               <tr><td>Robustness &amp; control</td><td>Resilience against errors, faults and misuse</td><td>Capability-scoped authority, atomic revocation, durable recovery</td></tr>

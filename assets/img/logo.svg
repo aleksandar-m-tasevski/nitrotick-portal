@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="t">
+  <title id="t">Nitrotick</title>
+  <circle cx="500" cy="500" r="500" fill="#137C6D"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="34" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M198 467H327L362 432L397 467H441"/>
+    <path d="M500 390L556 422V486L500 518L444 486V422Z"/>
+    <path d="M564 470L596 528L675 206L741 470L776 430L808 470"/>
+  </g>
+  <circle cx="500" cy="454" r="19" fill="#FFFFFF"/>
+  <text x="500" y="740" text-anchor="middle" fill="#FFFFFF" font-family="'Segoe UI', 'Noto Sans', 'Helvetica Neue', Arial, sans-serif" font-size="150" font-weight="700" letter-spacing="2">Nitrotick</text>
+</svg>

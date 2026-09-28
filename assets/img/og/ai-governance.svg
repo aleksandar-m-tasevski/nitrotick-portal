@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1B2A3F" stroke-width="1"/></pattern>
+    <radialGradient id="glow" cx="80%" cy="35%" r="60%"><stop offset="0" stop-color="#137C6D" stop-opacity=".45"/><stop offset="1" stop-color="#070B14" stop-opacity="0"/></radialGradient>
+    <linearGradient id="ln" x1="0" x2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#2DD4BF"/></linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#070B14"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity=".6"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g transform="translate(80 64)">
+    <circle cx="36" cy="36" r="36" fill="#137C6D"/>
+    <g fill="none" stroke="#fff" stroke-width="46" stroke-linecap="round" stroke-linejoin="round" transform="translate(-1 6) scale(.072)">
+      <path d="M198 467H327L362 432L397 467H441"/><path d="M500 390L556 422V486L500 518L444 486V422Z"/><path d="M564 470L596 528L675 206L741 470L776 430L808 470"/>
+    </g>
+    <circle cx="35" cy="38.5" r="1.8" fill="#fff"/>
+    <text x="90" y="48" fill="#fff" font-family="'Segoe UI','Noto Sans',Arial,sans-serif" font-size="32" font-weight="700" letter-spacing="1">Nitrotick</text>
+  </g>
+  <g font-family="'Segoe UI','Noto Sans',Arial,sans-serif">
+    <text x="80" y="200" fill="#5EEAD4" font-size="21" font-weight="700" letter-spacing="4">GOVERNED AI EXECUTION</text>
+    <text x="80" y="270" fill="#FFFFFF" font-size="60" font-weight="800">AI agents propose.</text><text x="80" y="340" fill="#5EEAD4" font-size="60" font-weight="800">Governance decides.</text>
+    <text x="80" y="406" fill="#C7D2E0" font-size="27">Bounded AI actors, human approval gates and</text><text x="80" y="444" fill="#C7D2E0" font-size="27">evidence for every decision — EU AI Act ready.</text>
+    <text x="80" y="566" fill="#8FA3BA" font-size="22" font-weight="600">nitrotick.com/ai-governance</text>
+  </g>
+  <g transform="translate(820 190)"><g font-family="'Segoe UI','Noto Sans',Arial,sans-serif" text-anchor="middle">
+    <rect x="0" y="95" width="96" height="70" rx="14" fill="#111C2D" stroke="#27405C" stroke-width="2"/>
+    <text x="48" y="126" fill="#fff" font-size="17" font-weight="700">AI Agent</text><text x="48" y="148" fill="#8FA3BA" font-size="13">proposes</text>
+    <path d="M100 130H124" stroke="#22D3EE" stroke-width="4"/>
+    <rect x="128" y="80" width="96" height="100" rx="14" fill="#0B2027" stroke="#22D3EE" stroke-width="3"/>
+    <text x="176" y="122" fill="#22D3EE" font-size="15" font-weight="700">Policy</text><text x="176" y="142" fill="#22D3EE" font-size="15" font-weight="700">gate</text>
+    <text x="176" y="164" fill="#8FA3BA" font-size="12">+ human</text>
+    <path d="M228 130H252" stroke="#2DD4BF" stroke-width="4"/>
+  </g>
+  <circle cx="286" cy="130" r="30" fill="#137C6D" stroke="#5EEAD4" stroke-width="3"/>
+  <g transform="translate(288 132)"><path d="M-11 0l7 7 15-16" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text x="160" y="236" text-anchor="middle" font-family="'Segoe UI','Noto Sans',Arial,sans-serif" fill="#8FA3BA" font-size="15">every decision evidenced</text></g>
+</svg>

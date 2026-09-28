@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1B2A3F" stroke-width="1"/></pattern>
+    <radialGradient id="glow" cx="80%" cy="35%" r="60%"><stop offset="0" stop-color="#137C6D" stop-opacity=".45"/><stop offset="1" stop-color="#070B14" stop-opacity="0"/></radialGradient>
+    <linearGradient id="ln" x1="0" x2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#2DD4BF"/></linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#070B14"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity=".6"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g transform="translate(80 64)">
+    <circle cx="36" cy="36" r="36" fill="#137C6D"/>
+    <g fill="none" stroke="#fff" stroke-width="46" stroke-linecap="round" stroke-linejoin="round" transform="translate(-1 6) scale(.072)">
+      <path d="M198 467H327L362 432L397 467H441"/><path d="M500 390L556 422V486L500 518L444 486V422Z"/><path d="M564 470L596 528L675 206L741 470L776 430L808 470"/>
+    </g>
+    <circle cx="35" cy="38.5" r="1.8" fill="#fff"/>
+    <text x="90" y="48" fill="#fff" font-family="'Segoe UI','Noto Sans',Arial,sans-serif" font-size="32" font-weight="700" letter-spacing="1">Nitrotick</text>
+  </g>
+  <g font-family="'Segoe UI','Noto Sans',Arial,sans-serif">
+    <text x="80" y="230" fill="#5EEAD4" font-size="21" font-weight="700" letter-spacing="4">VERIFIABLE EXECUTION INFRASTRUCTURE</text>
+    <text x="80" y="300" fill="#FFFFFF" font-size="70" font-weight="800">Trust in Execution.</text>
+    <text x="80" y="366" fill="#C7D2E0" font-size="27">Deterministic execution · Cryptographic proof ·</text><text x="80" y="404" fill="#C7D2E0" font-size="27">Federated trust — without blockchain overhead.</text>
+    <text x="80" y="566" fill="#8FA3BA" font-size="22" font-weight="600">nitrotick.com</text>
+  </g>
+  <g transform="translate(820 190)"><g fill="none" stroke-width="3">
+    <path d="M40 130L160 50L280 130L160 210Z" stroke="#1E3A52"/>
+    <path d="M40 130L160 50M160 50L280 130M40 130L160 210M160 210L280 130M160 50V210M40 130H280" stroke="url(#ln)" opacity=".7"/>
+    <g stroke="#2DD4BF" fill="#0B1422"><circle cx="40" cy="130" r="20"/><circle cx="160" cy="50" r="20"/><circle cx="280" cy="130" r="20"/><circle cx="160" cy="210" r="20"/></g>
+  </g>
+  <circle cx="160" cy="130" r="36" fill="#137C6D" stroke="#5EEAD4" stroke-width="3"/>
+  <g transform="translate(162 132)"><path d="M-11 0l7 7 15-16" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g></g>
+</svg>

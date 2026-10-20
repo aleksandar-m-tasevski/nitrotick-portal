@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1B2A3F" stroke-width="1"/></pattern>
+    <radialGradient id="glow" cx="80%" cy="35%" r="60%"><stop offset="0" stop-color="#137C6D" stop-opacity=".45"/><stop offset="1" stop-color="#070B14" stop-opacity="0"/></radialGradient>
+    <linearGradient id="ln" x1="0" x2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#2DD4BF"/></linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#070B14"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity=".6"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g transform="translate(80 64)">
+    <circle cx="36" cy="36" r="36" fill="#137C6D"/>
+    <g fill="none" stroke="#fff" stroke-width="46" stroke-linecap="round" stroke-linejoin="round" transform="translate(-1 6) scale(.072)">
+      <path d="M198 467H327L362 432L397 467H441"/><path d="M500 390L556 422V486L500 518L444 486V422Z"/><path d="M564 470L596 528L675 206L741 470L776 430L808 470"/>
+    </g>
+    <circle cx="35" cy="38.5" r="1.8" fill="#fff"/>
+    <text x="90" y="48" fill="#fff" font-family="'Segoe UI','Noto Sans',Arial,sans-serif" font-size="32" font-weight="700" letter-spacing="1">Nitrotick</text>
+  </g>
+  <g font-family="'Segoe UI','Noto Sans',Arial,sans-serif">
+    <text x="80" y="200" fill="#5EEAD4" font-size="21" font-weight="700" letter-spacing="4">IP EVIDENCE &amp; VERIFICATION</text>
+    <text x="80" y="270" fill="#FFFFFF" font-size="58" font-weight="800">Prove the history</text><text x="80" y="340" fill="#5EEAD4" font-size="58" font-weight="800">of your IP.</text>
+    <text x="80" y="406" fill="#C7D2E0" font-size="27">Source code, CAD and AI models — governed</text><text x="80" y="444" fill="#C7D2E0" font-size="27">versions and cryptographic proof.</text>
+    <text x="80" y="566" fill="#8FA3BA" font-size="22" font-weight="600">nitrotick.com/ip-evidence-verification</text>
+  </g>
+  <g transform="translate(800 150)" font-family="'Segoe UI','Noto Sans',Arial,sans-serif">
+    <rect x="0" y="0" width="320" height="74" rx="14" fill="#0D1624" stroke="#27405C" stroke-width="2"/>
+    <text x="22" y="32" fill="#fff" font-size="20" font-weight="700">v1 · Registered</text><text x="22" y="56" fill="#8FA3BA" font-size="14">content fingerprint recorded</text>
+    <path d="M160 78V106" stroke="#2DD4BF" stroke-width="3" stroke-dasharray="5 5"/>
+    <rect x="0" y="110" width="320" height="74" rx="14" fill="#0D1624" stroke="#27405C" stroke-width="2"/>
+    <text x="22" y="142" fill="#fff" font-size="20" font-weight="700">v2 · Approved</text><text x="22" y="166" fill="#8FA3BA" font-size="14">linked to v1</text>
+    <path d="M160 188V216" stroke="#2DD4BF" stroke-width="3" stroke-dasharray="5 5"/>
+    <rect x="0" y="220" width="320" height="74" rx="14" fill="#0B2027" stroke="#22D3EE" stroke-width="3"/>
+    <text x="22" y="252" fill="#fff" font-size="20" font-weight="700">v3 · Proof issued</text><text x="22" y="276" fill="#5EEAD4" font-size="14">verified · reconstructed</text>
+    <circle cx="282" cy="257" r="20" fill="#137C6D" stroke="#5EEAD4" stroke-width="2"/>
+    <path d="M273 257l6 6 12-13" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

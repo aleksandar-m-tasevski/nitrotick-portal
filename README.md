@@ -3,7 +3,7 @@
 Static company website for **Nitrotick — Verifiable Execution Infrastructure**, published with GitHub Pages.
 
 - 100% HTML + CSS. No JavaScript, no build step, no frameworks.
-- All graphics are inline or file-based **SVG**. PNG files exist only where platforms require raster images (social preview cards, Apple touch icon, PWA icons).
+- All graphics are inline or file-based **SVG**. PNG files exist only where platforms require raster images (social preview cards, Apple touch icon, PWA icons). The Execution OS architecture infographic is a WebP (`assets/img/execution-os-architecture*.webp`, 760 px and full size via `srcset`).
 - No external fonts, trackers or third-party requests (GDPR-friendly and fast).
 - Contact goes through LinkedIn messages, so the site has no contact form.
 
@@ -12,10 +12,15 @@ Static company website for **Nitrotick — Verifiable Execution Infrastructure**
 ```
 /
 ├── index.html                        Home — platform, trust tiers, architecture, comparison, FAQ
+├── execution-os/index.html           Federation-Enabled Execution OS (AI agents, robots, machines, people)
 ├── federation/index.html             Nitrotick Federation (cross-institution execution)
+├── execution-shield/index.html       Nitrotick Execution Shield (governed execution for critical operations)
+├── ip-evidence-verification/index.html  IP Evidence & Verification (provenance for source code, CAD, AI models)
+├── qa-governance-traceability/index.html  QA Governance & Product Traceability (QA workflows, batch recall, GS1 Digital Link)
 ├── digital-product-passport/index.html  Verifiable Digital Asset Platform / DPP (GS1 Digital Link, lifecycle, FAQ)
 ├── ai-governance/index.html          Governed AI execution (AI agents as bounded actors)
 ├── blockchain-alternative/index.html Enterprise blockchain alternative (comparison, FAQ)
+├── verifiable-off-chain-execution/index.html  Verifiable Off-Chain Execution & Oracle (blockchain / DLT integration profile)
 ├── compliance/index.html             NIS2, DORA, EU AI Act, GDPR, eIDAS 2.0, ESPR
 ├── use-cases/index.html              Use cases by industry (DPP, banking, insurance, manufacturing, public sector)
 ├── 404.html                          GitHub Pages not-found page

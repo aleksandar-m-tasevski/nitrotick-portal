@@ -34,7 +34,7 @@
   <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="css/styles.css?v=20260928">
+  <link rel="stylesheet" href="css/styles.css?v=20261019g">
 
   <script type="application/ld+json">
   {
@@ -64,7 +64,7 @@
           "url": "https://www.linkedin.com/in/aleksandar-m-tasevski/",
           "availableLanguage": ["English", "Macedonian"]
         },
-        "knowsAbout": ["Enterprise AI infrastructure", "Verifiable execution", "Deterministic AI governance", "AI agent governance", "Durable execution", "Cryptographic proof", "Federated trust", "Digital Product Passport", "NIS2", "DORA", "GDPR", "EU AI Act"]
+        "knowsAbout": ["Enterprise AI infrastructure", "Federation-Enabled Execution OS", "Verifiable execution", "Intellectual property evidence", "Deterministic AI governance", "AI agent governance", "Durable execution", "Cryptographic proof", "Federated trust", "Digital Product Passport", "NIS2", "DORA", "GDPR", "EU AI Act"]
       },
       {
         "@type": "Person",
@@ -114,7 +114,8 @@
           "Independent cryptographic proof and reconstruction",
           "Federated cross-institution execution with atomic revocation",
           "Governed AI agents as bounded actors",
-          "Verifiable digital assets and Digital Product Passports"
+          "Verifiable digital assets and Digital Product Passports",
+          "Intellectual property evidence and verification"
         ]
       },
       {
@@ -144,7 +145,7 @@
           {
             "@type": "Question",
             "name": "What is the difference between Nitrotick Proof and Nitrotick Qualified Anchor?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Nitrotick Proof provides independent cryptographic proof, immutable evidence and deterministic reconstruction for critical execution. Nitrotick Qualified Anchor adds an external qualified trust anchor to those proofs for regulated and legally sensitive use cases." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Nitrotick Proof provides independent cryptographic proof, tamper-evident evidence and deterministic reconstruction for critical execution. Nitrotick Qualified Anchor adds an external qualified trust anchor to those proofs for regulated and legally sensitive use cases." }
           },
           {
             "@type": "Question",
@@ -179,10 +180,23 @@
       <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu">
       <label class="nav-toggle-label" for="nav-toggle" aria-hidden="true"><span></span></label>
       <ul class="nav-menu">
-        <li><a href="federation/">Federation</a></li>
-        <li><a href="digital-product-passport/">Digital Product Passport</a></li>
-        <li><a href="ai-governance/">AI Governance</a></li>
+        <li><a href="execution-os/">Execution OS</a></li>
+        <li class="nav-dd">
+          <a class="nav-dd-link" href="#products" aria-haspopup="true">Products</a>
+          <ul class="nav-sub">
+            <li class="nav-sub-label">Products</li>
+            <li><a href="federation/"><strong>Nitrotick Federation</strong><span>Governed execution across independent organizations</span></a></li>
+            <li><a href="ip-evidence-verification/"><strong>IP Evidence &amp; Verification</strong><span>Verifiable evidence of IP creation and version history</span></a></li>
+            <li><a href="verifiable-off-chain-execution/"><strong>Verifiable Off-Chain Execution &amp; Oracle</strong><span>Governed execution for blockchain and DLT</span></a></li>
+            <li><a href="qa-governance-traceability/"><strong>QA Governance &amp; Product Traceability</strong><span>QA workflows, batch recall and GS1 Digital Link</span></a></li>
+            <li><a href="digital-product-passport/"><strong>Digital Product Passport</strong><span>Product identity, versioning and DPP</span></a></li>
+            <li><a href="ai-governance/"><strong>AI Governance</strong><span>Governed AI agent actions with verifiable evidence</span></a></li>
+            <li class="nav-sub-label">Solutions</li>
+            <li><a href="execution-shield/"><strong>Nitrotick Execution Shield</strong><span>Execution security within and across institutions</span></a></li>
+          </ul>
+        </li>
         <li><a href="blockchain-alternative/">Blockchain Alternative</a></li>
+        <li><a href="verifiable-off-chain-execution/">Verifiable Off-Chain Execution &amp; Oracle</a></li>
         <li><a href="compliance/">Compliance</a></li>
         <li><a href="use-cases/">Use Cases</a></li>
         <li><a class="btn btn--primary" href="#contact">Request a demo</a></li>
@@ -191,6 +205,68 @@
   </header>
 
   <main id="main">
+    <!-- ================= PRODUCTS ================= -->
+    <section class="section section--alt products-top" id="products" aria-labelledby="products-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Nitrotick products</span>
+          <h2 id="products-title">One Execution OS. Multiple products. Verifiable outcomes.</h2>
+          <p class="lead">Built on Nitrotick's common <a href="execution-os/">execution and evidence infrastructure</a>, our products address different business challenges — from intellectual property protection and product identity to cross-institution collaboration and enterprise AI governance. Federation extends these capabilities across independent organizations when required.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card card--product card--span">
+            <div class="pc-visual" aria-hidden="true"><svg viewBox="0 0 320 150"><defs><marker id="pv7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#22D3EE"/></marker><marker id="pv7v" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#A78BFA"/></marker></defs><rect x="4" y="8" width="112" height="118" rx="12" fill="#1A1A3A" stroke="#6366F1"/><text x="60" y="27" text-anchor="middle" fill="#fff" font-size="11" font-weight="800" font-family="Segoe UI, Noto Sans, Arial, sans-serif">Institution A</text><path d="M60 41.0L85.0 55.0V76C85.0 94.2 71.0 106.8 60 111.0C49.0 106.8 35.0 94.2 35.0 76V55.0Z" fill="#0B2027" stroke="#2DD4BF" stroke-width="2.5"/><path d="M46 76l9 9 19-21" fill="none" stroke="#5EEAD4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="204" y="8" width="112" height="118" rx="12" fill="#0B2A25" stroke="#2DD4BF"/><text x="260" y="27" text-anchor="middle" fill="#fff" font-size="11" font-weight="800" font-family="Segoe UI, Noto Sans, Arial, sans-serif">Institution B</text><path d="M260 41.0L285.0 55.0V76C285.0 94.2 271.0 106.8 260 111.0C249.0 106.8 235.0 94.2 235.0 76V55.0Z" fill="#0B2027" stroke="#2DD4BF" stroke-width="2.5"/><path d="M246 76l9 9 19-21" fill="none" stroke="#5EEAD4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M118 67H202" stroke="#2DD4BF" stroke-width="2" stroke-dasharray="5 5"/><circle cx="160" cy="67" r="15" fill="#137C6D" stroke="#5EEAD4" stroke-width="1.5"/><path d="M153 67l5 5 9-10" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text x="160" y="137" text-anchor="middle" fill="#8193A8" font-size="9.5" font-family="Segoe UI, Noto Sans, Arial, sans-serif">Independent institutions · Governed collaboration</text><text x="160" y="149" text-anchor="middle" fill="#5EEAD4" font-size="9.5" font-weight="700" font-family="Segoe UI, Noto Sans, Arial, sans-serif">Verifiable evidence</text></svg></div>
+            <span class="card-kicker">Solution · Execution governance · Cross-institution</span>
+            <h3>Nitrotick Execution Shield</h3>
+            <p>Protect critical operations, not just access — within your organization <strong>and across institutional boundaries</strong>. Each participating organization retains control over its own policies, execution decisions and evidence, with independent approval where required. A solution built on the Execution OS, not a separate engine.</p>
+            <a class="card-link" href="execution-shield/">Protect your critical operations</a>
+          </article>
+          <article class="card card--product">
+            <div class="pc-visual" aria-hidden="true"><svg viewBox="0 0 320 120"><defs><marker id="pv1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#2DD4BF"/></marker></defs><g stroke="#2DD4BF" stroke-width="2" stroke-dasharray="5 5" fill="none"><path d="M96 46H129M191 46H224M160 77V86"/></g><rect x="20" y="28" width="76" height="36" rx="9" fill="#1A1A3A" stroke="#6366F1"/><text x="58.0" y="50.3" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="Segoe UI, Noto Sans, Arial, sans-serif">Org A</text><rect x="224" y="28" width="76" height="36" rx="9" fill="#22143A" stroke="#A78BFA"/><text x="262.0" y="50.3" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="Segoe UI, Noto Sans, Arial, sans-serif">Org C</text><circle cx="160" cy="46" r="31" fill="#137C6D" stroke="#5EEAD4" stroke-width="2"/><text x="160" y="50" text-anchor="middle" fill="#fff" font-size="9.5" font-weight="800" font-family="Segoe UI, Noto Sans, Arial, sans-serif">Nitrotick</text><rect x="122" y="86" width="76" height="30" rx="9" fill="#0B2A25" stroke="#2DD4BF"/><text x="160.0" y="105.3" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="Segoe UI, Noto Sans, Arial, sans-serif">Org B</text></svg></div>
+            <span class="card-kicker">Cross-institution</span>
+            <h3>Nitrotick Federation</h3>
+            <p>Coordinate governed execution across independent organizations while preserving institutional authority, controlled data sharing and verifiable evidence.</p>
+            <a class="card-link" href="federation/">Explore Federation</a>
+          </article>
+          <article class="card card--product">
+            <div class="pc-visual" aria-hidden="true"><svg viewBox="0 0 320 120"><defs><marker id="pv2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#2DD4BF"/></marker></defs><rect x="14" y="40" width="78" height="40" rx="9" fill="#111C2D" stroke="#27405C"/><text x="53.0" y="64.3" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="Segoe UI, Noto Sans, Arial, sans-serif">v1</text><rect x="121" y="40" width="78" height="40" rx="9" fill="#111C2D" stroke="#27405C"/><text x="160.0" y="64.3" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="Segoe UI, Noto Sans, Arial, sans-serif">v2</text><rect x="228" y="40" width="78" height="40" rx="9" fill="#0B2027" stroke="#22D3EE"/><text x="267.0" y="64.3" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="Segoe UI, Noto Sans, Arial, sans-serif">v3</text><path d="M92 60H117M199 60H224" stroke="#2DD4BF" stroke-width="2" marker-end="url(#pv2)"/><circle cx="300" cy="36" r="13" fill="#137C6D" stroke="#5EEAD4" stroke-width="1.5"/><path d="M294 36l4 4 8-8" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><text x="160" y="106" text-anchor="middle" fill="#8193A8" font-size="11" font-family="Segoe UI, Noto Sans, Arial, sans-serif">registered · approved · proven</text></svg></div>
+            <span class="card-kicker">Intellectual property</span>
+            <h3>IP Evidence &amp; Verification</h3>
+            <p>Build independently verifiable evidence of IP creation, changes, approvals and version history — for source code, CAD designs, technical documents and AI assets.</p>
+            <a class="card-link" href="ip-evidence-verification/">Build verifiable IP evidence</a>
+          </article>
+          <article class="card card--product">
+            <div class="pc-visual" aria-hidden="true"><svg viewBox="0 0 320 120"><defs><marker id="pv3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#A78BFA"/></marker></defs><g fill="#12112A" stroke="#8B5CF6"><rect x="60" y="12" width="44" height="28" rx="6"/><rect x="112" y="12" width="44" height="28" rx="6"/><rect x="164" y="12" width="44" height="28" rx="6"/><rect x="216" y="12" width="44" height="28" rx="6"/></g><path d="M112 26H104M164 26H156M216 26H208" stroke="#8B5CF6" stroke-width="2"/><path d="M120 44V70" stroke="#22D3EE" stroke-width="2" stroke-dasharray="4 4"/><path d="M200 74V48" stroke="#A78BFA" stroke-width="2" marker-end="url(#pv3)"/><rect x="70" y="76" width="180" height="36" rx="9" fill="#0B2A25" stroke="#2DD4BF"/><text x="160.0" y="98.3" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="Segoe UI, Noto Sans, Arial, sans-serif">Nitrotick · off-chain</text></svg></div>
+            <span class="card-kicker">Blockchain &amp; DLT</span>
+            <h3>Verifiable Off-Chain Execution &amp; Oracle</h3>
+            <p>Run complex institutional workflows off-chain under multi-party governance and exchange verifiable evidence with blockchain and DLT networks.</p>
+            <a class="card-link" href="verifiable-off-chain-execution/">Execute off-chain, prove on-chain</a>
+          </article>
+          <article class="card card--product">
+            <div class="pc-visual" aria-hidden="true"><svg viewBox="0 0 320 120"><rect x="40" y="14" width="92" height="92" rx="12" fill="#0D1624" stroke="#27405C"/><g fill="none" stroke="#E6EDF5" stroke-width="5"><rect x="54" y="28" width="22" height="22"/><rect x="96" y="28" width="22" height="22"/><rect x="54" y="70" width="22" height="22"/></g><g fill="#5EEAD4"><rect x="90" y="66" width="9" height="9"/><rect x="104" y="80" width="9" height="9"/><rect x="108" y="62" width="9" height="9"/></g><rect x="160" y="26" width="120" height="28" rx="14" fill="#0B2A25" stroke="#2DD4BF"/><text x="220" y="45" text-anchor="middle" fill="#5EEAD4" font-size="12" font-weight="800" font-family="Segoe UI, Noto Sans, Arial, sans-serif">APPROVED</text><rect x="160" y="66" width="56" height="28" rx="14" fill="#2A2210" stroke="#FBBF24"/><text x="188" y="85" text-anchor="middle" fill="#FBBF24" font-size="11.5" font-weight="800" font-family="Segoe UI, Noto Sans, Arial, sans-serif">HOLD</text><rect x="222" y="66" width="80" height="28" rx="14" fill="#2A1116" stroke="#F87171"/><text x="262" y="85" text-anchor="middle" fill="#F87171" font-size="11.5" font-weight="800" font-family="Segoe UI, Noto Sans, Arial, sans-serif">RECALLED</text></svg></div>
+            <span class="card-kicker">Food, feed &amp; agriculture</span>
+            <h3>QA Governance &amp; Product Traceability</h3>
+            <p>Governed QA workflows, batch traceability and recall with verifiable evidence — published to consumers and partners through GS1 Digital Link.</p>
+            <a class="card-link" href="qa-governance-traceability/">From product to trusted information</a>
+          </article>
+          <article class="card card--product">
+            <div class="pc-visual" aria-hidden="true"><svg viewBox="0 0 320 120"><defs><marker id="pv5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#2DD4BF"/></marker></defs><path d="M60 40L100 22L140 40V86L100 104L60 86Z" fill="#111C2D" stroke="#27405C" stroke-width="1.5"/><path d="M60 40L100 58L140 40M100 58V104" fill="none" stroke="#27405C" stroke-width="1.5"/><path d="M146 62H176" stroke="#2DD4BF" stroke-width="2" marker-end="url(#pv5)"/><rect x="182" y="22" width="110" height="80" rx="10" fill="#0B2A25" stroke="#2DD4BF"/><text x="196" y="44" fill="#5EEAD4" font-size="10.5" font-weight="800" letter-spacing="1" font-family="Segoe UI, Noto Sans, Arial, sans-serif">PASSPORT</text><g stroke="#5EEAD4" stroke-width="3" stroke-linecap="round" opacity=".7"><path d="M196 60H276M196 74H262M196 88H240"/></g></svg></div>
+            <span class="card-kicker">Digital assets</span>
+            <h3>Product Identity, Versioning &amp; Digital Product Passport</h3>
+            <p>Persistent product identity and verifiable version lineage on your GS1 identifiers and ERP data — valuable today, and the foundation for EU Digital Product Passports.</p>
+            <a class="card-link" href="digital-product-passport/">Digital Product Passport</a>
+          </article>
+          <article class="card card--product">
+            <div class="pc-visual" aria-hidden="true"><svg viewBox="0 0 320 120"><defs><marker id="pv6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#22D3EE"/></marker></defs><rect x="16" y="38" width="74" height="44" rx="10" fill="#111C2D" stroke="#27405C"/><g fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round"><rect x="40" y="48" width="26" height="18" rx="5"/><path d="M53 48v-5"/></g><text x="53" y="78" text-anchor="middle" fill="#B4C2D3" font-size="9.5" font-weight="600" font-family="Segoe UI, Noto Sans, Arial, sans-serif">AI agent</text><path d="M90 60H120" stroke="#22D3EE" stroke-width="2" marker-end="url(#pv6)"/><path d="M160 22L196 36V62C196 82 180 96 160 102C140 96 124 82 124 62V36Z" fill="#0B2027" stroke="#22D3EE" stroke-width="2"/><path d="M150 62l7 7 13-14" fill="none" stroke="#5EEAD4" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M198 60H228" stroke="#22D3EE" stroke-width="2" marker-end="url(#pv6)"/><rect x="232" y="40" width="74" height="40" rx="9" fill="#0B2A25" stroke="#2DD4BF"/><text x="269.0" y="64.3" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="Segoe UI, Noto Sans, Arial, sans-serif">Commit</text></svg></div>
+            <span class="card-kicker">Enterprise AI</span>
+            <h3>AI Governance</h3>
+            <p>Govern high-impact actions initiated by AI agents with explicit authority, human oversight where required, and verifiable execution evidence.</p>
+            <a class="card-link" href="ai-governance/">Govern your AI agents</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- ================= HERO ================= -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="container split">
@@ -206,7 +282,7 @@
           </div>
           <ul class="hero-meta">
             <li>Deterministic execution</li>
-            <li>Immutable evidence</li>
+            <li>Tamper-evident evidence</li>
             <li>Federated trust</li>
             <li>No blockchain required</li>
           </ul>
@@ -284,7 +360,7 @@
         <div class="stats">
           <div class="stat"><b><span class="accent">&lt; 100 ms</span></b><span>real-time state transitions at cloud speed</span></div>
           <div class="stat"><b><span class="accent">$0 gas</span></b><span>predictable, flat infrastructure cost</span></div>
-          <div class="stat"><b><span class="accent">60–83%</span></b><span>lower upfront cost vs. enterprise blockchain builds</span></div>
+          <div class="stat"><b><span class="accent">Sovereign</span></b><span>your data stays in your own infrastructure</span></div>
           <div class="stat"><b><span class="accent">TLA+</span></b><span>formally model-checked federation protocols</span></div>
         </div>
       </div>
@@ -324,6 +400,7 @@
           <h2 id="category-title">One layer beneath everything you already use</h2>
           <p class="lead">When blockchain emerged it answered one question: how do we trust <strong>state</strong> without trusting a single central entity? Nitrotick targets the next, deeper layer: how do we trust <strong>execution</strong> itself?</p>
           <p>Nitrotick is not another cybersecurity product, NIS2 checklist, QTSP, blockchain layer or workflow orchestrator. It is purpose-built execution infrastructure, engineered from the ground up — with its own protocols, storage and execution engine — for the root challenge: trust in execution.</p>
+          <a class="card-link" href="execution-os/">Nitrotick — the Federation-Enabled Execution OS</a>
         </div>
         <dl class="layers">
           <div class="layer"><dt>Cybersecurity</dt><dd>Protects system perimeters.</dd></div>
@@ -376,39 +453,8 @@
       </div>
     </section>
 
-    <!-- ================= PRODUCTS ================= -->
-    <section class="section section--alt" id="products" aria-labelledby="products-title">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Products</span>
-          <h2 id="products-title">Built on one execution foundation</h2>
-          <p class="lead">Nitrotick combines its own protocols for sovereign durable execution, federated trust, ownership and capability admission, bilateral trust and recursive authorization — supported by frameworks for governed decision execution and execution economics.</p>
-        </div>
-        <div class="grid grid--3">
-          <article class="card">
-            <span class="card-kicker">Digital assets</span>
-            <h3>Verifiable Digital Asset Platform</h3>
-            <p>Turn products, documents, certificates and business data into verifiable digital assets — with versioned state, lineage, execution evidence and independent proof. The foundation for custom Digital Product Passports.</p>
-            <a class="card-link" href="digital-product-passport/">Digital Product Passport</a>
-          </article>
-          <article class="card card--featured">
-            <span class="card-kicker">Cross-institution</span>
-            <h3>Nitrotick Federation</h3>
-            <p>Secure multi-tenant federated execution between independent organizations. Signals, claims and cryptographic proofs travel — raw data stays home. Capabilities are re-verified at execution time and revoked atomically.</p>
-            <a class="card-link" href="federation/">Explore Federation</a>
-          </article>
-          <article class="card">
-            <span class="card-kicker">Enterprise AI</span>
-            <h3>Governed AI Execution</h3>
-            <p>Autonomous AI agents operate as bounded actors. Agents propose; the governed execution layer holds authority — with deterministic logs of which context, policy and inputs led to every decision.</p>
-            <a class="card-link" href="ai-governance/">AI Governance</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <!-- ================= TRUST TIERS ================= -->
-    <section class="section" id="trust-tiers" aria-labelledby="tiers-title">
+    <section class="section section--alt" id="trust-tiers" aria-labelledby="tiers-title">
       <div class="container">
         <div class="section-head section-head--center">
           <span class="eyebrow">Trust tiers</span>
@@ -420,7 +466,7 @@
             <span class="card-kicker">Tier 1</span>
             <h3>Nitrotick Proof</h3>
             <p class="tagline">Independent cryptographic proof for critical execution</p>
-            <p>Deterministic reconstruction, immutable evidence and cryptographic verification of how a business outcome was reached.</p>
+            <p>Deterministic reconstruction, tamper-evident evidence and cryptographic verification of how a business outcome was reached.</p>
             <ul class="check-list">
               <li>Append-only, tamper-evident execution evidence</li>
               <li>Cryptographic commitments for every state transition</li>
@@ -445,7 +491,7 @@
     </section>
 
     <!-- ================= ARCHITECTURE ================= -->
-    <section class="section section--alt" id="architecture" aria-labelledby="arch-title">
+    <section class="section" id="architecture" aria-labelledby="arch-title">
       <div class="container split">
         <div>
           <span class="eyebrow">Market architecture</span>
@@ -536,7 +582,7 @@
     </section>
 
     <!-- ================= FEDERATED FLOW ================= -->
-    <section class="section" id="how-it-works" aria-labelledby="flow-title">
+    <section class="section section--alt" id="how-it-works" aria-labelledby="flow-title">
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">How it works</span>
@@ -610,19 +656,19 @@
             <p>AI agents act as bounded, governed actors across institutional boundaries. They propose; execution authority and cryptographic hand-offs remain locked in the governance layer.</p>
           </article>
           <article class="card">
-            <h3>Dynamic ancestry &amp; atomic revocation</h3>
-            <p>Capabilities are re-verified across the federation hierarchy at execution time. A partner that loses authorization is revoked atomically — healthy peers keep running.</p>
+            <h3>Hierarchical authority &amp; revocation</h3>
+            <p>Authority is checked at execution time, and no participant can exceed what was delegated to it. A partner that loses authorization can be revoked while healthy peers keep running.</p>
           </article>
           <article class="card">
             <h3>Proofs without PII</h3>
-            <p>Every state transition commits signed evidence to an immutable audit trail, without exposing underlying personal or proprietary enterprise data.</p>
+            <p>Every state transition commits signed evidence to a tamper-evident audit trail, without exposing underlying personal or proprietary enterprise data.</p>
           </article>
         </div>
       </div>
     </section>
 
     <!-- ================= COMPARISON ================= -->
-    <section class="section section--alt" id="comparison" aria-labelledby="compare-title">
+    <section class="section" id="comparison" aria-labelledby="compare-title">
       <div class="container">
         <div class="section-head section-head--center">
           <span class="eyebrow">Blockchain-like trust. Without the overhead.</span>
@@ -635,7 +681,7 @@
             <span class="card-kicker">Legacy decentralized layer</span>
             <h3>Traditional blockchain</h3>
             <div class="metric">
-              <div class="metric-head"><span>Initial build cost</span><span class="t-bad">$150K – $500K+</span></div>
+              <div class="metric-head"><span>Build effort</span><span class="t-bad">High</span></div>
               <div class="bar bar--bad"><i class="w-88"></i></div>
               <p>Node setup, Web3 synchronization and smart-contract engineering.</p>
             </div>
@@ -645,7 +691,7 @@
               <p>Transactions wait for network-wide block confirmation.</p>
             </div>
             <div class="metric">
-              <div class="metric-head"><span>Monthly network fees</span><span class="t-bad">$15K – $60K+ gas</span></div>
+              <div class="metric-head"><span>Network fees</span><span class="t-bad">Variable gas</span></div>
               <div class="bar bar--bad"><i class="w-80"></i></div>
               <p>Unpredictable gas spikes and percentage-based transaction rent.</p>
             </div>
@@ -662,7 +708,7 @@
             <span class="card-kicker">Durable execution framework</span>
             <h3>Nitrotick infrastructure</h3>
             <div class="metric">
-              <div class="metric-head"><span>Initial build cost</span><span class="t-good">$40K – $90K</span></div>
+              <div class="metric-head"><span>Build effort</span><span class="t-good">Low</span></div>
               <div class="bar bar--good"><i class="w-22"></i></div>
               <p>Runs on standard enterprise cloud stacks you already operate.</p>
             </div>
@@ -672,7 +718,7 @@
               <p>Real-time execution suited to AI and high-volume data streams.</p>
             </div>
             <div class="metric">
-              <div class="metric-head"><span>Monthly network fees</span><span class="t-good">$0 gas</span></div>
+              <div class="metric-head"><span>Network fees</span><span class="t-good">$0 gas</span></div>
               <div class="bar bar--good"><i class="w-3"></i></div>
               <p>Flat, predictable SaaS or infrastructure pricing.</p>
             </div>
@@ -683,13 +729,13 @@
             </ul>
           </article>
         </div>
-        <p class="note center mt-lg">Indicative ranges for typical enterprise implementations; actual figures depend on scope and deployment model.</p>
+        <p class="note center mt-lg">Qualitative comparison for typical enterprise implementations; actual effort depends on scope and deployment model.</p>
         <p class="center"><a class="card-link" href="blockchain-alternative/">Full comparison: enterprise blockchain alternative</a></p>
       </div>
     </section>
 
     <!-- ================= INDUSTRIES ================= -->
-    <section class="section" id="industries" aria-labelledby="industries-title">
+    <section class="section section--alt" id="industries" aria-labelledby="industries-title">
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">Industries</span>
@@ -700,7 +746,7 @@
           <article class="card">
             <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6"/><path d="M5 10v8M9.5 10v8M14.5 10v8M19 10v8"/><path d="M3 21h18"/></svg></div>
             <h3>Banking &amp; fintech</h3>
-            <p>Verifiable transaction authorization, cross-institution settlement workflows and instant revoke signals for fraud and non-compliance — before value moves.</p>
+            <p>Verifiable transaction authorization, cross-institution settlement workflows and revoke signals for fraud and non-compliance — before value moves.</p>
           </article>
           <article class="card">
             <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M8.5 12h7M12 8.5v7"/></svg></div>
@@ -733,7 +779,7 @@
     </section>
 
     <!-- ================= INTEGRATION ================= -->
-    <section class="section section--alt" id="integration" aria-labelledby="integration-title">
+    <section class="section" id="integration" aria-labelledby="integration-title">
       <div class="container">
         <div class="split">
           <div>
@@ -767,7 +813,7 @@
     </section>
 
     <!-- ================= COMPLIANCE ================= -->
-    <section class="section" id="compliance" aria-labelledby="compliance-title">
+    <section class="section section--alt" id="compliance" aria-labelledby="compliance-title">
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">Regulatory alignment</span>
@@ -796,7 +842,7 @@
     </section>
 
     <!-- ================= FOUNDER ================= -->
-    <section class="section section--alt" id="about" aria-labelledby="about-title">
+    <section class="section" id="about" aria-labelledby="about-title">
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">About</span>
@@ -831,7 +877,7 @@
     </section>
 
     <!-- ================= FAQ ================= -->
-    <section class="section" id="faq" aria-labelledby="faq-title">
+    <section class="section section--alt" id="faq" aria-labelledby="faq-title">
       <div class="container">
         <div class="section-head section-head--center">
           <span class="eyebrow">FAQ</span>
@@ -856,7 +902,7 @@
           </details>
           <details>
             <summary>What is the difference between Nitrotick Proof and Nitrotick Qualified Anchor?</summary>
-            <div><p>Nitrotick Proof provides independent cryptographic proof, immutable evidence and deterministic reconstruction for critical execution. Nitrotick Qualified Anchor adds an external qualified trust anchor to those proofs for regulated and legally sensitive use cases.</p></div>
+            <div><p>Nitrotick Proof provides independent cryptographic proof, tamper-evident evidence and deterministic reconstruction for critical execution. Nitrotick Qualified Anchor adds an external qualified trust anchor to those proofs for regulated and legally sensitive use cases.</p></div>
           </details>
           <details>
             <summary>How is Nitrotick Federation different from workflow orchestrators or APIs?</summary>
@@ -906,11 +952,12 @@
             <img src="assets/img/logo-mark.svg" alt="" width="40" height="40">
             <span>Nitrotick</span>
           </a>
-          <p class="footer-tagline">Verifiable execution infrastructure. <strong>Trust in Execution.</strong></p>
+          <p class="footer-tagline">Federation-Enabled Execution OS. <strong>Trust in Execution.</strong></p>
         </div>
         <div>
           <p class="footer-heading">Platform</p>
           <ul>
+            <li><a href="execution-os/">Execution OS</a></li>
             <li><a href="#platform">Core platform</a></li>
             <li><a href="#trust-tiers">Trust tiers</a></li>
             <li><a href="#architecture">Architecture</a></li>
@@ -922,6 +969,10 @@
           <p class="footer-heading">Solutions</p>
           <ul>
             <li><a href="federation/">Nitrotick Federation</a></li>
+            <li><a href="execution-shield/">Nitrotick Execution Shield</a></li>
+            <li><a href="ip-evidence-verification/">IP Evidence &amp; Verification</a></li>
+            <li><a href="verifiable-off-chain-execution/">Verifiable Off-Chain Execution &amp; Oracle</a></li>
+            <li><a href="qa-governance-traceability/">QA Governance &amp; Product Traceability</a></li>
             <li><a href="digital-product-passport/">Digital Product Passport</a></li>
             <li><a href="ai-governance/">AI Governance</a></li>
             <li><a href="compliance/">Compliance &amp; regulations</a></li>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1B2A3F" stroke-width="1"/></pattern>
+    <radialGradient id="glow" cx="80%" cy="35%" r="60%"><stop offset="0" stop-color="#137C6D" stop-opacity=".45"/><stop offset="1" stop-color="#070B14" stop-opacity="0"/></radialGradient>
+    <linearGradient id="ln" x1="0" x2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#2DD4BF"/></linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#070B14"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity=".6"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g transform="translate(80 64)">
+    <circle cx="36" cy="36" r="36" fill="#137C6D"/>
+    <g fill="none" stroke="#fff" stroke-width="46" stroke-linecap="round" stroke-linejoin="round" transform="translate(-1 6) scale(.072)">
+      <path d="M198 467H327L362 432L397 467H441"/><path d="M500 390L556 422V486L500 518L444 486V422Z"/><path d="M564 470L596 528L675 206L741 470L776 430L808 470"/>
+    </g>
+    <circle cx="35" cy="38.5" r="1.8" fill="#fff"/>
+    <text x="90" y="48" fill="#fff" font-family="'Segoe UI','Noto Sans',Arial,sans-serif" font-size="32" font-weight="700" letter-spacing="1">Nitrotick</text>
+  </g>
+  <g font-family="'Segoe UI','Noto Sans',Arial,sans-serif">
+    <text x="80" y="200" fill="#5EEAD4" font-size="21" font-weight="700" letter-spacing="4">FEDERATION-ENABLED EXECUTION OS</text>
+    <text x="80" y="270" fill="#FFFFFF" font-size="58" font-weight="800">Trust in Execution</text><text x="80" y="340" fill="#5EEAD4" font-size="58" font-weight="800">for AI &amp; robots.</text>
+    <text x="80" y="406" fill="#C7D2E0" font-size="27">AI proposes, machines execute, people</text><text x="80" y="444" fill="#C7D2E0" font-size="27">approve — every step verifiable.</text>
+    <text x="80" y="566" fill="#8FA3BA" font-size="22" font-weight="600">nitrotick.com/execution-os</text>
+  </g>
+  <g transform="translate(790 150)" font-family="'Segoe UI','Noto Sans',Arial,sans-serif" text-anchor="middle">
+    <rect x="0" y="0" width="100" height="60" rx="12" fill="#0D1624" stroke="#27405C" stroke-width="2"/><text x="50" y="36" fill="#fff" font-size="17" font-weight="700">AI</text>
+    <rect x="115" y="0" width="100" height="60" rx="12" fill="#0D1624" stroke="#27405C" stroke-width="2"/><text x="165" y="36" fill="#fff" font-size="17" font-weight="700">Robots</text>
+    <rect x="230" y="0" width="100" height="60" rx="12" fill="#0D1624" stroke="#27405C" stroke-width="2"/><text x="280" y="36" fill="#fff" font-size="17" font-weight="700">Humans</text>
+    <path d="M50 64V100M165 64V100M280 64V100" stroke="#22D3EE" stroke-width="3" stroke-dasharray="5 5"/>
+    <rect x="0" y="104" width="330" height="96" rx="16" fill="#0B2A25" stroke="#2DD4BF" stroke-width="3"/>
+    <text x="165" y="146" fill="#fff" font-size="26" font-weight="800">Nitrotick</text><text x="165" y="174" fill="#5EEAD4" font-size="15" font-weight="600">Execution OS</text>
+    <path d="M50 204V240M165 204V240M280 204V240" stroke="#A78BFA" stroke-width="3" stroke-dasharray="5 5"/>
+    <rect x="0" y="244" width="330" height="56" rx="12" fill="#12112A" stroke="#3B3470" stroke-width="2"/>
+    <text x="165" y="278" fill="#C4B5FD" font-size="15" font-weight="600">Cloud · On-prem · MES / SCADA / IoT</text>
+  </g>
+</svg>

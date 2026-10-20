@@ -18,7 +18,7 @@
   <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://nitrotick.com/federation/">
   <meta property="og:title" content="Nitrotick Federation — Execution Across Organizations">
-  <meta property="og:description" content="Independent organizations execute shared processes with full sovereignty: signals and proofs travel, raw data stays home. Zero gas, sub-100 ms, atomic revocation.">
+  <meta property="og:description" content="Independent organizations execute shared processes while preserving institutional authority, controlled data sharing and verifiable evidence.">
   <meta property="og:image" content="https://nitrotick.com/assets/img/og/federation.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
@@ -34,7 +34,7 @@
   <link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="../apple-touch-icon.png">
   <link rel="manifest" href="../site.webmanifest">
-  <link rel="stylesheet" href="../css/styles.css?v=20260928">
+  <link rel="stylesheet" href="../css/styles.css?v=20261019g">
 
   <script type="application/ld+json">
   {
@@ -68,7 +68,34 @@
         "serviceType": "Federated execution infrastructure",
         "provider": { "@id": "https://nitrotick.com/#organization" },
         "areaServed": "Worldwide",
-        "description": "Secure multi-tenant federated execution flow for banks, insurers, manufacturers, public institutions and AI agents operating across organizational boundaries."
+        "description": "Secure multi-tenant federated execution flow for banks, insurers, manufacturers, public institutions and AI agents operating across organizational boundaries.",
+        "isRelatedTo": { "@id": "https://nitrotick.com/execution-os/#software" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://nitrotick.com/federation/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Nitrotick Federation?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Nitrotick Federation is secure multi-tenant federated execution between independent organizations. Each participant keeps its own node, data and authority; only signals, claims and cryptographic proofs cross the boundary. Capabilities are re-verified at execution time, revocation is atomic and every hand-off produces signed evidence." }
+          },
+          {
+            "@type": "Question",
+            "name": "What does Federation-Enabled Execution OS mean?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Nitrotick is a Federation-Enabled Execution OS: an execution layer with identity and trust, capability authorization, deterministic execution, durable state, a federation protocol and verifiable evidence. Federation is built into that OS, so any governed process can extend to partner organizations without a separate integration stack." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do partners have to share their data?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Data stays in each participant's own systems. Partners receive signals and scoped, time-bound authority for the specific step, and return results with signed evidence instead of copies of records." }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens when a partner loses authorization?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Every active grant tied to that partner is revoked atomically in one operation, with a forensic evidence record. Healthy peers keep operating; there is no system-wide shutdown." }
+          }
+        ]
       },
       {
         "@type": "BreadcrumbList",
@@ -94,10 +121,23 @@
       <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu">
       <label class="nav-toggle-label" for="nav-toggle" aria-hidden="true"><span></span></label>
       <ul class="nav-menu">
-        <li><a href="./" aria-current="page">Federation</a></li>
-        <li><a href="../digital-product-passport/">Digital Product Passport</a></li>
-        <li><a href="../ai-governance/">AI Governance</a></li>
+        <li><a href="../execution-os/">Execution OS</a></li>
+        <li class="nav-dd">
+          <a class="nav-dd-link is-current" href="../#products" aria-haspopup="true">Products</a>
+          <ul class="nav-sub">
+            <li class="nav-sub-label">Products</li>
+            <li><a href="./" aria-current="page"><strong>Nitrotick Federation</strong><span>Governed execution across independent organizations</span></a></li>
+            <li><a href="../ip-evidence-verification/"><strong>IP Evidence &amp; Verification</strong><span>Verifiable evidence of IP creation and version history</span></a></li>
+            <li><a href="../verifiable-off-chain-execution/"><strong>Verifiable Off-Chain Execution &amp; Oracle</strong><span>Governed execution for blockchain and DLT</span></a></li>
+            <li><a href="../qa-governance-traceability/"><strong>QA Governance &amp; Product Traceability</strong><span>QA workflows, batch recall and GS1 Digital Link</span></a></li>
+            <li><a href="../digital-product-passport/"><strong>Digital Product Passport</strong><span>Product identity, versioning and DPP</span></a></li>
+            <li><a href="../ai-governance/"><strong>AI Governance</strong><span>Governed AI agent actions with verifiable evidence</span></a></li>
+            <li class="nav-sub-label">Solutions</li>
+            <li><a href="../execution-shield/"><strong>Nitrotick Execution Shield</strong><span>Execution security within and across institutions</span></a></li>
+          </ul>
+        </li>
         <li><a href="../blockchain-alternative/">Blockchain Alternative</a></li>
+        <li><a href="../verifiable-off-chain-execution/">Verifiable Off-Chain Execution &amp; Oracle</a></li>
         <li><a href="../compliance/">Compliance</a></li>
         <li><a href="../use-cases/">Use Cases</a></li>
         <li><a class="btn btn--primary" href="#contact">Request a demo</a></li>
@@ -119,6 +159,7 @@
           <span class="pill"><span class="dot" aria-hidden="true"></span>Nitrotick Federation · v2.0</span>
           <h1 id="hero-title">Execution across organizations — <span class="accent">without surrendering sovereignty.</span></h1>
           <p class="lead">Nitrotick Federation is secure multi-tenant federated execution for banks, insurers, manufacturers, public institutions and AI agents. Each participant keeps its own node, data and authority. Only signals, claims and cryptographic proofs cross the boundary.</p>
+          <p>Federation is a core service of <a href="../execution-os/">Nitrotick — the Federation-Enabled Execution OS</a>: the same execution, authorization and evidence layer that governs AI agents, robots, machines and people.</p>
           <div class="btn-row">
             <a class="btn btn--primary" href="#contact">Request a technical demo</a>
             <a class="btn btn--ghost" href="#capabilities">See capabilities</a>
@@ -265,11 +306,11 @@
     <section class="section" aria-labelledby="revoke-title">
       <div class="container split">
         <div>
-          <span class="eyebrow">Recursive authorization</span>
-          <h2 id="revoke-title">Dynamic ancestry and atomic revocation</h2>
+          <span class="eyebrow">Hierarchical federations</span>
+          <h2 id="revoke-title">Hierarchical authority and revocation</h2>
           <p class="lead">Real federations are hierarchies: a group, its divisions and each division's own suppliers or partners. Authority changes while work is still in flight.</p>
           <ul class="check-list">
-            <li><strong>Capability intersection</strong>The effective capability of a participant is computed across its federation ancestry — a child can never exceed what its parents allow.</li>
+            <li><strong>Delegated authority stays bounded</strong>A participant can never exceed the authority delegated to it by the organizations above it.</li>
             <li><strong>Re-verified at execution time</strong>Admission is checked when the step executes, not when a credential was issued.</li>
             <li><strong>Atomic revocation</strong>When a partner loses authorization or certification, every active grant tied to it is revoked in one operation, with a forensic evidence record.</li>
             <li><strong>No system-wide shutdown</strong>Traffic from the isolated member stops; healthy peers keep operating and route around it.</li>
@@ -314,8 +355,8 @@
               <path d="M345 245l10 10M355 245l-10 10" stroke="#F87171" stroke-width="2.4" stroke-linecap="round"/>
 
               <rect x="16" y="350" width="528" height="54" rx="12" fill="#0A111D" stroke="#27405C"/>
-              <text x="280" y="373" fill="#E6EDF5" font-size="12.5" font-weight="600">Effective capability = intersection across ancestry</text>
-              <text x="280" y="392" fill="#8193A8" font-size="11.5">Revocation cascades atomically · evidence recorded · healthy peers unaffected</text>
+              <text x="280" y="373" fill="#E6EDF5" font-size="12.5" font-weight="600">Delegated authority stays within its parent's scope</text>
+              <text x="280" y="392" fill="#8193A8" font-size="11.5">Revocation applies to its grants · evidence recorded · healthy peers unaffected</text>
             </g>
           </svg>
           <figcaption>Authority is re-verified at execution time across the whole hierarchy.</figcaption>
@@ -396,6 +437,54 @@
       </div>
     </section>
 
+    <!-- ================= EXECUTION OS ================= -->
+    <section class="section" id="execution-os" aria-labelledby="os-title">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">Federation-Enabled Execution OS</span>
+          <h2 id="os-title">Federation is built into the OS — not bolted on</h2>
+          <p class="lead">Nitrotick is a Federation-Enabled Execution OS. Federation is one of its six core services, so any governed process — an AI agent workflow, a robot mission or an approval chain — can extend to partner organizations with the same authority checks and the same evidence.</p>
+          <a class="card-link" href="../execution-os/">Explore the Execution OS</a>
+        </div>
+        <ul class="os-row" style="--cols: 2">
+          <li><strong>Identity &amp; Trust</strong>Verified participants, bilateral trust</li>
+          <li><strong>Capability Authorization</strong>Checked at execution time</li>
+          <li><strong>Deterministic Execution</strong>Reproducible state transitions</li>
+          <li><strong>Durable State</strong>Persistence and recovery</li>
+          <li><strong>Federation Protocol</strong>Across sovereign organizations</li>
+          <li><strong>Verifiable Evidence</strong>Signed and tamper-evident</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section section--alt" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow">FAQ</span>
+          <h2 id="faq-title">Nitrotick Federation — frequently asked questions</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>What is Nitrotick Federation?</summary>
+            <div><p>Nitrotick Federation is secure multi-tenant federated execution between independent organizations. Each participant keeps its own node, data and authority; only signals, claims and cryptographic proofs cross the boundary. Capabilities are re-verified at execution time, revocation is atomic and every hand-off produces signed evidence.</p></div>
+          </details>
+          <details>
+            <summary>What does Federation-Enabled Execution OS mean?</summary>
+            <div><p>Nitrotick is a Federation-Enabled Execution OS: an execution layer with identity and trust, capability authorization, deterministic execution, durable state, a federation protocol and verifiable evidence. Federation is built into that OS, so any governed process can extend to partner organizations without a separate integration stack.</p></div>
+          </details>
+          <details>
+            <summary>Do partners have to share their data?</summary>
+            <div><p>No. Data stays in each participant's own systems. Partners receive signals and scoped, time-bound authority for the specific step, and return results with signed evidence instead of copies of records.</p></div>
+          </details>
+          <details>
+            <summary>What happens when a partner loses authorization?</summary>
+            <div><p>Every active grant tied to that partner is revoked atomically in one operation, with a forensic evidence record. Healthy peers keep operating; there is no system-wide shutdown.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <!-- ================= CONTACT ================= -->
     <section class="section" id="contact" aria-labelledby="contact-title">
       <div class="container">
@@ -423,11 +512,12 @@
             <img src="../assets/img/logo-mark.svg" alt="" width="40" height="40">
             <span>Nitrotick</span>
           </a>
-          <p class="footer-tagline">Verifiable execution infrastructure. <strong>Trust in Execution.</strong></p>
+          <p class="footer-tagline">Federation-Enabled Execution OS. <strong>Trust in Execution.</strong></p>
         </div>
         <div>
           <p class="footer-heading">Platform</p>
           <ul>
+            <li><a href="../execution-os/">Execution OS</a></li>
             <li><a href="../#platform">Core platform</a></li>
             <li><a href="../#trust-tiers">Trust tiers</a></li>
             <li><a href="../#architecture">Architecture</a></li>
@@ -439,6 +529,10 @@
           <p class="footer-heading">Solutions</p>
           <ul>
             <li><a href="./" aria-current="page">Nitrotick Federation</a></li>
+            <li><a href="../execution-shield/">Nitrotick Execution Shield</a></li>
+            <li><a href="../ip-evidence-verification/">IP Evidence &amp; Verification</a></li>
+            <li><a href="../verifiable-off-chain-execution/">Verifiable Off-Chain Execution &amp; Oracle</a></li>
+            <li><a href="../qa-governance-traceability/">QA Governance &amp; Product Traceability</a></li>
             <li><a href="../digital-product-passport/">Digital Product Passport</a></li>
             <li><a href="../ai-governance/">AI Governance</a></li>
             <li><a href="../compliance/">Compliance &amp; regulations</a></li>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1B2A3F" stroke-width="1"/></pattern>
+    <radialGradient id="glow" cx="80%" cy="35%" r="60%"><stop offset="0" stop-color="#137C6D" stop-opacity=".45"/><stop offset="1" stop-color="#070B14" stop-opacity="0"/></radialGradient>
+    <linearGradient id="ln" x1="0" x2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#2DD4BF"/></linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#070B14"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity=".6"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g transform="translate(80 64)">
+    <circle cx="36" cy="36" r="36" fill="#137C6D"/>
+    <g fill="none" stroke="#fff" stroke-width="46" stroke-linecap="round" stroke-linejoin="round" transform="translate(-1 6) scale(.072)">
+      <path d="M198 467H327L362 432L397 467H441"/><path d="M500 390L556 422V486L500 518L444 486V422Z"/><path d="M564 470L596 528L675 206L741 470L776 430L808 470"/>
+    </g>
+    <circle cx="35" cy="38.5" r="1.8" fill="#fff"/>
+    <text x="90" y="48" fill="#fff" font-family="'Segoe UI','Noto Sans',Arial,sans-serif" font-size="32" font-weight="700" letter-spacing="1">Nitrotick</text>
+  </g>
+  <g font-family="'Segoe UI','Noto Sans',Arial,sans-serif">
+    <text x="80" y="200" fill="#5EEAD4" font-size="21" font-weight="700" letter-spacing="4">OFF-CHAIN EXECUTION &amp; ORACLE</text>
+    <text x="80" y="270" fill="#FFFFFF" font-size="56" font-weight="800">Execute off-chain.</text><text x="80" y="338" fill="#5EEAD4" font-size="56" font-weight="800">Prove on-chain.</text>
+    <text x="80" y="404" fill="#C7D2E0" font-size="26">Governed institutional workflows with</text><text x="80" y="442" fill="#C7D2E0" font-size="26">verifiable evidence for blockchain and DLT.</text>
+    <text x="80" y="566" fill="#8FA3BA" font-size="22" font-weight="600">nitrotick.com/verifiable-off-chain-execution</text>
+  </g>
+  <g transform="translate(810 140)" font-family="'Segoe UI','Noto Sans',Arial,sans-serif" text-anchor="middle">
+    <rect x="0" y="0" width="310" height="64" rx="14" fill="#12112A" stroke="#8B5CF6" stroke-width="2.5"/>
+    <text x="155" y="40" fill="#fff" font-size="19" font-weight="700">Blockchain / DLT</text>
+    <path d="M80 72V122" stroke="#22D3EE" stroke-width="4" stroke-dasharray="7 6"/><path d="M70 112l10 12 10-12" fill="none" stroke="#22D3EE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M230 124V74" stroke="#A78BFA" stroke-width="4"/><path d="M220 84l10-12 10 12" fill="none" stroke="#A78BFA" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="80" y="150" fill="#22D3EE" font-size="14" font-weight="700">events</text><text x="230" y="150" fill="#C4B5FD" font-size="14" font-weight="700">proofs</text>
+    <rect x="0" y="166" width="310" height="110" rx="16" fill="#0B2A25" stroke="#2DD4BF" stroke-width="3"/>
+    <text x="155" y="210" fill="#fff" font-size="24" font-weight="800">Nitrotick</text>
+    <text x="155" y="238" fill="#5EEAD4" font-size="15" font-weight="600">govern · execute · prove</text>
+    <text x="155" y="262" fill="#8FA3BA" font-size="13">data stays local</text>
+  </g>
+</svg>

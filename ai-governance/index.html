@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>AI Agent Governance &amp; Prompt Injection Defense | Nitrotick</title>
-  <meta name="description" content="Govern AI agents under the EU AI Act, NIS2 and DORA. AI proposes, governance decides — scoped authority and evidence that contain prompt injection.">
-  <meta name="keywords" content="AI governance, AI agent governance, prompt injection, jailbreaking, AI agent security, NIS2, DORA, AI agents, bounded actors, agentic AI, human oversight, EU AI Act, AI audit trail, decision evidence, governed execution, human in the loop, Nitrotick">
+  <title>AI Agent &amp; A2A Governance, Prompt Injection Defense | Nitrotick</title>
+  <meta name="description" content="Govern AI agents and A2A workflows locally or across organizations. AI proposes, governance decides — scoped authority and evidence against prompt injection.">
+  <meta name="keywords" content="AI governance, AI agent governance, A2A governance, agent-to-agent governance, federated A2A, multi-agent governance, prompt injection, jailbreaking, AI agent security, NIS2, DORA, AI agents, bounded actors, agentic AI, human oversight, EU AI Act, AI audit trail, decision evidence, governed execution, human in the loop, Nitrotick">
   <meta name="author" content="Aleksandar M. Tasevski">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="theme-color" content="#070b14">
@@ -17,7 +17,7 @@
   <meta property="og:site_name" content="Nitrotick">
   <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://nitrotick.com/ai-governance/">
-  <meta property="og:title" content="AI Agent Governance &amp; Prompt Injection Defense | Nitrotick">
+  <meta property="og:title" content="AI Agent &amp; A2A Governance | Nitrotick">
   <meta property="og:description" content="In regulated enterprises, an AI agent must not just get an API key. Nitrotick makes every agent action authorized, evidenced and reconstructable.">
   <meta property="og:image" content="https://nitrotick.com/assets/img/og/ai-governance.png">
   <meta property="og:image:type" content="image/png">
@@ -25,7 +25,7 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Nitrotick AI Governance — AI agents propose, governance decides.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="AI Agent Governance &amp; Prompt Injection Defense | Nitrotick">
+  <meta name="twitter:title" content="AI Agent &amp; A2A Governance | Nitrotick">
   <meta name="twitter:description" content="Agents propose, governance decides. Authorized, evidenced and reconstructable AI execution.">
   <meta name="twitter:image" content="https://nitrotick.com/assets/img/og/ai-governance.png">
   <meta name="twitter:image:alt" content="Nitrotick AI Governance — AI agents propose, governance decides.">
@@ -34,7 +34,7 @@
   <link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="../apple-touch-icon.png">
   <link rel="manifest" href="../site.webmanifest">
-  <link rel="stylesheet" href="../css/styles.css?v=20260928">
+  <link rel="stylesheet" href="../css/styles.css?v=20261019g">
 
   <script type="application/ld+json">
   {
@@ -54,8 +54,8 @@
         "@type": "WebPage",
         "@id": "https://nitrotick.com/ai-governance/#webpage",
         "url": "https://nitrotick.com/ai-governance/",
-        "name": "AI Agent Governance & Prompt Injection Defense",
-        "description": "Governed execution for enterprise AI agents with capability-scoped authority, human approval gates and deterministic decision evidence.",
+        "name": "AI Agent & A2A Governance, Prompt Injection Defense",
+        "description": "Governed execution for enterprise AI agents and agent-to-agent (A2A) workflows, locally or across organizations, with capability-scoped authority, human approval gates and deterministic decision evidence.",
         "isPartOf": { "@id": "https://nitrotick.com/#website" },
         "about": { "@id": "https://nitrotick.com/ai-governance/#service" },
         "breadcrumb": { "@id": "https://nitrotick.com/ai-governance/#breadcrumb" },
@@ -70,7 +70,8 @@
         "audience": { "@type": "BusinessAudience", "audienceType": "Banks, fintech, insurers and regulated enterprises deploying AI agents" },
         "provider": { "@id": "https://nitrotick.com/#organization" },
         "areaServed": "Worldwide",
-        "description": "Infrastructure that lets autonomous AI agents operate as bounded actors: they propose, while a governed, deterministic execution layer holds authority and records evidence."
+        "description": "Infrastructure that lets autonomous AI agents operate as bounded actors: they propose, while a governed, deterministic execution layer holds authority and records evidence — for local and federated agent-to-agent (A2A) workflows.",
+        "isRelatedTo": { "@id": "https://nitrotick.com/execution-os/#software" }
       },
       {
         "@type": "FAQPage",
@@ -90,7 +91,22 @@
           {
             "@type": "Question",
             "name": "Does the AI model get direct access to our systems?",
-            "acceptedAnswer": { "@type": "Answer", "text": "No. The model proposes; the governed execution layer holds the credentials and authority. Agents receive capability-scoped grants limited in scope, duration and risk level, which can be revoked instantly." }
+            "acceptedAnswer": { "@type": "Answer", "text": "No. The model proposes; the governed execution layer holds the credentials and authority. Agents receive capability-scoped grants limited in scope, duration and risk level, which can be revoked at any time." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is A2A governance?",
+            "acceptedAnswer": { "@type": "Answer", "text": "A2A (agent-to-agent) governance controls how AI agents hand work to other agents: which agent may delegate what, under whose authority, and with what evidence. Nitrotick enforces it at execution time — every A2A hand-off is checked against capability and policy and recorded as tamper-evident evidence." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between local and federated A2A?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Local A2A runs inside one organization, on its own infrastructure and under its own policies. Federated A2A connects agents of independent organizations through Nitrotick Federation: each organization keeps its own node, data and authority, and only signals, claims and signed evidence cross the boundary." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Nitrotick an AI gateway?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. An AI gateway controls access to AI models and routes requests, and an A2A governance layer defines how agents interact. Nitrotick Execution OS provides the full execution environment around them: identity, capability authorization, durable state, governance and cryptographic evidence for the whole workflow." }
           }
         ]
       },
@@ -118,10 +134,23 @@
       <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu">
       <label class="nav-toggle-label" for="nav-toggle" aria-hidden="true"><span></span></label>
       <ul class="nav-menu">
-        <li><a href="../federation/">Federation</a></li>
-        <li><a href="../digital-product-passport/">Digital Product Passport</a></li>
-        <li><a href="./" aria-current="page">AI Governance</a></li>
+        <li><a href="../execution-os/">Execution OS</a></li>
+        <li class="nav-dd">
+          <a class="nav-dd-link is-current" href="../#products" aria-haspopup="true">Products</a>
+          <ul class="nav-sub">
+            <li class="nav-sub-label">Products</li>
+            <li><a href="../federation/"><strong>Nitrotick Federation</strong><span>Governed execution across independent organizations</span></a></li>
+            <li><a href="../ip-evidence-verification/"><strong>IP Evidence &amp; Verification</strong><span>Verifiable evidence of IP creation and version history</span></a></li>
+            <li><a href="../verifiable-off-chain-execution/"><strong>Verifiable Off-Chain Execution &amp; Oracle</strong><span>Governed execution for blockchain and DLT</span></a></li>
+            <li><a href="../qa-governance-traceability/"><strong>QA Governance &amp; Product Traceability</strong><span>QA workflows, batch recall and GS1 Digital Link</span></a></li>
+            <li><a href="../digital-product-passport/"><strong>Digital Product Passport</strong><span>Product identity, versioning and DPP</span></a></li>
+            <li><a href="./" aria-current="page"><strong>AI Governance</strong><span>Governed AI agent actions with verifiable evidence</span></a></li>
+            <li class="nav-sub-label">Solutions</li>
+            <li><a href="../execution-shield/"><strong>Nitrotick Execution Shield</strong><span>Execution security within and across institutions</span></a></li>
+          </ul>
+        </li>
         <li><a href="../blockchain-alternative/">Blockchain Alternative</a></li>
+        <li><a href="../verifiable-off-chain-execution/">Verifiable Off-Chain Execution &amp; Oracle</a></li>
         <li><a href="../compliance/">Compliance</a></li>
         <li><a href="../use-cases/">Use Cases</a></li>
         <li><a class="btn btn--primary" href="#contact">Request a demo</a></li>
@@ -142,7 +171,7 @@
         <div class="section-head">
           <span class="pill"><span class="dot" aria-hidden="true"></span>Governed AI Execution</span>
           <h1 id="hero-title">AI agents propose. <span class="accent">Governance decides.</span></h1>
-          <p class="lead">In a regulated enterprise, an AI agent must not just receive an API key. Nitrotick makes agents bounded actors: every action is authorized by capability and policy, gated by humans where it matters, and recorded with the exact context that produced it.</p>
+          <p class="lead">In a regulated enterprise, an AI agent must not just receive an API key. Nitrotick makes agents bounded actors: every action is authorized by capability and policy, gated by humans where it matters, and recorded with the exact context that produced it — for single agents, local A2A workflows and agents collaborating across organizations. Governed AI execution runs on the <a href="../execution-os/">Nitrotick Federation-Enabled Execution OS</a>.</p>
           <div class="btn-row">
             <a class="btn btn--primary" href="#contact">Request a technical demo</a>
             <a class="btn btn--ghost" href="#gate">See the governance gate</a>
@@ -255,19 +284,111 @@
             <p>Each action records the historical context, inputs, policy version and capability it relied on — deterministically reconstructable.</p>
           </article>
           <article class="card">
-            <h3>Instant, atomic revocation</h3>
-            <p>If an agent or an external partner's agent loses authorization, its grants are revoked atomically — without stopping healthy processes.</p>
+            <h3>Revocation without downtime</h3>
+            <p>If an agent or an external partner's agent loses authorization, its grants can be revoked without stopping healthy processes.</p>
           </article>
           <article class="card">
             <h3>Agent-to-agent across institutions</h3>
-            <p>Agents can delegate across organizational boundaries through Nitrotick Federation, with every hand-off signed and verified.</p>
+            <p>Agents can delegate across organizational boundaries through Nitrotick Federation, with every hand-off signed and verified. <a href="#a2a">Local vs. federated A2A</a></p>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- ================= A2A GOVERNANCE ================= -->
+    <section class="section" id="a2a" aria-labelledby="a2a-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">A2A governance</span>
+          <h2 id="a2a-title">Agent-to-agent governance — inside your organization and across organizations</h2>
+          <p class="lead">When agents hand work to other agents, the hand-off itself needs identity, authority and evidence. Nitrotick governs A2A interactions in both settings with the same execution OS.</p>
+        </div>
+        <div class="grid grid--2">
+          <article class="card">
+            <span class="card-kicker">Local A2A</span>
+            <h3>Local A2A in your organization</h3>
+            <p>Agents and systems collaborate within your organization, governed by your policies and running on your infrastructure.</p>
+            <figure class="a2a-figure mt-lg">
+            <svg viewBox="0 0 560 380" role="img" aria-labelledby="la2a-title la2a-desc">
+              <title id="la2a-title">Local A2A governance inside one organization</title>
+              <desc id="la2a-desc">Four AI agents inside one organization collaborate only through the Nitrotick Execution OS at the center, which governs every agent-to-agent hand-off. The organization's own data, systems and policies stay inside its boundary and are reached only through governed access.</desc>
+              <g class="svg-text">
+                <rect x="8" y="8" width="544" height="364" rx="18" fill="#0A111D" stroke="#2DD4BF" stroke-opacity=".55" stroke-width="1.5"/>
+                <text x="28" y="38" fill="#5EEAD4" font-size="12.5" font-weight="700" letter-spacing="1.6">YOUR ORGANIZATION · YOUR INFRASTRUCTURE</text>
+                <rect x="28" y="62" width="130" height="290" rx="14" fill="#0D1624" stroke="#27405C"/>
+                <g fill="none" stroke="#A78BFA" stroke-width="2"><ellipse cx="93" cy="118" rx="22" ry="7"/><path d="M71 118v26c0 4 10 7 22 7s22-3 22-7v-26M71 131c0 4 10 7 22 7s22-3 22-7"/></g>
+                <g text-anchor="middle" font-size="13" font-weight="700" fill="#fff"><text x="93" y="190">Your data</text><text x="93" y="214">Your systems</text><text x="93" y="238">Your policies</text></g>
+                <text x="93" y="290" text-anchor="middle" fill="#8193A8" font-size="12.5">stay inside your</text>
+                <text x="93" y="306" text-anchor="middle" fill="#8193A8" font-size="12.5">boundary</text>
+                <g stroke="#22D3EE" stroke-width="2" stroke-dasharray="5 5" fill="none"><path d="M370 210L250 110M370 210L490 110M370 210L250 310M370 210L490 310"/></g>
+                <path d="M158 210H316" stroke="#A78BFA" stroke-width="2" fill="none"/>
+                <text x="237" y="202" text-anchor="middle" fill="#C4B5FD" font-size="12.5" font-weight="600">governed access</text>
+                <circle cx="370" cy="210" r="54" fill="#137C6D" stroke="#5EEAD4" stroke-width="2"/>
+                <text x="370" y="206" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">Nitrotick</text>
+                <text x="370" y="225" text-anchor="middle" fill="#CCFBF1" font-size="12.5">Execution OS</text>
+                <rect x="215" y="87" width="70" height="46" rx="10" fill="#111C2D" stroke="#27405C"/><g fill="none" stroke="#5EEAD4" stroke-width="1.8" stroke-linecap="round"><rect x="240" y="95" width="20" height="15" rx="4"/><path d="M250 95v-4"/></g><circle cx="246" cy="102" r="1.6" fill="#5EEAD4"/><circle cx="254" cy="102" r="1.6" fill="#5EEAD4"/><text x="250" y="126" text-anchor="middle" fill="#B4C2D3" font-size="12" font-weight="600">Agent A</text>
+                <rect x="455" y="87" width="70" height="46" rx="10" fill="#111C2D" stroke="#27405C"/><g fill="none" stroke="#5EEAD4" stroke-width="1.8" stroke-linecap="round"><rect x="480" y="95" width="20" height="15" rx="4"/><path d="M490 95v-4"/></g><circle cx="486" cy="102" r="1.6" fill="#5EEAD4"/><circle cx="494" cy="102" r="1.6" fill="#5EEAD4"/><text x="490" y="126" text-anchor="middle" fill="#B4C2D3" font-size="12" font-weight="600">Agent B</text>
+                <rect x="215" y="287" width="70" height="46" rx="10" fill="#111C2D" stroke="#27405C"/><g fill="none" stroke="#5EEAD4" stroke-width="1.8" stroke-linecap="round"><rect x="240" y="295" width="20" height="15" rx="4"/><path d="M250 295v-4"/></g><circle cx="246" cy="302" r="1.6" fill="#5EEAD4"/><circle cx="254" cy="302" r="1.6" fill="#5EEAD4"/><text x="250" y="326" text-anchor="middle" fill="#B4C2D3" font-size="12" font-weight="600">Agent C</text>
+                <rect x="455" y="287" width="70" height="46" rx="10" fill="#111C2D" stroke="#27405C"/><g fill="none" stroke="#5EEAD4" stroke-width="1.8" stroke-linecap="round"><rect x="480" y="295" width="20" height="15" rx="4"/><path d="M490 295v-4"/></g><circle cx="486" cy="302" r="1.6" fill="#5EEAD4"/><circle cx="494" cy="302" r="1.6" fill="#5EEAD4"/><text x="490" y="326" text-anchor="middle" fill="#B4C2D3" font-size="12" font-weight="600">Agent D</text>
+              </g>
+            </svg>
+            </figure>
+            <ul class="check-list mt-lg">
+              <li><strong>Local A2A governance</strong>Every agent-to-agent hand-off is authorized by capability and policy.</li>
+              <li><strong>On-premise or private cloud</strong>Runs where your data and systems already are.</li>
+              <li><strong>Full control and privacy</strong>Your data, systems and policies remain under your control.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <span class="card-kicker">Federated A2A</span>
+            <h3>Federated A2A across organizations</h3>
+            <p>Independent organizations collaborate through trusted A2A interactions, each retaining its own systems, data and authority.</p>
+            <figure class="a2a-figure mt-lg">
+            <svg viewBox="0 0 560 380" role="img" aria-labelledby="fa2a-title fa2a-desc">
+              <title id="fa2a-title">Federated A2A governance across organizations</title>
+              <desc id="fa2a-desc">Three independent organizations, A, B and C, each run their own agents on their own Nitrotick node. Their agents collaborate through the Nitrotick federation protocol at the center. Only signals, claims and signed evidence cross the boundaries; each organization keeps its own data and authority.</desc>
+              <g class="svg-text">
+                <g stroke="#2DD4BF" stroke-width="2.5" stroke-dasharray="6 5" fill="none"><path d="M280 150V122M240 230L196 264M320 230L364 264"/></g>
+                <rect x="190" y="16" width="180" height="106" rx="14" fill="#1A1A3A" stroke="#6366F1" stroke-width="1.5"/>
+                <text x="280" y="40" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Organization A</text>
+                <rect x="212" y="63" width="56" height="42" rx="10" fill="#0D1624" stroke="#27405C"/><g fill="none" stroke="#5EEAD4" stroke-width="1.8" stroke-linecap="round"><rect x="230" y="71" width="20" height="15" rx="4"/><path d="M240 71v-4"/></g><circle cx="236" cy="78" r="1.6" fill="#5EEAD4"/><circle cx="244" cy="78" r="1.6" fill="#5EEAD4"/><text x="240" y="98" text-anchor="middle" fill="#B4C2D3" font-size="12" font-weight="600">Agent</text>
+                <rect x="292" y="63" width="56" height="42" rx="10" fill="#0D1624" stroke="#27405C"/><g fill="none" stroke="#5EEAD4" stroke-width="1.8" stroke-linecap="round"><rect x="310" y="71" width="20" height="15" rx="4"/><path d="M320 71v-4"/></g><circle cx="316" cy="78" r="1.6" fill="#5EEAD4"/><circle cx="324" cy="78" r="1.6" fill="#5EEAD4"/><text x="320" y="98" text-anchor="middle" fill="#B4C2D3" font-size="12" font-weight="600">Agent</text>
+                <rect x="16" y="252" width="180" height="110" rx="14" fill="#0B2A25" stroke="#2DD4BF" stroke-width="1.5"/>
+                <text x="106" y="276" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Organization B</text>
+                <rect x="38" y="299" width="56" height="42" rx="10" fill="#0D1624" stroke="#27405C"/><g fill="none" stroke="#5EEAD4" stroke-width="1.8" stroke-linecap="round"><rect x="56" y="307" width="20" height="15" rx="4"/><path d="M66 307v-4"/></g><circle cx="62" cy="314" r="1.6" fill="#5EEAD4"/><circle cx="70" cy="314" r="1.6" fill="#5EEAD4"/><text x="66" y="334" text-anchor="middle" fill="#B4C2D3" font-size="12" font-weight="600">Agent</text>
+                <rect x="118" y="299" width="56" height="42" rx="10" fill="#0D1624" stroke="#27405C"/><g fill="none" stroke="#5EEAD4" stroke-width="1.8" stroke-linecap="round"><rect x="136" y="307" width="20" height="15" rx="4"/><path d="M146 307v-4"/></g><circle cx="142" cy="314" r="1.6" fill="#5EEAD4"/><circle cx="150" cy="314" r="1.6" fill="#5EEAD4"/><text x="146" y="334" text-anchor="middle" fill="#B4C2D3" font-size="12" font-weight="600">Agent</text>
+                <rect x="364" y="252" width="180" height="110" rx="14" fill="#22143A" stroke="#A78BFA" stroke-width="1.5"/>
+                <text x="454" y="276" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Organization C</text>
+                <rect x="386" y="299" width="56" height="42" rx="10" fill="#0D1624" stroke="#27405C"/><g fill="none" stroke="#5EEAD4" stroke-width="1.8" stroke-linecap="round"><rect x="404" y="307" width="20" height="15" rx="4"/><path d="M414 307v-4"/></g><circle cx="410" cy="314" r="1.6" fill="#5EEAD4"/><circle cx="418" cy="314" r="1.6" fill="#5EEAD4"/><text x="414" y="334" text-anchor="middle" fill="#B4C2D3" font-size="12" font-weight="600">Agent</text>
+                <rect x="466" y="299" width="56" height="42" rx="10" fill="#0D1624" stroke="#27405C"/><g fill="none" stroke="#5EEAD4" stroke-width="1.8" stroke-linecap="round"><rect x="484" y="307" width="20" height="15" rx="4"/><path d="M494 307v-4"/></g><circle cx="490" cy="314" r="1.6" fill="#5EEAD4"/><circle cx="498" cy="314" r="1.6" fill="#5EEAD4"/><text x="494" y="334" text-anchor="middle" fill="#B4C2D3" font-size="12" font-weight="600">Agent</text>
+                <circle cx="280" cy="200" r="52" fill="#137C6D" stroke="#5EEAD4" stroke-width="2"/>
+                <text x="280" y="196" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">Nitrotick</text>
+                <text x="280" y="215" text-anchor="middle" fill="#CCFBF1" font-size="12.5">Federation</text>
+                <g fill="#8193A8" font-size="13">
+                  <text x="20" y="40">Each organization keeps</text><text x="20" y="57">its own node, data</text><text x="20" y="74">and authority.</text>
+                  <text x="540" y="40" text-anchor="end">Only signals, claims</text><text x="540" y="57" text-anchor="end">and signed evidence</text><text x="540" y="74" text-anchor="end">cross the boundary.</text>
+                </g>
+              </g>
+            </svg>
+            </figure>
+            <ul class="check-list mt-lg">
+              <li><strong>Federated A2A governance</strong>Authority is re-verified at execution time on both sides of every boundary.</li>
+              <li><strong>Cross-organization workflows</strong>Agents delegate work to partner agents through <a href="../federation/">Nitrotick Federation</a>.</li>
+              <li><strong>Independent authority domains</strong>Each organization decides what its own agents may do.</li>
+              <li><strong>Verifiable evidence across organizations</strong>Every hand-off is signed and recorded by both parties.</li>
+            </ul>
+          </article>
+        </div>
+        <div class="card card--featured mt-lg center">
+          <h3>Looking for an AI gateway or A2A governance? <span class="accent">We offer you an OS.</span></h3>
+          <p>An AI gateway controls requests and A2A governance defines how agents interact. The Nitrotick Execution OS securely executes, governs and proves the full workflow around them.</p>
+          <a class="card-link" href="../execution-os/#ai-gateway-a2a">Compare AI gateway, A2A governance and Execution OS</a>
+        </div>
+      </div>
+    </section>
+
     <!-- ================= PROMPT INJECTION ================= -->
-    <section class="section" aria-labelledby="injection-title">
+    <section class="section section--alt" aria-labelledby="injection-title">
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">Prompt injection &amp; jailbreaking</span>
@@ -299,14 +420,26 @@
           </details>
           <details>
             <summary>Does the AI model get direct access to our systems?</summary>
-            <div><p>No. The model proposes; the governed execution layer holds the credentials and authority. Agents receive capability-scoped grants limited in scope, duration and risk level, which can be revoked instantly.</p></div>
+            <div><p>No. The model proposes; the governed execution layer holds the credentials and authority. Agents receive capability-scoped grants limited in scope, duration and risk level, which can be revoked at any time.</p></div>
+          </details>
+          <details>
+            <summary>What is A2A governance?</summary>
+            <div><p>A2A (agent-to-agent) governance controls how AI agents hand work to other agents: which agent may delegate what, under whose authority, and with what evidence. Nitrotick enforces it at execution time — every A2A hand-off is checked against capability and policy and recorded as tamper-evident evidence.</p></div>
+          </details>
+          <details>
+            <summary>What is the difference between local and federated A2A?</summary>
+            <div><p>Local A2A runs inside one organization, on its own infrastructure and under its own policies. Federated A2A connects agents of independent organizations through Nitrotick Federation: each organization keeps its own node, data and authority, and only signals, claims and signed evidence cross the boundary.</p></div>
+          </details>
+          <details>
+            <summary>Is Nitrotick an AI gateway?</summary>
+            <div><p>No. An AI gateway controls access to AI models and routes requests, and an A2A governance layer defines how agents interact. Nitrotick Execution OS provides the full execution environment around them: identity, capability authorization, durable state, governance and cryptographic evidence for the whole workflow.</p></div>
           </details>
         </div>
       </div>
     </section>
 
     <!-- ================= EXAMPLE ================= -->
-    <section class="section section--alt" aria-labelledby="example-title">
+    <section class="section" aria-labelledby="example-title">
       <div class="container split">
         <div>
           <span class="eyebrow">Example</span>
@@ -325,7 +458,7 @@
     </section>
 
     <!-- ================= EU AI ACT ================= -->
-    <section class="section" aria-labelledby="act-title">
+    <section class="section section--alt" aria-labelledby="act-title">
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">Regulatory alignment</span>
@@ -350,7 +483,7 @@
     </section>
 
     <!-- ================= ECONOMICS ================= -->
-    <section class="section section--alt" aria-labelledby="econ-title">
+    <section class="section" aria-labelledby="econ-title">
       <div class="container split">
         <div>
           <span class="eyebrow">Execution economics</span>
@@ -398,11 +531,12 @@
             <img src="../assets/img/logo-mark.svg" alt="" width="40" height="40">
             <span>Nitrotick</span>
           </a>
-          <p class="footer-tagline">Verifiable execution infrastructure. <strong>Trust in Execution.</strong></p>
+          <p class="footer-tagline">Federation-Enabled Execution OS. <strong>Trust in Execution.</strong></p>
         </div>
         <div>
           <p class="footer-heading">Platform</p>
           <ul>
+            <li><a href="../execution-os/">Execution OS</a></li>
             <li><a href="../#platform">Core platform</a></li>
             <li><a href="../#trust-tiers">Trust tiers</a></li>
             <li><a href="../#architecture">Architecture</a></li>
@@ -414,6 +548,10 @@
           <p class="footer-heading">Solutions</p>
           <ul>
             <li><a href="../federation/">Nitrotick Federation</a></li>
+            <li><a href="../execution-shield/">Nitrotick Execution Shield</a></li>
+            <li><a href="../ip-evidence-verification/">IP Evidence &amp; Verification</a></li>
+            <li><a href="../verifiable-off-chain-execution/">Verifiable Off-Chain Execution &amp; Oracle</a></li>
+            <li><a href="../qa-governance-traceability/">QA Governance &amp; Product Traceability</a></li>
             <li><a href="../digital-product-passport/">Digital Product Passport</a></li>
             <li><a href="./" aria-current="page">AI Governance</a></li>
             <li><a href="../compliance/">Compliance &amp; regulations</a></li>

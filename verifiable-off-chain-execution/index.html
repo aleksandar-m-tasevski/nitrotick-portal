@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Verifiable Off-Chain Execution &amp; Oracle | Nitrotick</title>
+  <meta name="description" content="Run complex institutional workflows off-chain under multi-party governance, then exchange verifiable evidence with blockchain and DLT networks.">
+  <meta name="keywords" content="verifiable off-chain execution, off-chain computation, blockchain oracle, verifiable compute, execution oracle, enterprise DLT integration, blockchain anchoring, multi-party governance, chain-agnostic, Nitrotick">
+  <meta name="author" content="Aleksandar M. Tasevski">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#070b14">
+  <meta name="color-scheme" content="dark">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="canonical" href="https://nitrotick.com/verifiable-off-chain-execution/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nitrotick">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://nitrotick.com/verifiable-off-chain-execution/">
+  <meta property="og:title" content="Nitrotick Verifiable Off-Chain Execution &amp; Oracle">
+  <meta property="og:description" content="Sovereign execution. Federated governance. Cryptographic proof. Blockchain interoperability.">
+  <meta property="og:image" content="https://nitrotick.com/assets/img/og/off-chain-execution.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Nitrotick Verifiable Off-Chain Execution &amp; Oracle — governed execution off-chain, verifiable evidence on-chain.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nitrotick Verifiable Off-Chain Execution &amp; Oracle">
+  <meta name="twitter:description" content="Execute complex institutional workflows off-chain and exchange verifiable evidence with blockchain and DLT networks.">
+  <meta name="twitter:image" content="https://nitrotick.com/assets/img/og/off-chain-execution.png">
+  <meta name="twitter:image:alt" content="Nitrotick Verifiable Off-Chain Execution &amp; Oracle — governed execution off-chain, verifiable evidence on-chain.">
+
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="stylesheet" href="../css/styles.css?v=20261019g">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://nitrotick.com/#organization",
+        "name": "Nitrotick",
+        "url": "https://nitrotick.com/",
+        "logo": "https://nitrotick.com/assets/img/logo-512.png",
+        "description": "Verifiable execution infrastructure for enterprise AI, banks, fintech and regulated systems.",
+        "founder": { "@type": "Person", "@id": "https://nitrotick.com/#founder", "name": "Aleksandar M. Tasevski", "jobTitle": "Founder & Principal Architect", "sameAs": ["https://www.linkedin.com/in/aleksandar-m-tasevski/"] },
+        "sameAs": ["https://www.linkedin.com/company/nitrotick/"]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://nitrotick.com/verifiable-off-chain-execution/#webpage",
+        "url": "https://nitrotick.com/verifiable-off-chain-execution/",
+        "name": "Verifiable Off-Chain Execution & Oracle for Blockchain",
+        "description": "Run complex institutional workflows off-chain under multi-party governance, then exchange verifiable evidence with blockchain and DLT networks.",
+        "isPartOf": { "@id": "https://nitrotick.com/#website" },
+        "about": { "@id": "https://nitrotick.com/verifiable-off-chain-execution/#service" },
+        "breadcrumb": { "@id": "https://nitrotick.com/verifiable-off-chain-execution/#breadcrumb" },
+        "primaryImageOfPage": "https://nitrotick.com/assets/img/og/off-chain-execution.png",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://nitrotick.com/verifiable-off-chain-execution/#service",
+        "name": "Nitrotick Verifiable Off-Chain Execution & Oracle",
+        "serviceType": "Verifiable off-chain execution and blockchain interoperability",
+        "slogan": "Sovereign execution. Federated governance. Cryptographic proof. Blockchain interoperability.",
+        "provider": { "@id": "https://nitrotick.com/#organization" },
+        "areaServed": "Worldwide",
+        "audience": { "@type": "BusinessAudience", "audienceType": "Financial institutions, enterprise DLT operators, blockchain integrators and consortia" },
+        "isRelatedTo": { "@id": "https://nitrotick.com/execution-os/#software" },
+        "description": "Enterprise product profile of the Nitrotick Execution OS: complex institutional workflows run off-chain with durable state, multi-party authorization and cryptographic evidence, and exchange verifiable results with blockchain and DLT networks through chain-specific adapters."
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://nitrotick.com/verifiable-off-chain-execution/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is Nitrotick a blockchain oracle?",
+            "acceptedAnswer": { "@type": "Answer", "text": "It can play the oracle role, but it is more than a data feed. A typical oracle delivers an external value to a smart contract. Nitrotick executes the governed business process off-chain, under identified institutional authority, and delivers the result together with cryptographic evidence of how it was produced." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does any confidential data go on-chain?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Business logic, documents and personal data stay in the participants' own Nitrotick nodes. Only a cryptographic commitment to the proven result is published to the blockchain or DLT network." }
+          },
+          {
+            "@type": "Question",
+            "name": "Which blockchains are supported?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The architecture is chain-agnostic, but every network has its own event model, finality rules and verification mechanisms. Nitrotick therefore connects through a chain-specific adapter, which is built and validated for the network you use as part of the engagement. We do not claim support for a network until its adapter has passed acceptance testing." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Nitrotick depend on a blockchain?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Nitrotick is blockchain-independent infrastructure for governed execution. Blockchain integration is an optional layer at the edge; finality, reorganizations and transaction formats are handled in the adapters, not in the Nitrotick core." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does anchoring a hash on-chain mean the smart contract verified the execution?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Anchoring records a public, timestamped commitment. On-chain verification of the execution itself requires a defined verification protocol for that network. We state explicitly which of the two a given integration provides." }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://nitrotick.com/verifiable-off-chain-execution/#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nitrotick.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Blockchain alternative", "item": "https://nitrotick.com/blockchain-alternative/" },
+          { "@type": "ListItem", "position": 3, "name": "Verifiable Off-Chain Execution & Oracle", "item": "https://nitrotick.com/verifiable-off-chain-execution/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Primary">
+      <a class="brand" href="../" aria-label="Nitrotick home">
+        <img src="../assets/img/logo-mark.svg" alt="" width="40" height="40">
+        <span>Nitrotick</span>
+      </a>
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu">
+      <label class="nav-toggle-label" for="nav-toggle" aria-hidden="true"><span></span></label>
+      <ul class="nav-menu">
+        <li><a href="../execution-os/">Execution OS</a></li>
+        <li class="nav-dd">
+          <a class="nav-dd-link is-current" href="../#products" aria-haspopup="true">Products</a>
+          <ul class="nav-sub">
+            <li class="nav-sub-label">Products</li>
+            <li><a href="../federation/"><strong>Nitrotick Federation</strong><span>Governed execution across independent organizations</span></a></li>
+            <li><a href="../ip-evidence-verification/"><strong>IP Evidence &amp; Verification</strong><span>Verifiable evidence of IP creation and version history</span></a></li>
+            <li><a href="./" aria-current="page"><strong>Verifiable Off-Chain Execution &amp; Oracle</strong><span>Governed execution for blockchain and DLT</span></a></li>
+            <li><a href="../qa-governance-traceability/"><strong>QA Governance &amp; Product Traceability</strong><span>QA workflows, batch recall and GS1 Digital Link</span></a></li>
+            <li><a href="../digital-product-passport/"><strong>Digital Product Passport</strong><span>Product identity, versioning and DPP</span></a></li>
+            <li><a href="../ai-governance/"><strong>AI Governance</strong><span>Governed AI agent actions with verifiable evidence</span></a></li>
+            <li class="nav-sub-label">Solutions</li>
+            <li><a href="../execution-shield/"><strong>Nitrotick Execution Shield</strong><span>Execution security within and across institutions</span></a></li>
+          </ul>
+        </li>
+        <li><a href="../blockchain-alternative/">Blockchain Alternative</a></li>
+        <li><a href="./" aria-current="page">Verifiable Off-Chain Execution &amp; Oracle</a></li>
+        <li><a href="../compliance/">Compliance</a></li>
+        <li><a href="../use-cases/">Use Cases</a></li>
+        <li><a class="btn btn--primary" href="#contact">Request a demo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero hero--page" aria-labelledby="hero-title">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="../">Home</a></li>
+            <li><a href="../blockchain-alternative/">Blockchain alternative</a></li>
+            <li aria-current="page">Off-Chain Execution &amp; Oracle</li>
+          </ol>
+        </nav>
+        <div class="section-head">
+          <span class="pill"><span class="dot" aria-hidden="true"></span>Nitrotick · Enterprise product profile</span>
+          <h1 id="hero-title">Verifiable Off-Chain Execution <span class="accent">&amp; Oracle</span></h1>
+          <p class="lead"><strong>Sovereign execution. Federated governance. Cryptographic proof. Blockchain interoperability.</strong></p>
+          <p class="lead">Execute complex institutional workflows off-chain, enforce multi-party authority, and exchange verifiable evidence with blockchain and DLT networks — without moving a single byte of confidential data on-chain.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="#contact">Discuss a pilot</a>
+            <a class="btn btn--ghost" href="#how-it-works">See how it connects</a>
+          </div>
+        </div>
+
+        <figure class="diagram diagram--scroll" id="how-it-works">
+          <svg viewBox="0 0 960 444" role="img" aria-labelledby="oc-title oc-desc">
+            <title id="oc-title">Bi-directional integration between a blockchain and Nitrotick</title>
+            <desc id="oc-desc">Inbound: an on-chain event passes through a chain adapter that extracts it and assesses finality before it may trigger Nitrotick. Nitrotick governs the request, executes the workflow durably and produces a Nitrotick Proof. Outbound: a proof publication adapter submits a commitment to the proof back to the blockchain and tracks its finality. Enterprise data stays local; only commitments leave.</desc>
+            <defs>
+              <marker id="oc-c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#22D3EE"/></marker>
+              <marker id="oc-v" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#A78BFA"/></marker>
+            </defs>
+            <g class="svg-text">
+              <rect x="20" y="16" width="920" height="64" rx="14" fill="#12112A" stroke="#8B5CF6" stroke-width="1.5"/>
+              <text x="480" y="44" text-anchor="middle" fill="#fff" font-size="17" font-weight="800">Blockchain / DLT network</text>
+              <text x="480" y="66" text-anchor="middle" fill="#C4B5FD" font-size="12.5">Public chains · consortium chains · enterprise DLT</text>
+
+              <path d="M240 82V116" stroke="#22D3EE" stroke-width="2.5" marker-end="url(#oc-c)"/>
+              <text x="254" y="104" fill="#22D3EE" font-size="12.5" font-weight="700">INBOUND · on-chain event</text>
+              <rect x="60" y="120" width="360" height="70" rx="12" fill="#0D1624" stroke="#27405C"/>
+              <text x="240" y="148" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">Chain adapter</text>
+              <text x="240" y="170" text-anchor="middle" fill="#8193A8" font-size="12.5">Event extraction · finality · reorg detection</text>
+              <path d="M240 192V222" stroke="#22D3EE" stroke-width="2.5" marker-end="url(#oc-c)"/>
+
+              <path d="M720 222V194" stroke="#A78BFA" stroke-width="2.5" marker-end="url(#oc-v)"/>
+              <rect x="540" y="120" width="360" height="70" rx="12" fill="#0D1624" stroke="#27405C"/>
+              <text x="720" y="148" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">Proof publication adapter</text>
+              <text x="720" y="170" text-anchor="middle" fill="#8193A8" font-size="12.5">Submission · confirmation · finality tracking</text>
+              <path d="M720 118V84" stroke="#A78BFA" stroke-width="2.5" marker-end="url(#oc-v)"/>
+              <text x="706" y="104" text-anchor="end" fill="#C4B5FD" font-size="12.5" font-weight="700">OUTBOUND · proof commitment</text>
+
+              <rect x="20" y="226" width="920" height="152" rx="16" fill="#0B2027" stroke="#2DD4BF" stroke-width="2"/>
+              <text x="480" y="254" text-anchor="middle" fill="#5EEAD4" font-size="12" font-weight="700" letter-spacing="1.6">NITROTICK · VERIFIABLE OFF-CHAIN EXECUTION</text>
+              <g text-anchor="middle">
+                <rect x="44" y="272" width="272" height="88" rx="12" fill="#081418" stroke="#1C4C55"/>
+                <text x="180" y="304" fill="#fff" font-size="15" font-weight="700">Govern</text>
+                <text x="180" y="326" fill="#8193A8" font-size="12.5">Identity · authority · policy</text>
+                <text x="180" y="344" fill="#8193A8" font-size="12.5">multi-party approval</text>
+                <rect x="344" y="272" width="272" height="88" rx="12" fill="#081418" stroke="#1C4C55"/>
+                <text x="480" y="304" fill="#fff" font-size="15" font-weight="700">Execute</text>
+                <text x="480" y="326" fill="#8193A8" font-size="12.5">Durable, deterministic workflow</text>
+                <text x="480" y="344" fill="#8193A8" font-size="12.5">loops · conditions · approvals</text>
+                <rect x="644" y="272" width="272" height="88" rx="12" fill="#081418" stroke="#1C4C55"/>
+                <text x="780" y="304" fill="#fff" font-size="15" font-weight="700">Prove</text>
+                <text x="780" y="326" fill="#8193A8" font-size="12.5">Nitrotick Proof of the result</text>
+                <text x="780" y="344" fill="#8193A8" font-size="12.5">and how it was produced</text>
+              </g>
+              <path d="M318 316H340" stroke="#2DD4BF" stroke-width="2" marker-end="url(#oc-c)"/>
+              <path d="M618 316H640" stroke="#2DD4BF" stroke-width="2" marker-end="url(#oc-c)"/>
+
+              <rect x="20" y="392" width="920" height="40" rx="12" fill="#0A111D" stroke="#27405C"/>
+              <text x="480" y="417" text-anchor="middle" fill="#B4C2D3" font-size="13">Enterprise systems, documents and personal data stay local — only commitments leave</text>
+            </g>
+          </svg>
+          <figcaption>Chain-agnostic architecture, chain-specific adapters. The Nitrotick core never becomes blockchain-aware.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= PROBLEM ================= -->
+    <section class="section section--alt" aria-labelledby="problem-title">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">The problem</span>
+          <h2 id="problem-title">Blockchains record. They don't execute the real world.</h2>
+          <p class="lead">A blockchain is an excellent public tape: immutable, timestamped, shared. But complex institutional processes do not fit inside it — and the bridges that feed it data rarely prove how that data was produced.</p>
+        </div>
+        <div class="card card--bad">
+          <h3>Where on-chain logic runs out</h3>
+          <ul class="cross-list">
+            <li><strong>Complex workflows are expensive on-chain</strong>Long-running processes, loops, approvals and retries cost gas, add latency and expose logic publicly.</li>
+            <li><strong>Private data cannot go on a public ledger</strong>Contracts, designs, BOMs and personal data have no place on an immutable public chain.</li>
+            <li><strong>Data-feed oracles deliver values, not proof</strong>They bring an external value in, but not evidence of how it was computed or who authorized it.</li>
+            <li><strong>One oracle operator is one point of trust</strong>If a single server writes the next transaction, everyone has to trust that server blindly.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ROLES ================= -->
+    <section class="section" aria-labelledby="roles-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Hybrid model</span>
+          <h2 id="roles-title">Each system does what it is best at</h2>
+          <p class="lead">Nitrotick does not compete with your blockchain. It becomes its verifiable execution layer: the heavy, private, governed work happens off-chain; the chain keeps the public commitment.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card">
+            <span class="card-kicker">Enterprise &amp; institutions</span>
+            <h3>Business processes and data</h3>
+            <p>Business rules, institutional authority and sovereign data stay with the organizations that own them.</p>
+          </article>
+          <article class="card card--featured">
+            <span class="card-kicker">Nitrotick</span>
+            <h3>Governed execution and proof</h3>
+            <p>Durable, deterministic execution under multi-party authorization, with cryptographic evidence of every state transition.</p>
+          </article>
+          <article class="card">
+            <span class="card-kicker">Blockchain / DLT</span>
+            <h3>Public commitment and settlement</h3>
+            <p>An immutable, timestamped anchor for the proven result — and, where you use it, the settlement of value.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="two-paths" aria-labelledby="paths-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Verify(Fact) = TRUE</span>
+          <h2 id="paths-title">Two paths to a verified fact — and a way to combine them</h2>
+          <p class="lead">A blockchain reaches a verifiable fact through shared consensus. Nitrotick reaches it through sovereign authority and governed execution. Verifiable Off-Chain Execution &amp; Oracle composes the two: Nitrotick executes and proves the process, the chain keeps the public commitment.</p>
+        </div>
+        <figure class="hero-figure mt-lg">
+          <img src="../assets/img/verify-fact-two-paths-760.webp"
+               srcset="../assets/img/verify-fact-two-paths-760.webp 760w, ../assets/img/verify-fact-two-paths-1200.webp 1200w, ../assets/img/verify-fact-two-paths-1672.webp 1672w"
+               sizes="(max-width: 1240px) 100vw, 1136px"
+               width="1672" height="941" loading="lazy" decoding="async"
+               alt="Two architectural paths to the same verifiable result, Verify(Fact) = TRUE. Blockchain / DLT, the shared ledger path: a fact passes through global consensus into a replicated shared ledger and is verified by the network. Nitrotick, the sovereign authority path: a fact passes through authorized, independent organizations, each running its own Nitrotick node, and is verified independently by each organization.">
+        </figure>
+        <p class="note center mt-lg">The future of digital trust does not have to follow a single architectural model.</p>
+      </div>
+    </section>
+
+    <!-- ================= COMPARISON ================= -->
+    <section class="section" id="comparison" aria-labelledby="cmp-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">More than an oracle</span>
+          <h2 id="cmp-title">Data-feed oracle vs. verifiable off-chain execution</h2>
+          <p class="lead">“Oracle” describes how Nitrotick connects to a chain. What it delivers is governed execution.</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <caption class="visually-hidden">Comparison of a typical data-feed oracle and Nitrotick Verifiable Off-Chain Execution</caption>
+            <thead>
+              <tr><th scope="col">Dimension</th><th scope="col">Typical data-feed oracle</th><th scope="col">Nitrotick Off-Chain Execution &amp; Oracle</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>What it delivers</td><td>An external value, such as a price</td><td class="t-good">The result of a governed process, with proof of how it was produced</td></tr>
+              <tr><td>Business logic</td><td>None — relays data</td><td class="t-good">Complex, long-running, deterministic workflows</td></tr>
+              <tr><td>State</td><td>Stateless</td><td class="t-good">Durable state with recovery</td></tr>
+              <tr><td>Authority</td><td>Operator or node network</td><td class="t-good">Identified institutions under multi-party authorization</td></tr>
+              <tr><td>Confidential data</td><td>Data is published to the chain</td><td class="t-good">Data stays local; only commitments are published</td></tr>
+              <tr><td>Evidence</td><td>Signed data point</td><td class="t-good">Cryptographic proof of execution, authority and lineage</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note mt-lg">Typical scope of each category. Data-feed oracles remain the right tool for market data; Nitrotick addresses processes whose correctness depends on governed execution.</p>
+      </div>
+    </section>
+
+    <!-- ================= MULTI-PARTY APPROVAL ================= -->
+    <section class="section section--alt" aria-labelledby="approval-title">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">Multi-party governance</span>
+          <h2 id="approval-title">Not one oracle server — independent organizations</h2>
+          <p class="lead">Before a result reaches the chain, the organizations involved have approved it under their own authority. Each one runs its own node in its own infrastructure.</p>
+          <ul class="check-list">
+            <li><strong>Independent trust domains</strong>Every participating organization operates its own node. No participant can approve on another's behalf.</li>
+            <li><strong>No single point of trust</strong>The chain receives a result that several independent parties stand behind — not the output of one operator.</li>
+            <li><strong>Data stays with its owner</strong>Each organization keeps its own data and systems; only the proven result is shared.</li>
+          </ul>
+        </div>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 380" role="img" aria-labelledby="q-title q-desc">
+            <title id="q-title">Multi-party approval before anchoring</title>
+            <desc id="q-desc">Four independent organizations, each running its own node, approve the same result. Only after the required approvals is the commitment anchored to the blockchain.</desc>
+            <defs><marker id="q-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#A78BFA"/></marker></defs>
+            <g class="svg-text" text-anchor="middle">
+              <g stroke="#2DD4BF" stroke-width="2" stroke-dasharray="5 5" fill="none"><path d="M100 96L232 170M420 96L288 170M100 284L232 210M420 284L288 210"/></g>
+              <rect x="20" y="40" width="160" height="56" rx="12" fill="#1A1A3A" stroke="#6366F1"/>
+              <text x="100" y="64" fill="#fff" font-size="14" font-weight="700">Organization A</text><text x="100" y="83" fill="#A5B4FC" font-size="12">own node</text>
+              <rect x="340" y="40" width="160" height="56" rx="12" fill="#1A1A3A" stroke="#6366F1"/>
+              <text x="420" y="64" fill="#fff" font-size="14" font-weight="700">Organization B</text><text x="420" y="83" fill="#A5B4FC" font-size="12">own node</text>
+              <rect x="20" y="284" width="160" height="56" rx="12" fill="#0B2A25" stroke="#2DD4BF"/>
+              <text x="100" y="308" fill="#fff" font-size="14" font-weight="700">Organization C</text><text x="100" y="327" fill="#5EEAD4" font-size="12">own node</text>
+              <rect x="340" y="284" width="160" height="56" rx="12" fill="#22143A" stroke="#A78BFA"/>
+              <text x="420" y="308" fill="#fff" font-size="14" font-weight="700">Organization D</text><text x="420" y="327" fill="#C4B5FD" font-size="12">own node</text>
+              <circle cx="260" cy="190" r="46" fill="#137C6D" stroke="#5EEAD4" stroke-width="2"/>
+              <text x="260" y="186" fill="#fff" font-size="14" font-weight="800">Approved</text><text x="260" y="204" fill="#CCFBF1" font-size="11.5">result</text>
+              <rect x="190" y="0" width="140" height="30" rx="15" fill="#12112A" stroke="#8B5CF6"/>
+              <text x="260" y="20" fill="#C4B5FD" font-size="12" font-weight="700">then anchor on-chain</text>
+              <path d="M260 144V34" stroke="#A78BFA" stroke-width="2.5" marker-end="url(#q-a)"/>
+            </g>
+          </svg>
+          <figcaption>Each node is owned and operated by its organization. Nitrotick is the software they run.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= ENGINEERING HONESTY ================= -->
+    <section class="section" aria-labelledby="eng-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Chain-agnostic, honestly</span>
+          <h2 id="eng-title">One architecture. A dedicated adapter per network.</h2>
+          <p class="lead">Every blockchain has its own event model, finality rules and verification mechanisms. We design for that difference instead of hiding it.</p>
+        </div>
+        <div class="grid grid--2">
+          <article class="card">
+            <span class="tag tag--live">Available</span>
+            <h3>Governed off-chain execution</h3>
+            <p>Durable, deterministic workflows with identity, authorization, federation between institutions and cryptographic evidence — the Nitrotick Execution OS.</p>
+          </article>
+          <article class="card">
+            <span class="tag tag--planned">Per engagement</span>
+            <h3>Chain adapters</h3>
+            <p>Inbound event admission and outbound proof publication are built and validated for the specific network you use. We claim support for a network only after its adapter passes acceptance testing.</p>
+          </article>
+          <article class="card">
+            <span class="card-kicker">Finality is chain-specific</span>
+            <h3>No universal “wait N blocks”</h3>
+            <p>Finalized checkpoints, probabilistic confirmations and notary-based finality are different models. Each adapter applies the rules of its network before an event may trigger execution.</p>
+          </article>
+          <article class="card">
+            <span class="card-kicker">Anchoring is not verification</span>
+            <h3>Clear claims about what is proven</h3>
+            <p>Publishing a commitment on-chain gives a public, timestamped anchor. On-chain verification of the execution itself needs a defined protocol — and we state which one an integration provides.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= USE CASES ================= -->
+    <section class="section section--alt" aria-labelledby="uc-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Use cases</span>
+          <h2 id="uc-title">Where governed off-chain execution meets a chain</h2>
+        </div>
+        <div class="grid grid--2">
+          <article class="card">
+            <h3>Interbank settlement consortia</h3>
+            <p>Participating banks verify the business process off-chain; the settlement rail moves value only after the state is proven.</p>
+          </article>
+          <article class="card">
+            <h3>Tokenized real-world assets</h3>
+            <p>Issuance, transfer restrictions and compliance checks run as governed workflows; the token lifecycle on-chain follows proven decisions.</p>
+          </article>
+          <article class="card">
+            <h3>Supply chain and product passports</h3>
+            <p>Supplier approvals and product data stay private; a public commitment anchors each approved version of the <a href="../digital-product-passport/">Digital Product Passport</a>.</p>
+          </article>
+          <article class="card">
+            <h3>Public procurement and grants</h3>
+            <p>Every step runs under the approved procedure version with institutional sign-off; a public anchor lets anyone check that the record was not rewritten.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow">FAQ</span>
+          <h2 id="faq-title">Off-Chain Execution &amp; Oracle — frequently asked questions</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Is Nitrotick a blockchain oracle?</summary>
+            <div><p>It can play the oracle role, but it is more than a data feed. A typical oracle delivers an external value to a smart contract. Nitrotick executes the governed business process off-chain, under identified institutional authority, and delivers the result together with cryptographic evidence of how it was produced.</p></div>
+          </details>
+          <details>
+            <summary>Does any confidential data go on-chain?</summary>
+            <div><p>No. Business logic, documents and personal data stay in the participants' own Nitrotick nodes. Only a cryptographic commitment to the proven result is published to the blockchain or DLT network.</p></div>
+          </details>
+          <details>
+            <summary>Which blockchains are supported?</summary>
+            <div><p>The architecture is chain-agnostic, but every network has its own event model, finality rules and verification mechanisms. Nitrotick therefore connects through a chain-specific adapter, which is built and validated for the network you use as part of the engagement. We do not claim support for a network until its adapter has passed acceptance testing.</p></div>
+          </details>
+          <details>
+            <summary>Does Nitrotick depend on a blockchain?</summary>
+            <div><p>No. Nitrotick is blockchain-independent infrastructure for governed execution. Blockchain integration is an optional layer at the edge; finality, reorganizations and transaction formats are handled in the adapters, not in the Nitrotick core.</p></div>
+          </details>
+          <details>
+            <summary>Does anchoring a hash on-chain mean the smart contract verified the execution?</summary>
+            <div><p>No. Anchoring records a public, timestamped commitment. On-chain verification of the execution itself requires a defined verification protocol for that network. We state explicitly which of the two a given integration provides.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="cta">
+          <span class="pill"><span class="dot" aria-hidden="true"></span>Enterprise pilot</span>
+          <h2 id="contact-title" class="mt-lg">Give your blockchain a verifiable execution layer</h2>
+          <p class="lead">Start with one network and one governed workflow. Message the founder on LinkedIn with the chain you use and the process you need to execute off-chain.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="https://www.linkedin.com/in/aleksandar-m-tasevski/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+              Message on LinkedIn
+            </a>
+            <a class="btn btn--ghost" href="../blockchain-alternative/">Blockchain alternative</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="../" aria-label="Nitrotick home">
+            <img src="../assets/img/logo-mark.svg" alt="" width="40" height="40">
+            <span>Nitrotick</span>
+          </a>
+          <p class="footer-tagline">Federation-Enabled Execution OS. <strong>Trust in Execution.</strong></p>
+        </div>
+        <div>
+          <p class="footer-heading">Platform</p>
+          <ul>
+            <li><a href="../execution-os/">Execution OS</a></li>
+            <li><a href="../#platform">Core platform</a></li>
+            <li><a href="../#trust-tiers">Trust tiers</a></li>
+            <li><a href="../#faq">FAQ</a></li>
+            <li><a href="../blockchain-alternative/">Blockchain alternative</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Solutions</p>
+          <ul>
+            <li><a href="../federation/">Nitrotick Federation</a></li>
+            <li><a href="../execution-shield/">Nitrotick Execution Shield</a></li>
+            <li><a href="../ip-evidence-verification/">IP Evidence &amp; Verification</a></li>
+            <li><a href="./" aria-current="page">Verifiable Off-Chain Execution &amp; Oracle</a></li>
+            <li><a href="../qa-governance-traceability/">QA Governance &amp; Product Traceability</a></li>
+            <li><a href="../digital-product-passport/">Digital Product Passport</a></li>
+            <li><a href="../ai-governance/">AI Governance</a></li>
+            <li><a href="../compliance/">Compliance &amp; regulations</a></li>
+            <li><a href="../use-cases/">Use cases</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Connect</p>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/aleksandar-m-tasevski/" target="_blank" rel="noopener">Founder on LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/company/nitrotick/" target="_blank" rel="noopener">Nitrotick on LinkedIn</a></li>
+            <li><a href="#contact">Request a demo</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Nitrotick. All rights reserved.</span>
+        <span>Skopje, North Macedonia · SaaS · Private Cloud · On-Premise</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

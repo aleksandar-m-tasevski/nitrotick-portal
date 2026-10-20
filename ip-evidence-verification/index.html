@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>IP Evidence &amp; Verification for Code, CAD &amp; AI | Nitrotick</title>
+  <meta name="description" content="Build verifiable evidence of how your IP evolved: register source code, CAD designs and AI models, govern every version and verify the evidence.">
+  <meta name="keywords" content="intellectual property evidence, IP provenance, prove intellectual property, source code provenance, CAD version history, AI model provenance, cryptographic proof, IP verification, version lineage, technical due diligence, Nitrotick IP Evidence">
+  <meta name="author" content="Aleksandar M. Tasevski">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#070b14">
+  <meta name="color-scheme" content="dark">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="canonical" href="https://nitrotick.com/ip-evidence-verification/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nitrotick">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://nitrotick.com/ip-evidence-verification/">
+  <meta property="og:title" content="Prove the History Behind Your Intellectual Property — Nitrotick IP Evidence">
+  <meta property="og:description" content="Register high-value digital assets, govern changes, preserve version lineage and verify the cryptographic evidence behind every committed version.">
+  <meta property="og:image" content="https://nitrotick.com/assets/img/og/ip-evidence.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Nitrotick IP Evidence &amp; Verification — prove the history behind your intellectual property.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Prove the History Behind Your Intellectual Property — Nitrotick IP Evidence">
+  <meta name="twitter:description" content="Verifiable provenance for source code, CAD designs, AI models and technical documentation.">
+  <meta name="twitter:image" content="https://nitrotick.com/assets/img/og/ip-evidence.png">
+  <meta name="twitter:image:alt" content="Nitrotick IP Evidence &amp; Verification — prove the history behind your intellectual property.">
+
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="stylesheet" href="../css/styles.css?v=20261019g">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://nitrotick.com/#organization",
+        "name": "Nitrotick",
+        "url": "https://nitrotick.com/",
+        "logo": "https://nitrotick.com/assets/img/logo-512.png",
+        "description": "Verifiable execution infrastructure for enterprise AI, banks, fintech and regulated systems.",
+        "founder": { "@type": "Person", "@id": "https://nitrotick.com/#founder", "name": "Aleksandar M. Tasevski", "jobTitle": "Founder & Principal Architect", "sameAs": ["https://www.linkedin.com/in/aleksandar-m-tasevski/"] },
+        "sameAs": ["https://www.linkedin.com/company/nitrotick/"]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://nitrotick.com/ip-evidence-verification/#webpage",
+        "url": "https://nitrotick.com/ip-evidence-verification/",
+        "name": "IP Evidence & Verification — Prove Your Intellectual Property",
+        "description": "Build verifiable evidence of how your IP evolved: register source code, CAD designs and AI models, govern every version and verify the evidence.",
+        "isPartOf": { "@id": "https://nitrotick.com/#website" },
+        "about": { "@id": "https://nitrotick.com/ip-evidence-verification/#service" },
+        "breadcrumb": { "@id": "https://nitrotick.com/ip-evidence-verification/#breadcrumb" },
+        "primaryImageOfPage": "https://nitrotick.com/assets/img/og/ip-evidence.png",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://nitrotick.com/ip-evidence-verification/#service",
+        "name": "Nitrotick IP Evidence & Verification",
+        "alternateName": "Nitrotick IP Evidence",
+        "serviceType": "Intellectual property evidence and verification",
+        "slogan": "Prove the History Behind Your Intellectual Property.",
+        "provider": { "@id": "https://nitrotick.com/#organization" },
+        "areaServed": "Worldwide",
+        "audience": { "@type": "BusinessAudience", "audienceType": "Industrial R&D centers, CAD and engineering organizations, software and AI companies, industrial product developers" },
+        "description": "Enterprise B2B service that registers high-value digital artifacts, governs their versions under enterprise approval policies, preserves version lineage and issues cryptographic Nitrotick Proofs that can be verified and reconstructed later."
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://nitrotick.com/ip-evidence-verification/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is Nitrotick IP Evidence a patent registration service?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Nitrotick creates and verifies technical evidence about what was registered, which version was approved and how it evolved. It does not register IP rights, and it does not determine ownership, authorship, patentability or legal admissibility." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Nitrotick store my original files?",
+            "acceptedAnswer": { "@type": "Answer", "text": "That depends on the contracted deployment. Client-owned storage is a supported design target: your artifacts can stay in your own storage while Nitrotick records their content digests, approved metadata and proofs. The exact custody model is defined in your contract." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can the evidence be verified without Nitrotick online?",
+            "acceptedAnswer": { "@type": "Answer", "text": "A portable evidence bundle and a separately deployable, offline-capable verifier are on the product roadmap. Until they pass their acceptance tests, verification and reconstruction run in the Nitrotick platform." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is blockchain required?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Nitrotick Proofs do not depend on a blockchain. Public-chain anchoring is an optional, planned extension for organizations that want an additional public commitment." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does AI decide what becomes evidence?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. AI-assisted metadata extraction is optional and never authoritative. Only attributes approved by an authorized person under your enterprise policy are committed to the evidence." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is a qualified electronic timestamp included?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Qualified electronic timestamping (eIDAS QeTS) is a planned, optional integration. It will be offered only after the provider integration and its validation are complete, and every proof will clearly state whether an external timestamp is present." }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://nitrotick.com/ip-evidence-verification/#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nitrotick.com/" },
+          { "@type": "ListItem", "position": 2, "name": "IP Evidence & Verification", "item": "https://nitrotick.com/ip-evidence-verification/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Primary">
+      <a class="brand" href="../" aria-label="Nitrotick home">
+        <img src="../assets/img/logo-mark.svg" alt="" width="40" height="40">
+        <span>Nitrotick</span>
+      </a>
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu">
+      <label class="nav-toggle-label" for="nav-toggle" aria-hidden="true"><span></span></label>
+      <ul class="nav-menu">
+        <li><a href="../execution-os/">Execution OS</a></li>
+        <li class="nav-dd">
+          <a class="nav-dd-link is-current" href="../#products" aria-haspopup="true">Products</a>
+          <ul class="nav-sub">
+            <li class="nav-sub-label">Products</li>
+            <li><a href="../federation/"><strong>Nitrotick Federation</strong><span>Governed execution across independent organizations</span></a></li>
+            <li><a href="./" aria-current="page"><strong>IP Evidence &amp; Verification</strong><span>Verifiable evidence of IP creation and version history</span></a></li>
+            <li><a href="../verifiable-off-chain-execution/"><strong>Verifiable Off-Chain Execution &amp; Oracle</strong><span>Governed execution for blockchain and DLT</span></a></li>
+            <li><a href="../qa-governance-traceability/"><strong>QA Governance &amp; Product Traceability</strong><span>QA workflows, batch recall and GS1 Digital Link</span></a></li>
+            <li><a href="../digital-product-passport/"><strong>Digital Product Passport</strong><span>Product identity, versioning and DPP</span></a></li>
+            <li><a href="../ai-governance/"><strong>AI Governance</strong><span>Governed AI agent actions with verifiable evidence</span></a></li>
+            <li class="nav-sub-label">Solutions</li>
+            <li><a href="../execution-shield/"><strong>Nitrotick Execution Shield</strong><span>Execution security within and across institutions</span></a></li>
+          </ul>
+        </li>
+        <li><a href="../blockchain-alternative/">Blockchain Alternative</a></li>
+        <li><a href="../verifiable-off-chain-execution/">Verifiable Off-Chain Execution &amp; Oracle</a></li>
+        <li><a href="../compliance/">Compliance</a></li>
+        <li><a href="../use-cases/">Use Cases</a></li>
+        <li><a class="btn btn--primary" href="#contact">Request a demo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero hero--page" aria-labelledby="hero-title">
+      <div class="container split">
+        <div>
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+              <li><a href="../">Home</a></li>
+              <li aria-current="page">IP Evidence &amp; Verification</li>
+            </ol>
+          </nav>
+          <span class="pill"><span class="dot" aria-hidden="true"></span>Nitrotick · IP Evidence &amp; Verification</span>
+          <h1 id="hero-title">Prove the history behind your <span class="accent">intellectual property.</span></h1>
+          <p class="lead">Register high-value digital assets, govern changes, preserve version lineage and verify the cryptographic evidence behind every committed version — for source code, CAD designs, AI models and technical documentation.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="#contact">Request an enterprise evaluation</a>
+            <a class="btn btn--ghost" href="#how-it-works">Explore the verification process</a>
+          </div>
+          <ul class="hero-meta">
+            <li>Verifiable provenance</li>
+            <li>Version lineage</li>
+            <li>Governed approvals</li>
+            <li>No blockchain required</li>
+          </ul>
+        </div>
+
+        <figure class="diagram">
+          <svg viewBox="0 0 560 440" role="img" aria-labelledby="ipv-title ipv-desc">
+            <title id="ipv-title">Three committed versions of an intellectual property asset</title>
+            <desc id="ipv-desc">An engineering design moves through three linked versions. Each version records the content digest of its exact bytes, the approver and a state commitment, and each one points to the version before it. The latest version carries a Nitrotick Proof that can be verified and reconstructed.</desc>
+            <defs>
+              <marker id="ipv-a" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#2DD4BF"/></marker>
+            </defs>
+            <g class="svg-text">
+              <text x="280" y="30" text-anchor="middle" fill="#8193A8" font-size="11" font-weight="700" letter-spacing="1.6">ASSET · TURBINE-HOUSING DESIGN PACKAGE</text>
+
+              <g>
+                <rect x="20" y="56" width="520" height="92" rx="14" fill="#0D1624" stroke="#27405C"/>
+                <text x="42" y="88" fill="#fff" font-size="17" font-weight="800">v1 · Registered</text>
+                <text x="42" y="112" fill="#8193A8" font-size="12">Content fingerprint recorded</text>
+                <text x="42" y="132" fill="#8193A8" font-size="12">Approved by R&amp;D lead</text>
+                <rect x="386" y="84" width="132" height="34" rx="17" fill="#0B2A25" stroke="#2DD4BF"/>
+                <text x="452" y="106" text-anchor="middle" fill="#5EEAD4" font-size="12" font-weight="700">state committed</text>
+              </g>
+              <path d="M280 150V184" stroke="#2DD4BF" stroke-width="2" stroke-dasharray="4 5" marker-end="url(#ipv-a)"/>
+              <g>
+                <rect x="20" y="190" width="520" height="92" rx="14" fill="#0D1624" stroke="#27405C"/>
+                <text x="42" y="222" fill="#fff" font-size="17" font-weight="800">v2 · Approved change</text>
+                <text x="42" y="246" fill="#8193A8" font-size="12">Linked to v1</text>
+                <text x="42" y="266" fill="#8193A8" font-size="12">Approved by engineering board</text>
+                <rect x="386" y="218" width="132" height="34" rx="17" fill="#0B2A25" stroke="#2DD4BF"/>
+                <text x="452" y="240" text-anchor="middle" fill="#5EEAD4" font-size="12" font-weight="700">state committed</text>
+              </g>
+              <path d="M280 284V318" stroke="#2DD4BF" stroke-width="2" stroke-dasharray="4 5" marker-end="url(#ipv-a)"/>
+              <g>
+                <rect x="20" y="324" width="520" height="96" rx="14" fill="#0B2027" stroke="#22D3EE" stroke-width="2"/>
+                <text x="42" y="356" fill="#fff" font-size="17" font-weight="800">v3 · Proof issued</text>
+                <text x="42" y="380" fill="#8193A8" font-size="12">Linked to v2</text>
+                <text x="42" y="400" fill="#8193A8" font-size="12">Proof verified · state reconstructed</text>
+                <circle cx="490" cy="372" r="22" fill="#137C6D" stroke="#5EEAD4" stroke-width="2"/>
+                <path d="M480 372l7 7 13-14" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </g>
+          </svg>
+          <figcaption>Synthetic example. Every version records the fingerprint of its content, its approver and a link to the version before it.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= PROBLEM ================= -->
+    <section class="section section--alt" aria-labelledby="problem-title">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">The problem</span>
+          <h2 id="problem-title">A file proves little about its history</h2>
+          <p class="lead">When designs, algorithms, research records and technical documents change hands, organizations need more than a file date or an audit-log entry. They need verifiable evidence of what was registered, which version was approved and what can be independently checked later.</p>
+          <p>Imagine an algorithm developed in 2026. In 2031 an investor, acquirer, auditor or legal expert asks about one historical version. The original team may have moved on, the repository may have been migrated and the original infrastructure may no longer run. The evidence has to stand on its own.</p>
+        </div>
+        <div class="card card--bad">
+          <h3>Why the usual evidence falls short</h3>
+          <ul class="cross-list">
+            <li><strong>Git history alone</strong>Identifies content inside Git's own data model. It is not independent attestation of when an artifact existed or who approved it.</li>
+            <li><strong>File dates and ZIP archives</strong>Easy to change, and they say nothing about the bytes that came before.</li>
+            <li><strong>Audit logs</strong>Owned and editable by the same operator whose records are in question.</li>
+            <li><strong>A single file hash</strong>Proves that bytes match — but not how versions relate, who approved them or what state they belong to.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HOW IT WORKS ================= -->
+    <section class="section" id="how-it-works" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow">How it works</span>
+          <h2 id="how-title">Register. Govern. Commit. Verify.</h2>
+          <p class="lead">Four steps turn a valuable artifact into a verifiable history — built on the same durable execution and proof foundation that runs every Nitrotick workflow.</p>
+        </div>
+        <ol class="timeline" style="--steps: 4">
+          <li>
+            <span class="tl-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M12 12v6M9 15l3-3 3 3"/></svg></span>
+            <strong>1 · Register</strong>Submit an artifact or a reference to client-owned storage. Nitrotick records a cryptographic fingerprint of its exact bytes and the proposed metadata.
+          </li>
+          <li>
+            <span class="tl-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+            <strong>2 · Govern</strong>Enterprise identity, review and approval policies decide which version changes are accepted — with explicit human approval before anything is committed.
+          </li>
+          <li>
+            <span class="tl-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></span>
+            <strong>3 · Commit</strong>The approved state is recorded as a new version linked to its predecessor, and a cryptographically signed Nitrotick Proof is issued.
+          </li>
+          <li>
+            <span class="tl-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.3-4.3"/><path d="M8.5 11l1.8 1.8 3.2-3.4"/></svg></span>
+            <strong>4 · Verify</strong>Validate the proof and its commitments, and reconstruct the committed state of any historical version when the inputs are available.
+          </li>
+        </ol>
+
+        <div class="grid grid--2 mt-lg">
+          <article class="card">
+            <span class="card-kicker">Content identity</span>
+            <h3>What the bytes were</h3>
+            <p>A cryptographic fingerprint of the exact uploaded bytes identifies each artifact. Change a single byte and the artifact no longer matches its registered fingerprint.</p>
+          </article>
+          <article class="card">
+            <span class="card-kicker">State commitment</span>
+            <h3>What was approved, and in which order</h3>
+            <p>Each version commits its approved attributes and related document digests, and links to the version before it. Verification can recompute that commitment from the retained inputs and compare it with the original.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CAPABILITIES ================= -->
+    <section class="section section--alt" id="capabilities" aria-labelledby="cap-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Capabilities</span>
+          <h2 id="cap-title">Verifiable provenance for high-value intellectual property</h2>
+          <p class="lead">Every capability is labelled with its current status, so you know exactly what is available today and what is on the roadmap.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card">
+            <span class="tag tag--live">Available</span>
+            <h3>Cryptographic proofs</h3>
+            <p>Every committed version receives a signed Nitrotick Proof that binds its content digests, approved attributes and state commitment.</p>
+          </article>
+          <article class="card">
+            <span class="tag tag--live">Available</span>
+            <h3>Version lineage</h3>
+            <p>Each new version points to exactly one predecessor, forming a linear, gap-free history. A forged parent link fails verification.</p>
+          </article>
+          <article class="card">
+            <span class="tag tag--live">Available</span>
+            <h3>Human approval</h3>
+            <p>Nothing becomes evidence until an authorized reviewer approves it. Reviewer, approver and uploader are recorded as distinct roles.</p>
+          </article>
+          <article class="card">
+            <span class="tag tag--live">Available</span>
+            <h3>Historical state reconstruction</h3>
+            <p>Recompute the committed state of an earlier version and compare it with the recorded commitment — instead of trusting a database administrator.</p>
+          </article>
+          <article class="card">
+            <span class="tag tag--live">Available</span>
+            <h3>Client-controlled storage &amp; retention</h3>
+            <p>Pluggable storage backends and governed retention policies, so artifacts can stay in infrastructure you control under your retention rules.</p>
+          </article>
+          <article class="card">
+            <span class="tag tag--planned">Roadmap</span>
+            <h3>Portable evidence &amp; independent verifier</h3>
+            <p>A versioned evidence bundle and a separately deployable verifier that checks proofs offline — without access to the original Nitrotick runtime.</p>
+          </article>
+          <article class="card">
+            <span class="tag tag--planned">Roadmap</span>
+            <h3>Qualified electronic timestamps</h3>
+            <p>Optional eIDAS qualified timestamping (QeTS) of finalized proofs, validated against the EU Trusted Lists and reported separately from the proof itself.</p>
+          </article>
+          <article class="card">
+            <span class="tag tag--planned">Roadmap</span>
+            <h3>Multi-authority approval</h3>
+            <p>n-of-m approval for designated high-value transitions, enforced by backend policy and recorded in the evidence.</p>
+          </article>
+          <article class="card">
+            <span class="tag tag--planned">Roadmap</span>
+            <h3>Optional public-chain anchoring</h3>
+            <p>An additional public commitment of batched proofs for organizations that want one. Never a prerequisite for a Nitrotick Proof.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ASSET TYPES / USE CASES ================= -->
+    <section class="section" id="use-cases" aria-labelledby="uc-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Use cases</span>
+          <h2 id="uc-title">Built for the artifacts your business depends on</h2>
+          <p class="lead">Every artifact is a byte stream plus approved metadata, so one evidence model covers source code, CAD, AI models and documents alike.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3v6l-5 9a2 2 0 0 0 1.7 3h10.6a2 2 0 0 0 1.7-3l-5-9V3"/><path d="M8 3h8M7.5 15h9"/></svg></div>
+            <h3>Industrial R&amp;D</h3>
+            <p>Research artifacts, experimental results and technical specifications with a provable record of how each one evolved.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg></div>
+            <h3>CAD &amp; engineering design</h3>
+            <p>Design baselines, drawings and engineering changes, approved by the right principals at each revision.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8l-5 4 5 4M16 8l5 4-5 4M14 5l-4 14"/></svg></div>
+            <h3>Software &amp; algorithms</h3>
+            <p>A structured evidence history of proprietary releases, from source-code archives to protocol specifications.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="7" width="14" height="12" rx="3"/><path d="M12 3v4M9 12h.01M15 12h.01M9.5 16h5"/></svg></div>
+            <h3>AI models</h3>
+            <p>Model weights, training configurations and algorithm implementations tied to the version that was actually approved.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg></div>
+            <h3>Technical documentation</h3>
+            <p>Controlled document versions, invention disclosures and approval histories that stay verifiable after migrations.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h6l2-3 2 3h6"/><path d="M7 8l-3 4 3 4M17 8l3 4-3 4"/></svg></div>
+            <h3>Contractual design handover</h3>
+            <p>Hand a design to a customer or partner with evidence of exactly which bytes and which approved version were delivered.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FIRST CLIENT ================= -->
+    <section class="section section--alt" id="first-client" aria-labelledby="first-title">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">Founder's story</span>
+          <h2 id="first-title">Our first client is Nitrotick itself</h2>
+          <p class="lead">Before asking enterprises to trust this model, we are applying it to our own most valuable asset: the Nitrotick source code, its release history and its architectural decisions.</p>
+          <p>That discipline keeps the product honest. It forces the hard questions: what happens if a historical artifact is missing? Can a verifier detect an inconsistent commitment? Can a previous version be reconstructed without relying on the current application database?</p>
+          <p class="note">The self-registration of Nitrotick's own releases is our first internal acceptance case. We will publish the full technical case study once the end-to-end procedure, including independent verification, is complete.</p>
+        </div>
+        <blockquote class="statement">
+          Intellectual property deserves more than storage. It deserves evidence that can withstand independent examination.
+          <small>— Aleksandar M. Tasevski, Founder &amp; Principal Architect</small>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ================= TRUST BOUNDARY ================= -->
+    <section class="section" id="trust" aria-labelledby="trust-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Trust statement</span>
+          <h2 id="trust-title">Exactly what is proven — and what is not</h2>
+          <p class="lead">Nitrotick verifies evidence of registered data and recorded decisions. It does not itself determine legal ownership, authorship, patentability or legal admissibility.</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <caption class="visually-hidden">Scope of Nitrotick IP evidence</caption>
+            <thead>
+              <tr><th scope="col">Evidence</th><th scope="col">What it establishes</th><th scope="col">What it does not establish</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Content digest</td><td class="t-good">The supplied bytes match the registered artifact</td><td>Who created the artifact</td></tr>
+              <tr><td>Version lineage</td><td class="t-good">Which approved version preceded which</td><td>That no other copies exist elsewhere</td></tr>
+              <tr><td>Approval record</td><td class="t-good">Which identity approved the change, under which policy</td><td>Legal title or inventorship</td></tr>
+              <tr><td>Nitrotick Proof</td><td class="t-good">The committed state has not been altered since it was proven</td><td>An external, qualified time attestation (planned add-on)</td></tr>
+              <tr><td>State reconstruction</td><td class="t-good">The retained evidence is consistent with the original commitment</td><td>The original file, if it was lawfully deleted under your retention policy</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note mt-lg">Ownership and authorship claims are recorded as claims, together with the claimant and the basis of the claim. Legal ownership depends on contracts, employment arrangements, assignments and applicable IP law.</p>
+      </div>
+    </section>
+
+    <!-- ================= ENTERPRISE DEPLOYMENT ================= -->
+    <section class="section section--alt" id="deployment" aria-labelledby="deploy-title">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">Enterprise deployment</span>
+          <h2 id="deploy-title">Your IP stays under your control</h2>
+          <p class="lead">IP Evidence &amp; Verification is an enterprise B2B product, licensed annually and deployed where your contract requires.</p>
+          <ul class="check-list">
+            <li><strong>Tenant isolation</strong>Every asset, proof and export is scoped to your organization.</li>
+            <li><strong>Client-owned storage</strong>Artifacts can remain in storage you own and operate; custody is defined in the contract.</li>
+            <li><strong>Your identity provider</strong>Approvals run through your existing enterprise identity and roles.</li>
+            <li><strong>Confidentiality first</strong>Proofs can be shared without disclosing the underlying source code or design files.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Deployment options</h3>
+          <p class="strip"><span>Private cloud</span><span>On-premise</span><span>SaaS</span></p>
+          <p class="center">Encryption, key custody and storage responsibilities are agreed per deployment before any confidential artifact is accepted.</p>
+          <p class="center"><a class="card-link" href="../execution-os/">Built on the Federation-Enabled Execution OS</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow">FAQ</span>
+          <h2 id="faq-title">IP Evidence &amp; Verification — frequently asked questions</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Is Nitrotick IP Evidence a patent registration service?</summary>
+            <div><p>No. Nitrotick creates and verifies technical evidence about what was registered, which version was approved and how it evolved. It does not register IP rights, and it does not determine ownership, authorship, patentability or legal admissibility.</p></div>
+          </details>
+          <details>
+            <summary>Does Nitrotick store my original files?</summary>
+            <div><p>That depends on the contracted deployment. Client-owned storage is a supported design target: your artifacts can stay in your own storage while Nitrotick records their content digests, approved metadata and proofs. The exact custody model is defined in your contract.</p></div>
+          </details>
+          <details>
+            <summary>Can the evidence be verified without Nitrotick online?</summary>
+            <div><p>A portable evidence bundle and a separately deployable, offline-capable verifier are on the product roadmap. Until they pass their acceptance tests, verification and reconstruction run in the Nitrotick platform.</p></div>
+          </details>
+          <details>
+            <summary>Is blockchain required?</summary>
+            <div><p>No. Nitrotick Proofs do not depend on a blockchain. Public-chain anchoring is an optional, planned extension for organizations that want an additional public commitment.</p></div>
+          </details>
+          <details>
+            <summary>Does AI decide what becomes evidence?</summary>
+            <div><p>No. AI-assisted metadata extraction is optional and never authoritative. Only attributes approved by an authorized person under your enterprise policy are committed to the evidence.</p></div>
+          </details>
+          <details>
+            <summary>Is a qualified electronic timestamp included?</summary>
+            <div><p>Qualified electronic timestamping (eIDAS QeTS) is a planned, optional integration. It will be offered only after the provider integration and its validation are complete, and every proof will clearly state whether an external timestamp is present.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="cta">
+          <span class="pill"><span class="dot" aria-hidden="true"></span>Enterprise evaluation</span>
+          <h2 id="contact-title" class="mt-lg">Protect the history of what you create</h2>
+          <p class="lead">Start with one asset and three versions. Message the founder on LinkedIn with your industry, asset types and deployment requirements — please do not send confidential IP in the first message.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="https://www.linkedin.com/in/aleksandar-m-tasevski/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+              Message on LinkedIn
+            </a>
+            <a class="btn btn--ghost" href="../">Back to overview</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="../" aria-label="Nitrotick home">
+            <img src="../assets/img/logo-mark.svg" alt="" width="40" height="40">
+            <span>Nitrotick</span>
+          </a>
+          <p class="footer-tagline">Federation-Enabled Execution OS. <strong>Trust in Execution.</strong></p>
+        </div>
+        <div>
+          <p class="footer-heading">Platform</p>
+          <ul>
+            <li><a href="../execution-os/">Execution OS</a></li>
+            <li><a href="../#platform">Core platform</a></li>
+            <li><a href="../#trust-tiers">Trust tiers</a></li>
+            <li><a href="../#faq">FAQ</a></li>
+            <li><a href="../blockchain-alternative/">Blockchain alternative</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Solutions</p>
+          <ul>
+            <li><a href="../federation/">Nitrotick Federation</a></li>
+            <li><a href="../execution-shield/">Nitrotick Execution Shield</a></li>
+            <li><a href="./" aria-current="page">IP Evidence &amp; Verification</a></li>
+            <li><a href="../verifiable-off-chain-execution/">Verifiable Off-Chain Execution &amp; Oracle</a></li>
+            <li><a href="../qa-governance-traceability/">QA Governance &amp; Product Traceability</a></li>
+            <li><a href="../digital-product-passport/">Digital Product Passport</a></li>
+            <li><a href="../ai-governance/">AI Governance</a></li>
+            <li><a href="../compliance/">Compliance &amp; regulations</a></li>
+            <li><a href="../use-cases/">Use cases</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Connect</p>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/aleksandar-m-tasevski/" target="_blank" rel="noopener">Founder on LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/company/nitrotick/" target="_blank" rel="noopener">Nitrotick on LinkedIn</a></li>
+            <li><a href="#contact">Request a demo</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Nitrotick. All rights reserved.</span>
+        <span>Skopje, North Macedonia · SaaS · Private Cloud · On-Premise</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Execution Shield — Cross-Institution Security | Nitrotick</title>
+  <meta name="description" content="Protect critical operations, not just access — inside your organization and across institutions, with independent authority and evidence on both sides.">
+  <meta name="author" content="Aleksandar M. Tasevski">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#070b14">
+  <meta name="color-scheme" content="dark">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="canonical" href="https://nitrotick.com/execution-shield/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nitrotick">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://nitrotick.com/execution-shield/">
+  <meta property="og:title" content="Nitrotick Execution Shield — Protect Critical Operations. Not Just Access.">
+  <meta property="og:description" content="Independently governed operations across institutional boundaries — each organization keeps control over its own policies, decisions and evidence.">
+  <meta property="og:image" content="https://nitrotick.com/assets/img/og/execution-shield.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Nitrotick Execution Shield — protect critical operations, not just access.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nitrotick Execution Shield — Protect Critical Operations. Not Just Access.">
+  <meta name="twitter:description" content="Govern which critical business operations may execute — with independent authority and verifiable evidence.">
+  <meta name="twitter:image" content="https://nitrotick.com/assets/img/og/execution-shield.png">
+  <meta name="twitter:image:alt" content="Nitrotick Execution Shield — protect critical operations, not just access.">
+
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="stylesheet" href="../css/styles.css?v=20261019g">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://nitrotick.com/#organization",
+        "name": "Nitrotick",
+        "url": "https://nitrotick.com/",
+        "logo": "https://nitrotick.com/assets/img/logo-512.png",
+        "description": "Verifiable execution infrastructure for enterprise AI, banks, fintech and regulated systems.",
+        "founder": { "@type": "Person", "@id": "https://nitrotick.com/#founder", "name": "Aleksandar M. Tasevski", "jobTitle": "Founder & Principal Architect", "sameAs": ["https://www.linkedin.com/in/aleksandar-m-tasevski/"] },
+        "sameAs": ["https://www.linkedin.com/company/nitrotick/"]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://nitrotick.com/execution-shield/#webpage",
+        "url": "https://nitrotick.com/execution-shield/",
+        "name": "Nitrotick Execution Shield — Protect Critical Operations, Not Just Access",
+        "description": "Protect critical operations, not just access — inside your organization and across institutions, with independent authority and evidence on both sides.",
+        "isPartOf": { "@id": "https://nitrotick.com/#website" },
+        "about": { "@id": "https://nitrotick.com/execution-shield/#service" },
+        "breadcrumb": { "@id": "https://nitrotick.com/execution-shield/#breadcrumb" },
+        "primaryImageOfPage": "https://nitrotick.com/assets/img/og/execution-shield.png",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://nitrotick.com/execution-shield/#service",
+        "name": "Nitrotick Execution Shield",
+        "alternateName": "Nitrotick Execution Shield, powered by Nitrotick Federation",
+        "serviceType": "Enterprise execution governance for critical business operations",
+        "slogan": "Protect Critical Operations. Not Just Access.",
+        "provider": { "@id": "https://nitrotick.com/#organization" },
+        "areaServed": "Worldwide",
+        "audience": { "@type": "BusinessAudience", "audienceType": "Banks, insurers, manufacturers, public institutions and enterprises with high-value business operations" },
+        "isRelatedTo": { "@id": "https://nitrotick.com/execution-os/#software" },
+        "description": "A solution configuration of the Nitrotick Federated Runtime that places an enforced execution boundary around selected critical business operations, inside one organization and across independently governed institutions: each participating organization retains control over its own authorization policies, execution decisions and evidence, with independent authority where required."
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://nitrotick.com/execution-shield/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does Execution Shield work between institutions?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Nitrotick enables independently governed operations across institutional boundaries. Each participating organization retains control over its own authorization policies, execution decisions and evidence. No shared central authority is required for institutional execution decisions." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Nitrotick Execution Shield a firewall or cybersecurity product?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. It does not replace your identity provider, firewall, endpoint security, SIEM or API gateway. Those controls decide who can access your systems. Execution Shield governs whether a selected critical business operation is authorized to execute." }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if an attacker steals valid credentials?",
+            "acceptedAnswer": { "@type": "Answer", "text": "A stolen identity is still limited to the scope it was granted. For operations configured and validated to require independent approval, one compromised identity is not enough to execute them — provided the independent approvers are not compromised as well." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do we need to replace our ERP or core banking system?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Execution Shield protects selected operations of existing systems through controlled integration. The protection applies to operations that pass through the enforced execution boundary, so any direct path to the same operation must be closed as part of the integration." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Execution Shield prevent every attack?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Its value is limiting what a compromised or unauthorized participant can do to critical business state, and retaining verifiable evidence of protected execution decisions. Guarantees depend on the integrated operations, the deployment configuration and completed acceptance testing." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it only for organizations that work with partners?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. A single organization can protect its own critical operations. When operations cross into partners, the same model extends to independently governed organizations through Nitrotick Federation." }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://nitrotick.com/execution-shield/#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nitrotick.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Execution Shield", "item": "https://nitrotick.com/execution-shield/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Primary">
+      <a class="brand" href="../" aria-label="Nitrotick home">
+        <img src="../assets/img/logo-mark.svg" alt="" width="40" height="40">
+        <span>Nitrotick</span>
+      </a>
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu">
+      <label class="nav-toggle-label" for="nav-toggle" aria-hidden="true"><span></span></label>
+      <ul class="nav-menu">
+        <li><a href="../execution-os/">Execution OS</a></li>
+        <li class="nav-dd">
+          <a class="nav-dd-link is-current" href="../#products" aria-haspopup="true">Products</a>
+          <ul class="nav-sub">
+            <li class="nav-sub-label">Products</li>
+            <li><a href="../federation/"><strong>Nitrotick Federation</strong><span>Governed execution across independent organizations</span></a></li>
+            <li><a href="../ip-evidence-verification/"><strong>IP Evidence &amp; Verification</strong><span>Verifiable evidence of IP creation and version history</span></a></li>
+            <li><a href="../verifiable-off-chain-execution/"><strong>Verifiable Off-Chain Execution &amp; Oracle</strong><span>Governed execution for blockchain and DLT</span></a></li>
+            <li><a href="../qa-governance-traceability/"><strong>QA Governance &amp; Product Traceability</strong><span>QA workflows, batch recall and GS1 Digital Link</span></a></li>
+            <li><a href="../digital-product-passport/"><strong>Digital Product Passport</strong><span>Product identity, versioning and DPP</span></a></li>
+            <li><a href="../ai-governance/"><strong>AI Governance</strong><span>Governed AI agent actions with verifiable evidence</span></a></li>
+            <li class="nav-sub-label">Solutions</li>
+            <li><a href="./" aria-current="page"><strong>Nitrotick Execution Shield</strong><span>Execution security within and across institutions</span></a></li>
+          </ul>
+        </li>
+        <li><a href="../blockchain-alternative/">Blockchain Alternative</a></li>
+        <li><a href="../verifiable-off-chain-execution/">Verifiable Off-Chain Execution &amp; Oracle</a></li>
+        <li><a href="../compliance/">Compliance</a></li>
+        <li><a href="../use-cases/">Use Cases</a></li>
+        <li><a class="btn btn--primary" href="#contact">Request a demo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero hero--page" aria-labelledby="hero-title">
+      <div class="container split">
+        <div>
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+              <li><a href="../">Home</a></li>
+              <li aria-current="page">Execution Shield</li>
+            </ol>
+          </nav>
+          <span class="pill"><span class="dot" aria-hidden="true"></span>Execution Shield · Powered by Federation</span>
+          <h1 id="hero-title">Protect critical operations. <span class="accent">Not just access.</span></h1>
+          <p class="lead">Your systems may be secure. But who controls what they — and your partners — are allowed to execute? Execution Shield puts an enforced execution boundary around your highest-value business operations, <strong>inside your organization and across institutional boundaries</strong>, without replacing your ERP, banking platform or manufacturing systems.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="#contact">Request an executive briefing</a>
+            <a class="btn btn--ghost" href="#how">See how it works</a>
+          </div>
+          <ul class="hero-meta">
+            <li>Cross-institution execution security</li>
+            <li>Independent authority</li>
+            <li>Evidence on both sides</li>
+          </ul>
+        </div>
+        <figure class="diagram" id="how">
+          <svg viewBox="0 0 560 360" role="img" aria-labelledby="xs-title xs-desc">
+            <title id="xs-title">Governed collaboration between independent institutions</title>
+            <desc id="xs-desc">Institution A and Institution B each keep independent control. Nitrotick Federation connects them for governed collaboration, with governed operations, verifiable evidence and institutional sovereignty.</desc>
+            <g class="svg-text" text-anchor="middle">
+              <g stroke="#2DD4BF" stroke-width="2.5" stroke-dasharray="7 6" fill="none"><path d="M168 150H206M354 150H392"/></g>
+              <rect x="10" y="70" width="158" height="160" rx="16" fill="#1A1A3A" stroke="#6366F1" stroke-width="1.5"/>
+              <path d="M89 104L117 115V139C117 159 105 172 89 178C73 172 61 159 61 139V115Z" fill="#0B2027" stroke="#2DD4BF" stroke-width="2.5"/>
+              <text x="89" y="205" fill="#fff" font-size="15" font-weight="800">Institution A</text>
+              <text x="89" y="222" fill="#A5B4FC" font-size="12">Independent control</text>
+              <circle cx="280" cy="150" r="74" fill="#137C6D" stroke="#5EEAD4" stroke-width="2"/>
+              <text x="280" y="145" fill="#fff" font-size="16" font-weight="800">Nitrotick</text>
+              <text x="280" y="165" fill="#fff" font-size="16" font-weight="800">Federation</text>
+              <text x="280" y="186" fill="#CCFBF1" font-size="11.5">Governed collaboration</text>
+              <rect x="392" y="70" width="158" height="160" rx="16" fill="#0B2A25" stroke="#2DD4BF" stroke-width="1.5"/>
+              <path d="M471 104L499 115V139C499 159 487 172 471 178C455 172 443 159 443 139V115Z" fill="#0B2027" stroke="#2DD4BF" stroke-width="2.5"/>
+              <text x="471" y="205" fill="#fff" font-size="15" font-weight="800">Institution B</text>
+              <text x="471" y="222" fill="#5EEAD4" font-size="12">Independent control</text>
+              <rect x="10" y="274" width="540" height="56" rx="14" fill="#0A111D" stroke="#27405C"/>
+              <text x="280" y="307" fill="#E6EDF5" font-size="13.5" font-weight="700">Governed operations · Verifiable evidence · Institutional sovereignty</text>
+            </g>
+          </svg>
+          <figcaption>Each participating organization keeps control over its own policies, decisions and evidence.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= PROBLEM ================= -->
+    <section class="section section--alt" aria-labelledby="problem-title">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">When authorized access is not enough</span>
+          <h2 id="problem-title">A valid login does not mean an operation should execute</h2>
+          <p class="lead">Authentication confirms identity. Permissions define access. But critical business operations often need something more: independent authority, governed execution and verifiable accountability.</p>
+          <blockquote class="statement">
+            Traditional security controls who can access your systems. Nitrotick governs which critical operations may actually execute.
+          </blockquote>
+        </div>
+        <div class="card card--bad">
+          <h3>Consider the consequences of</h3>
+          <ul class="cross-list">
+            <li><strong>An unauthorized supplier bank-account change</strong>Payments quietly redirected to an attacker.</li>
+            <li><strong>A high-value transfer without independent approval</strong>One identity is all it takes.</li>
+            <li><strong>A compromised service account</strong>Initiating sensitive operations at machine speed.</li>
+            <li><strong>An AI agent exceeding its delegated authority</strong>Acting on systems it was only meant to advise.</li>
+            <li><strong>A critical production change without governance</strong>Released before the required sign-off.</li>
+            <li><strong>A trusted partner acting outside its scope</strong>Using a legitimate connection for an unauthorized operation.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CROSS-INSTITUTION ================= -->
+    <section class="section" id="cross-institution" aria-labelledby="xi-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Cross-institution execution security</span>
+          <h2 id="xi-title">The shield doesn't stop at your perimeter</h2>
+          <p class="lead">Most security controls are designed around one organization's systems and identities. When critical operations cross into partners, a further question arises: who holds the authority to execute them — and who can prove it? Nitrotick enables independently governed operations across institutional boundaries. Each participating organization retains control over its own authorization policies, execution decisions and evidence.</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <caption class="visually-hidden">Primary focus of common security controls and of Nitrotick Execution Shield</caption>
+            <thead><tr><th scope="col">Control</th><th scope="col">Primary focus</th></tr></thead>
+            <tbody>
+              <tr><td>Firewall / WAF</td><td>Network and application traffic</td></tr>
+              <tr><td>IAM / SSO</td><td>Identities and sign-in</td></tr>
+              <tr><td>API gateways &amp; policy engines</td><td>API access and request policies</td></tr>
+              <tr><td>Nitrotick Execution Shield</td><td class="t-good">Authority over critical business-state changes — within and across institutions — with verifiable evidence</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note mt-lg">Execution Shield complements these controls; it does not replace them.</p>
+        <div class="grid grid--2 mt-lg">
+          <article class="card">
+            <h3>Independent institutional control</h3>
+            <p>Each participating organization retains control over its own authorization policies, execution decisions and evidence.</p>
+          </article>
+          <article class="card">
+            <h3>Sovereign refusal</h3>
+            <p>A federation partner can never force your institution to be more permissive than your own policy allows.</p>
+          </article>
+          <article class="card">
+            <h3>Partner suspension</h3>
+            <p>Partner access can be suspended under defined revocation policies, without shutting down healthy partners.</p>
+          </article>
+          <article class="card">
+            <h3>A consistent governance model</h3>
+            <p>The same governance model applies across deployment sizes — from one organization to a federation of institutions.</p>
+          </article>
+        </div>
+        <blockquote class="statement mt-lg">
+          This is where Nitrotick differs: independently governed execution across institutional boundaries — without a shared central authority or surrendered sovereignty.
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ================= INSIDE EACH INSTITUTION ================= -->
+    <section class="section section--alt" aria-labelledby="inside-title">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">Execution governance</span>
+          <h2 id="inside-title">Critical operations. Governed execution. Verifiable outcomes.</h2>
+          <p class="lead">Your critical business operations require more than authenticated access. Nitrotick brings governed authority, controlled execution and verifiable evidence to selected operations — whether initiated by employees, enterprise systems, AI agents or institutional partners.</p>
+          <p>Each organization retains control over its protected operations. Enforcement scope is defined through integration and validated before production deployment.</p>
+        </div>
+        <figure class="diagram">
+          <svg viewBox="0 0 560 450" role="img" aria-labelledby="ev-title ev-desc">
+            <title id="ev-title">Nitrotick Execution Shield: control the operation, prove the outcome</title>
+            <desc id="ev-desc">Critical business operations from enterprise systems and partners pass through three Nitrotick capabilities — governed authority over who may act, controlled execution of what may execute, and verifiable evidence of what can be proven — resulting in protected business operations with accountability across critical state changes.</desc>
+            <defs><marker id="ev-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#2DD4BF"/></marker></defs>
+            <g class="svg-text" text-anchor="middle">
+              <text x="280" y="26" fill="#8193A8" font-size="11.5" font-weight="700" letter-spacing="1.8">NITROTICK EXECUTION SHIELD</text>
+              <text x="280" y="54" fill="#fff" font-size="19" font-weight="800">Control the operation. Prove the outcome.</text>
+              <rect x="10" y="74" width="540" height="84" rx="14" fill="#111C2D" stroke="#27405C"/>
+              <g fill="none" stroke="#B4C2D3" stroke-width="1.8" stroke-linejoin="round"><path d="M270 106V88h12v18M282 94h8v12M266 106h28"/></g>
+              <text x="280" y="128" fill="#fff" font-size="15" font-weight="700">Enterprise systems &amp; partners</text>
+              <text x="280" y="147" fill="#8193A8" font-size="12.5">Critical business operations</text>
+              <path d="M280 160V190" stroke="#2DD4BF" stroke-width="2" marker-end="url(#ev-a)"/>
+              <rect x="10" y="196" width="172" height="112" rx="14" fill="#0B2A25" stroke="#2DD4BF" stroke-opacity=".8"/>
+              <path d="M96 214L110 220V231C110 240 104 246 96 249C88 246 82 240 82 231V220Z" fill="none" stroke="#5EEAD4" stroke-width="2"/>
+              <path d="M90 231l4 4 8-8" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <text x="96" y="274" fill="#fff" font-size="14" font-weight="700">Governed Authority</text>
+              <text x="96" y="294" fill="#5EEAD4" font-size="12">Who may act</text>
+              <rect x="194" y="196" width="172" height="112" rx="14" fill="#0B2027" stroke="#22D3EE" stroke-opacity=".8"/>
+              <g fill="none" stroke="#67E8F9" stroke-width="2" stroke-linejoin="round"><rect x="266" y="214" width="12" height="12" rx="2.5"/><rect x="282" y="234" width="12" height="12" rx="2.5"/><path d="M272 226v8a6 6 0 0 0 6 6h4"/></g>
+              <text x="280" y="274" fill="#fff" font-size="14" font-weight="700">Controlled Execution</text>
+              <text x="280" y="294" fill="#67E8F9" font-size="12">What may execute</text>
+              <rect x="378" y="196" width="172" height="112" rx="14" fill="#12112A" stroke="#A78BFA" stroke-opacity=".8"/>
+              <g fill="none" stroke="#C4B5FD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M468 212h-12a3 3 0 0 0-3 3v28a3 3 0 0 0 3 3h18a3 3 0 0 0 3-3v-22z"/><path d="M468 212v9h9M459 234l4 4 7-7"/></g>
+              <text x="464" y="274" fill="#fff" font-size="14" font-weight="700">Verifiable Evidence</text>
+              <text x="464" y="294" fill="#C4B5FD" font-size="12">What can be proven</text>
+              <path d="M280 310V340" stroke="#2DD4BF" stroke-width="2" marker-end="url(#ev-a)"/>
+              <rect x="10" y="346" width="540" height="94" rx="14" fill="#0B2A25" stroke="#2DD4BF" stroke-width="2"/>
+              <circle cx="280" cy="372" r="12" fill="none" stroke="#5EEAD4" stroke-width="2"/>
+              <path d="M274 372l4 4 8-8" fill="none" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <text x="280" y="407" fill="#fff" font-size="16" font-weight="800">Protected Business Operations</text>
+              <text x="280" y="427" fill="#5EEAD4" font-size="12.5">Accountability across critical state changes</text>
+            </g>
+          </svg>
+          <figcaption>Execution governance for selected critical operations.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= DELIVERS ================= -->
+    <section class="section" aria-labelledby="deliver-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow">What it delivers</span>
+          <h2 id="deliver-title">Authority over business-state changes</h2>
+          <p class="lead">Execution Shield addresses a different control boundary from your existing security stack: the authority to execute operations that change critical business state.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <h3>Governed execution</h3>
+            <p>Explicit authorization and governance requirements apply before a selected critical operation executes.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M3 20c.8-3 2.8-5 5-5s4.2 2 5 5M11 20c.8-3 2.8-5 5-5s4.2 2 5 5"/></svg></div>
+            <h3>Independent authority</h3>
+            <p>Require approval from independent authorities for operations where a single identity should never be enough.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+            <h3>Compromise containment</h3>
+            <p>A compromised identity, service or partner stays limited to the scope it was granted — it does not inherit unlimited control.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V9l8-5 8 5v12"/><path d="M9 21v-6h6v6"/></svg></div>
+            <h3>Sovereign control</h3>
+            <p>Each institution keeps authority over its own execution environment and can refuse operations that violate its policies.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 14l2 2 4-4"/></svg></div>
+            <h3>Verifiable evidence</h3>
+            <p>Execution decisions and outcomes can be retained as verifiable evidence for accountability, investigation and audit.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="7" height="7" rx="1.5"/><rect x="14" y="13" width="7" height="7" rx="1.5"/><path d="M10 7.5h4a3 3 0 0 1 3 3V13"/></svg></div>
+            <h3>Existing-system integration</h3>
+            <p>Protect selected operations of your existing applications through controlled integration — no rip-and-replace.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= USE CASES ================= -->
+    <section class="section section--alt" aria-labelledby="ops-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">High-impact operations</span>
+          <h2 id="ops-title">Built for the operations that must not go wrong</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <caption class="visually-hidden">Example protected operations by industry</caption>
+            <thead><tr><th scope="col">Industry</th><th scope="col">Example protected operations</th></tr></thead>
+            <tbody>
+              <tr><td>Banking &amp; finance</td><td>High-value transfers, beneficiary changes, settlement approvals</td></tr>
+              <tr><td>Manufacturing</td><td>Production release, quality approvals, critical process changes</td></tr>
+              <tr><td>Insurance</td><td>Claims approvals, policy changes, broker-authorized operations</td></tr>
+              <tr><td>Enterprise AI</td><td>Agent-initiated financial, operational or administrative actions</td></tr>
+              <tr><td>Supply chain &amp; ERP</td><td>Supplier bank-account changes, shipment approvals, cross-company transactions</td></tr>
+              <tr><td>Digital product identity</td><td>Product release, ownership changes, version approvals</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEDERATION & INTEGRATION ================= -->
+    <section class="section" aria-labelledby="fed-title">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">Beyond a single organization</span>
+          <h2 id="fed-title">Independent organizations. Governed operations. Verifiable decisions.</h2>
+          <p class="lead">Banks cooperate with banks, manufacturers depend on suppliers, insurers work with brokers and AI agents reach external systems. Built on <a href="../federation/">Nitrotick Federation</a>, Execution Shield extends governed execution across organizations without any of them surrendering its institutional authority.</p>
+          <p>A single organization can start with its own critical operations and extend the same model to partners later.</p>
+        </div>
+        <div class="stack">
+          <article class="card card--featured">
+            <h3>Works with your existing security</h3>
+            <p>Execution Shield is not a replacement for your identity provider, firewall, endpoint security, SIEM or API gateway. It complements them by governing whether a protected operation is authorized to execute.</p>
+          </article>
+          <article class="card">
+            <h3>Enforced, not advisory</h3>
+            <p>Protection applies to operations integrated through the enforced execution boundary. Closing every direct path to the same operation is part of every integration — otherwise it is only an extra approval step.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ENGAGEMENT ================= -->
+    <section class="section section--alt" aria-labelledby="eng-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow">How to start</span>
+          <h2 id="eng-title">From one critical operation to governed execution</h2>
+        </div>
+        <ol class="timeline" style="--steps:3">
+          <li>
+            <span class="tl-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.3-4.3"/></svg></span>
+            <strong>Critical operation assessment</strong>Identify one to three operations that need stronger execution authority, and every path that can reach them today.
+          </li>
+          <li>
+            <span class="tl-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/></svg></span>
+            <strong>Protected workflow deployment</strong>Integrate the selected operations through the enforced boundary, with your authorities and approval policies.
+          </li>
+          <li>
+            <span class="tl-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></span>
+            <strong>Enterprise runtime</strong>Run on the Nitrotick Federated Runtime in your own environment, with deployment-specific acceptance testing.
+          </li>
+        </ol>
+        <p class="note center">Execution Shield is a solution configuration of the Nitrotick Federated Runtime, not a separate engine. Technical architecture is shared in a controlled evaluation.</p>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow">FAQ</span>
+          <h2 id="faq-title">Execution Shield — frequently asked questions</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>How does Execution Shield work between institutions?</summary>
+            <div><p>Nitrotick enables independently governed operations across institutional boundaries. Each participating organization retains control over its own authorization policies, execution decisions and evidence. No shared central authority is required for institutional execution decisions.</p></div>
+          </details>
+          <details>
+            <summary>Is Nitrotick Execution Shield a firewall or cybersecurity product?</summary>
+            <div><p>No. It does not replace your identity provider, firewall, endpoint security, SIEM or API gateway. Those controls decide who can access your systems. Execution Shield governs whether a selected critical business operation is authorized to execute.</p></div>
+          </details>
+          <details>
+            <summary>What happens if an attacker steals valid credentials?</summary>
+            <div><p>A stolen identity is still limited to the scope it was granted. For operations configured and validated to require independent approval, one compromised identity is not enough to execute them — provided the independent approvers are not compromised as well.</p></div>
+          </details>
+          <details>
+            <summary>Do we need to replace our ERP or core banking system?</summary>
+            <div><p>No. Execution Shield protects selected operations of existing systems through controlled integration. The protection applies to operations that pass through the enforced execution boundary, so any direct path to the same operation must be closed as part of the integration.</p></div>
+          </details>
+          <details>
+            <summary>Does Execution Shield prevent every attack?</summary>
+            <div><p>No. Its value is limiting what a compromised or unauthorized participant can do to critical business state, and retaining verifiable evidence of protected execution decisions. Guarantees depend on the integrated operations, the deployment configuration and completed acceptance testing.</p></div>
+          </details>
+          <details>
+            <summary>Is it only for organizations that work with partners?</summary>
+            <div><p>No. A single organization can protect its own critical operations. When operations cross into partners, the same model extends to independently governed organizations through Nitrotick Federation.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="cta">
+          <span class="pill"><span class="dot" aria-hidden="true"></span>Executive briefing</span>
+          <h2 id="contact-title" class="mt-lg">Protect the decision. Govern the execution. Verify the outcome.</h2>
+          <p class="lead">Identify the critical business operations where conventional access controls are not enough. Message the founder on LinkedIn to arrange an executive briefing.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="https://www.linkedin.com/in/aleksandar-m-tasevski/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+              Message on LinkedIn
+            </a>
+            <a class="btn btn--ghost" href="../federation/">Nitrotick Federation</a>
+          </div>
+          <p class="note mt-lg">Capabilities and guarantees depend on the selected integration, deployment configuration and validated enforcement scope.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="../" aria-label="Nitrotick home">
+            <img src="../assets/img/logo-mark.svg" alt="" width="40" height="40">
+            <span>Nitrotick</span>
+          </a>
+          <p class="footer-tagline">Federation-Enabled Execution OS. <strong>Trust in Execution.</strong></p>
+        </div>
+        <div>
+          <p class="footer-heading">Platform</p>
+          <ul>
+            <li><a href="../execution-os/">Execution OS</a></li>
+            <li><a href="../#platform">Core platform</a></li>
+            <li><a href="../#trust-tiers">Trust tiers</a></li>
+            <li><a href="../#faq">FAQ</a></li>
+            <li><a href="../blockchain-alternative/">Blockchain alternative</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Solutions</p>
+          <ul>
+            <li><a href="../federation/">Nitrotick Federation</a></li>
+            <li><a href="./" aria-current="page">Nitrotick Execution Shield</a></li>
+            <li><a href="../ip-evidence-verification/">IP Evidence &amp; Verification</a></li>
+            <li><a href="../verifiable-off-chain-execution/">Verifiable Off-Chain Execution &amp; Oracle</a></li>
+            <li><a href="../qa-governance-traceability/">QA Governance &amp; Product Traceability</a></li>
+            <li><a href="../digital-product-passport/">Digital Product Passport</a></li>
+            <li><a href="../ai-governance/">AI Governance</a></li>
+            <li><a href="../compliance/">Compliance &amp; regulations</a></li>
+            <li><a href="../use-cases/">Use cases</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Connect</p>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/aleksandar-m-tasevski/" target="_blank" rel="noopener">Founder on LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/company/nitrotick/" target="_blank" rel="noopener">Nitrotick on LinkedIn</a></li>
+            <li><a href="#contact">Request a demo</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Nitrotick. All rights reserved.</span>
+        <span>Skopje, North Macedonia · Enterprise-managed deployment</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

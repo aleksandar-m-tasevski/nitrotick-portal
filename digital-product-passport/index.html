@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Digital Product Passport (DPP) Platform | Nitrotick</title>
-  <meta name="description" content="Build an EU Digital Product Passport on your GS1 identifiers and ERP data. Nitrotick adds versioned history, lineage, execution evidence and cryptographic proof.">
+  <meta name="description" content="Build an EU Digital Product Passport on your GS1 identifiers and ERP data. Nitrotick adds versioned history, lineage, execution evidence and proof.">
   <meta name="keywords" content="digital product passport, DPP, ESPR, EU battery passport, GS1, GTIN, product traceability, verifiable digital assets, product provenance, compliance, GS1 Digital Link, battery passport, batch traceability, supply chain traceability, Nitrotick">
   <meta name="author" content="Aleksandar M. Tasevski">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -35,7 +35,7 @@
   <link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="../apple-touch-icon.png">
   <link rel="manifest" href="../site.webmanifest">
-  <link rel="stylesheet" href="../css/styles.css?v=20260928">
+  <link rel="stylesheet" href="../css/styles.css?v=20261019g">
 
   <script type="application/ld+json">
   {
@@ -185,10 +185,23 @@
       <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu">
       <label class="nav-toggle-label" for="nav-toggle" aria-hidden="true"><span></span></label>
       <ul class="nav-menu">
-        <li><a href="../federation/">Federation</a></li>
-        <li><a href="./" aria-current="page">Digital Product Passport</a></li>
-        <li><a href="../ai-governance/">AI Governance</a></li>
+        <li><a href="../execution-os/">Execution OS</a></li>
+        <li class="nav-dd">
+          <a class="nav-dd-link is-current" href="../#products" aria-haspopup="true">Products</a>
+          <ul class="nav-sub">
+            <li class="nav-sub-label">Products</li>
+            <li><a href="../federation/"><strong>Nitrotick Federation</strong><span>Governed execution across independent organizations</span></a></li>
+            <li><a href="../ip-evidence-verification/"><strong>IP Evidence &amp; Verification</strong><span>Verifiable evidence of IP creation and version history</span></a></li>
+            <li><a href="../verifiable-off-chain-execution/"><strong>Verifiable Off-Chain Execution &amp; Oracle</strong><span>Governed execution for blockchain and DLT</span></a></li>
+            <li><a href="../qa-governance-traceability/"><strong>QA Governance &amp; Product Traceability</strong><span>QA workflows, batch recall and GS1 Digital Link</span></a></li>
+            <li><a href="./" aria-current="page"><strong>Digital Product Passport</strong><span>Product identity, versioning and DPP</span></a></li>
+            <li><a href="../ai-governance/"><strong>AI Governance</strong><span>Governed AI agent actions with verifiable evidence</span></a></li>
+            <li class="nav-sub-label">Solutions</li>
+            <li><a href="../execution-shield/"><strong>Nitrotick Execution Shield</strong><span>Execution security within and across institutions</span></a></li>
+          </ul>
+        </li>
         <li><a href="../blockchain-alternative/">Blockchain Alternative</a></li>
+        <li><a href="../verifiable-off-chain-execution/">Verifiable Off-Chain Execution &amp; Oracle</a></li>
         <li><a href="../compliance/">Compliance</a></li>
         <li><a href="../use-cases/">Use Cases</a></li>
         <li><a class="btn btn--primary" href="#contact">Request a demo</a></li>
@@ -521,7 +534,7 @@
               </g>
             </g>
           </svg>
-          <figcaption>Illustrative. Partners exchange signed evidence and scoped signals — never raw records.</figcaption>
+          <figcaption>Illustrative. Partners exchange signed evidence and scoped signals instead of full records.</figcaption>
         </figure>
         <div>
           <span class="eyebrow">Supply chain federation</span>
@@ -530,7 +543,7 @@
           <ul class="check-list">
             <li><strong>Each party keeps its own node</strong>Identified by its GLN and running on its own systems</li>
             <li><strong>Signed evidence joins the history</strong>Supplier, logistics and lab confirmations attach to the product</li>
-            <li><strong>Commercial secrets stay home</strong>Prices, recipes and supplier terms are never shared</li>
+            <li><strong>Commercial secrets stay home</strong>Prices, recipes and supplier terms stay private unless you choose to share them</li>
           </ul>
           <a class="card-link" href="../federation/">How Nitrotick Federation works</a>
         </div>
@@ -711,11 +724,12 @@
             <img src="../assets/img/logo-mark.svg" alt="" width="40" height="40">
             <span>Nitrotick</span>
           </a>
-          <p class="footer-tagline">Verifiable execution infrastructure. <strong>Trust in Execution.</strong></p>
+          <p class="footer-tagline">Federation-Enabled Execution OS. <strong>Trust in Execution.</strong></p>
         </div>
         <div>
           <p class="footer-heading">Platform</p>
           <ul>
+            <li><a href="../execution-os/">Execution OS</a></li>
             <li><a href="../#platform">Core platform</a></li>
             <li><a href="../#trust-tiers">Trust tiers</a></li>
             <li><a href="../#architecture">Architecture</a></li>
@@ -727,6 +741,10 @@
           <p class="footer-heading">Solutions</p>
           <ul>
             <li><a href="../federation/">Nitrotick Federation</a></li>
+            <li><a href="../execution-shield/">Nitrotick Execution Shield</a></li>
+            <li><a href="../ip-evidence-verification/">IP Evidence &amp; Verification</a></li>
+            <li><a href="../verifiable-off-chain-execution/">Verifiable Off-Chain Execution &amp; Oracle</a></li>
+            <li><a href="../qa-governance-traceability/">QA Governance &amp; Product Traceability</a></li>
             <li><a href="./" aria-current="page">Digital Product Passport</a></li>
             <li><a href="../ai-governance/">AI Governance</a></li>
             <li><a href="../compliance/">Compliance &amp; regulations</a></li>
